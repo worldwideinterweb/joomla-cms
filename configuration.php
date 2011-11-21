@@ -17,7 +17,7 @@ class JConfig {
 	public $dbprefix = 'jom17_';
 	public $live_site = '';
 	public $secret = 'DvcJbwEPm3X3ccI8';
-	public $gzip = '0';
+	public $gzip = '1';
 	public $error_reporting = 'maximum';
 	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&keyref=Help16:{keyref}';
 	public $ftp_host = '127.0.0.1';
@@ -45,8 +45,8 @@ class JConfig {
 	public $MetaKeys = '';
 	public $MetaAuthor = '1';
 	public $sef = '1';
-	public $sef_rewrite = '0';
-	public $sef_suffix = '0';
+	public $sef_rewrite = '1';
+	public $sef_suffix = '1';
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
 	public $log_path = '/var/www/html/www.worldwideinterweb.com/htdocs/logs';
