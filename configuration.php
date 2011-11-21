@@ -27,7 +27,7 @@ class JConfig {
 	public $debug = '0';
 	public $debug_lang = '0';
 	public $dbtype = 'mysqli';
-	public $host = 'localhost';
+	public $host = $dbip;
 	public $user = 'joomla_user';
 	public $password = 'CHu=ukaW?a_w';
 	public $db = 'joomla_db';
