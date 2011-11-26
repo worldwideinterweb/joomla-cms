@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fields name="params">
+    <fieldset name="advanced" label="COM_JOOMGALLERY_COMMON_ADVANCED_PARAMETERS">
+      <field 
+        name="price"
+        type="text"
+        label="Price"
+        description="Please enter the cost of this image"
+      />
+      <field 
+        name="additional_description"
+        type="textarea"
+        default=""
+        label="Additional Description"
+        description="Additional  description to display"
+        rows="6"
+        cols="25"
+      />
+      <field 
+        name="additional_field"
+        type="list"
+        default="0"
+        label="Example"
+        description="Example dropdown field"
+      >
+	      <option value="0">
+	        Example option 0
+	      </option>
+	      <option value="1">
+	        Example option 1
+	      </option>
+	      <option value="2">
+	        Example option 2
+	      </option>
+      </field>
+      <field 
+        name="display_comments"
+        type="radio"
+        default="1"
+        label="Display Comments"
+        description="Please select whether the comments of this image shall be displayed"
+      >
+        <option value="0">
+          JNO</option>
+        <option value="1">
+          JYES</option>
+      </field>
+    </fieldset>
+  </fields>	
+</form>

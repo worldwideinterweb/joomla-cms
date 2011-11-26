@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <fieldset
+    name="permissions"
+    label="JCONFIG_PERMISSIONS_LABEL"
+    description="COM_JOOMGALLERY_PERMISSIONS_DESC"
+    >
+    <field
+      name="rules"
+      type="rules"
+      label="JCONFIG_PERMISSIONS_LABEL"
+      class="inputbox"
+      validate="rules"
+      filter="rules"
+      component="com_joomgallery"
+      section="component" />
+  </fieldset>
+  <fieldset
+    name="extended"
+    label="COM_JOOMGALLERY_ADMENU_EXTENDED_LABEL"
+    description="COM_JOOMGALLERY_ADMENU_EXTENDED_DESC"
+    >
+    <field
+      name="extended_config"
+      type="radio"
+      label="COM_JOOMGALLERY_ADMENU_EXTENDED_CONFIG_LABEL"
+      description="COM_JOOMGALLERY_ADMENU_EXTENDED_CONFIG_DESC"
+      class="inputbox"
+      filter="integer"
+      default="0">
+      <option value="0">JNO</option>
+      <option value="1">JYes</option>
+    </field>
+  </fieldset>
+</config>
