@@ -4,8 +4,8 @@
 # Made by: Fableman
 
 A=`whoami`
-B=`1`
-C=`root`
+B=1
+C=root
 
 if [ $A = "root" ]
 then
