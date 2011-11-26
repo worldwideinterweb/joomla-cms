@@ -1,0 +1,242 @@
+/** 
+ * Alternative style for Adminer by paranoiq. 2009.
+ */
+
+/* defaults & fonts */
+body {
+    margin: 0; 
+    line-height: 1.25em;
+    font-size: 11pt; }
+body, select, option, optgroup, button {
+    font-family: Calibri, Arial, Helvetica, sans-serif; } /* IE6 */
+input[type='submit'], input[type='reset'], input[type='button'], input[type='file'] {
+    font-family: Calibri, Arial, Helvetica, sans-serif; }
+input, textarea, pre, code, samp, kbd, var {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 10pt; } /* FF3 */
+
+/* links */
+a { 
+    color: #007; }
+a:visited { 
+    color: #707; }
+a:hover { 
+    text-decoration: none; }
+h1 a:visited { 
+    color: #007; }
+
+/* tables */
+table { 
+    margin: 0 12px 12px 0; 
+    border: 1px #BBB solid;
+    font-size: 90%; }
+th {
+    text-align: left; }
+td, th {
+	background-color: #FFF;
+    padding: 1px 2px;
+    border: 1px #DDD solid;
+    border-width: 1px 0px 0px 1px; }
+tr:first-child td, tr:first-child th {
+    border-top-width: 0; }
+td:first-child, th:first-child {
+    border-left-width: 0; }
+thead td, thead th { 
+    background-color: #DDD;
+    border: none; 
+    border-bottom: 1px #BBB solid; }
+thead tr:hover td, thead tr:hover th {
+	background-color: #DDD !important; }
+tr:nth-child(2n) td, tr:nth-child(2n) th,
+.odd td, .odd th {
+    background-color: #DEF; }
+tr:hover td, tr:hover th {
+    background-color: #BCD; }
+
+/* forms */
+fieldset { 
+    display: inline; 
+    vertical-align: top; 
+    padding: 8px 12px; 
+    margin: 0 8px 12px 0; 
+    border: none;
+    background-color: #DEF;
+    position: relative;     /* IEx */
+    padding-top: 14px; }    /* IEx */
+fieldset, x:-moz-any-link {
+    padding-top: 4px; }     /* .FF3 */
+fieldset {
+    %padding-top: 14px;}    /* ..IE6+7 */
+legend {
+    font-weight: bold; 
+    color: #000;
+    background-color: #FFF;
+    position: absolute;     /* IEx */
+    top: -0.666em;          /* IEx */
+    left: 0.666em;          /* IEx */
+    padding: 0px 4px; }
+input[name='limit'], input[name*='length'] {
+    width: 3em; 
+    xtext-align: right; }
+input[name='text_length'] {
+    width: 5em; }           /* ~FF3 */
+select + input, select + select {
+    margin-left: 2px; }
+input + label input, select + label input {
+    margin-left: 4px; }
+td input[type='checkbox']:first-child, td input[type='radio']:first-child {
+    margin-left: 2px; }
+label:hover {
+    text-decoration: underline; }
+fieldset div {
+    margin-bottom: 2px; }
+input[name='Comment'] { /* !!! */
+	width: 24em; }
+input[name='Auto_increment'] { /* !!! */
+	width: 6em; }
+
+/* other */
+img { 
+    vertical-align: middle; 
+    margin: 0; 
+    padding: 0; }
+.error { 
+    padding: 8px; 
+    color: #F00; 
+    background-color: #FEE; }
+.message { 
+    padding: 8px;  
+    background-color: #DDD; }
+.char { 
+    color: #070; }
+.date { 
+    color: #707; }
+.enum { 
+    color: #077; }
+.binary { 
+    color: red; }
+.jush-sql {
+    padding: 2px 4px;
+    margin-right: 4px;
+    outline: 1px #BBB dashed;
+    font-size: 9pt; }
+
+/* structure */
+#content { 
+    margin: 28px 0 0 212px; 
+    padding: 10px 20px 20px 0; }
+h3 { 
+    margin: 20px 0;
+    font-weight: normal; 
+    font-size: 130%; }
+
+#lang { 
+    height: 23px;
+    width: 200px;
+    display: block; 
+    padding: 1px 0px; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    text-align: center; 
+    background-color: #EEE;
+	line-height: 1.25em; }
+#lang select {
+    font-size: 8pt; }
+
+#breadcrumb { 
+    margin: 0; 
+    height: 21px;
+    display: block; 
+    position: absolute; 
+    top: 0; 
+    left: 212px;
+    background-color: #DDD;
+    padding: 2px 12px;
+	line-height: 1.25em }
+
+#menu {  
+    position: absolute; 
+    margin: 0;
+    top: 38px; 
+    left: 0; 
+    width: 200px; 
+    background-color: #DEF; }
+#menu form { 
+    margin: 0; }
+#menu p { 
+    padding-left: 8px;
+    font-size: 10pt;
+	border-bottom: none; }
+#menu form p {
+    padding-left: 0;
+    text-align: center; }
+h1 { 
+    margin: 0; 
+    color: #000;
+    padding: 5px; 
+    text-align: center;
+    font-size: 14pt; 
+	border-bottom: none; 
+	background: transparent;
+	font-style: italic; }
+h1 .h1 {
+	color: #000; }
+h1 .h1:hover {
+	text-decoration: underline; } 
+
+h2 { 
+    margin: 0;
+    margin-bottom: 12px; 
+    padding: 6px 12px;  
+    font-weight: normal; 
+    background-color: #BCD;
+	border-bottom: none; }
+
+#schema { 
+    margin: 1.5em 0 0 220px;
+    position: relative; }
+#schema .table { 
+    border: 1px solid #DDD;
+    background-color: #DEF;
+    padding: 0 2px; 
+    cursor: move; 
+    position: absolute; }
+#schema .references { 
+    position: absolute; }
+
+/* controversial */
+.js .hidden {
+	display: inline; }
+.js td.hidden, .js input.hidden {
+	display: none; }
+legend a {
+	color: #000;
+	text-decoration: none;
+	cursor: default; }
+legend a:hover {
+	color: black; }
+code {
+	background: transparent; }
+
+/* eye candy */
+fieldset, legend, h2, table, .error, .message {
+    -moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; }
+#breadcrumb, #lang, #menu {
+    -moz-border-radius-bottomright: 5px;
+	-khtml-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	border-bottom-right-radius: 5px; }
+#breadcrumb {
+    -moz-border-radius-bottomleft: 5px;
+	-khtml-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	border-bottom-left-radius: 5px; }
+#menu {
+    -moz-border-radius-topright: 5px;
+	-khtml-border-top-right-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	border-bottom-top-radius: 5px; }
