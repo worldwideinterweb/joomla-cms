@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fields name="params">
+    <fieldset name="advanced" label="COM_JOOMGALLERY_COMMON_ADVANCED_PARAMETERS">
+      <field 
+        name="display_image_count"
+        type="radio"
+        default="0"
+        label="Display Image Count"
+        description=""
+      >
+        <option value="0">
+         JNo</option>
+        <option value="1">
+         JYes</option>
+      </field>
+      <field
+        name="language"
+        type="contentlanguage"
+        label="Language"
+        description="The language in which the content of this category is displayed"
+        class="inputbox">
+        <option value="*">JALL</option>
+      </field>
+      <field 
+        name="additional_text"
+        type="text"
+        size="25"
+        default=""
+        label="Additional Text"
+        description="Additional text to display"
+      />
+    </fieldset>
+  </fields>
+</form>
