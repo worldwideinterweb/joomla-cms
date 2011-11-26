@@ -29,7 +29,7 @@ joom_local.css.README umbenennen und anpassen
 
 /* Category view */
 .jg_element_cat {
-  width:49%;
+  width:24%;
   float:left;
 }
 .jg_catelem_cat a{
@@ -62,11 +62,13 @@ joom_local.css.README umbenennen und anpassen
 
 /* Detail view */
 .jg_minipic {
-  height:28px;
+  width:125px;
+height:125px;
+;
 }
 #motioncontainer {
-  width:400px; /* Set to gallery width, in px or percentage */
-  height:50px;/* Set to gallery height */
+  width:500px; /* Set to gallery width, in px or percentage */
+  height:150px;/* Set to gallery height */
 }
 
 /* Special view - Toplists*/
