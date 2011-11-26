@@ -48,7 +48,7 @@ chown $C:apache plugins/search
 chown $C:apache plugins/system
 chown $C:apache plugins/user
 chown $C:apache tmp
-chown $C:apache log
+chown $C:apache logs
 chown $C:apache templates
 chown $C:apache cache
 chown $C:apache administrator/cache
@@ -82,7 +82,7 @@ chmod 770 plugins/search
 chmod 770 plugins/system
 chmod 770 plugins/user
 chmod 770 tmp
-chmod 770 log
+chmod 770 logs
 chmod 770 templates
 chmod 770 cache
 chmod 770 administrator/cache
