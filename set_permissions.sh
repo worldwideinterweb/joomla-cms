@@ -4,8 +4,8 @@
 # Made by: Fableman
 
 A=`whoami`
-B=`ls|grep -c -w LICENSES.php`
-C=`ls -lauthor LICENSES.php | awk '{print $3}'`
+B=`1`
+C=`root`
 
 if [ $A = "root" ]
 then
