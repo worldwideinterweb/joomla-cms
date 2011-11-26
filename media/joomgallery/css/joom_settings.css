@@ -86,18 +86,3 @@ height:125px;
   width:49%;
   float:left;
 }
-
-/* Search view*/
-.jg_searchelement {
-  width:99%;
-  height:auto;
-}
-.jg_searchelem_photo {
-  width:49%;
-  float:left;
-}
-.jg_searchelem_txt {
-  text-align:left !important;
-  width:49%;
-  float:left;
-}
