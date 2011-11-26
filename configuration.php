@@ -38,7 +38,7 @@ class JConfig {
 	public $smtphost = 'localhost';
 	public $smtpsecure = 'none';
 	public $smtpport = '25';
-	public $caching = '1';
+	public $caching = '0';
 	public $cache_handler = 'apc';
 	public $cachetime = '15';
 	public $MetaDesc = '';
