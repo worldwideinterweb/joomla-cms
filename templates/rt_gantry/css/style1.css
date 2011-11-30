@@ -40,6 +40,7 @@ a:hover {color: #000;}
 #rt-header .rt-container {height:105px;}
 #rt-header .rt-container #rt-logo {margin-top:6px;}
 #rt-header .rt-container .rt-grid-2 {margin-left:0px;}
+#rt-header .rt-container .rt-grid-2 .rt-block {padding-left:0px;}
 /* #rt-header {margin:0px;}
 #rt-header .rt-container .rt-grid-10 .rt-block {margin:0px 0px 5px 0px;}
 #rt-header .rt-grid-2 {width:210px;}
