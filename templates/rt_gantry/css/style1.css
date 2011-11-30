@@ -52,7 +52,7 @@ body.cssstyle-style1 {color:black;background:url(http://superbooyah.com/images/s
 #rt-header .rt-grid-10 {width:730px;}
 #rt-header .logotop .rt-block p {margin:0px;}
 
-/* Header - Container */
+/* Header - 1px header hack for chrome/safari */
 @media screen and (-webkit-min-device-pixel-ratio:0){
 #rt-header .rt-container {background:url('/templates/rt_gantry/images/header/header_globe_big.gif') no-repeat 528px bottom !important;}
 }
