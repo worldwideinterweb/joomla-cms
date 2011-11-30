@@ -49,6 +49,9 @@ body.cssstyle-style1 {color:black;background:url(http://superbooyah.com/images/s
 #rt-header .rt-grid-10 {width:730px;}
 #rt-header .logotop .rt-block p {margin:0px;}
 
+/* Header - Container */
+!#rt-container {background:url(/templates/rt_gantry/images/header/header_globe_big.gif);}
+
 /* Header - Menu */
 #rt-header .rt-container .rt-block {margin:0px;padding:0px;}
 .nopill ul.menutop li.root a.orphan.item.bullet {height:auto;line-height:normal;}
