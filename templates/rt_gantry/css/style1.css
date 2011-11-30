@@ -8,7 +8,7 @@
 
 
 /* Site - Background */
-body.cssstyle-style1 {color:black;background:url(http://superbooyah.com/images/site/background.jpg) repeat-x 0 0 fixed;}
+body.cssstyle-style1 {color:black;}
 
 /* Site - General */
 .rt-grid-1, .rt-grid-2, .rt-grid-3, .rt-grid-4, .rt-grid-5, .rt-grid-6, .rt-grid-7, .rt-grid-8, .rt-grid-9, .rt-grid-10, .rt-grid-11, .rt-grid-12 {padding:0px;margin:0px 5px 0px 5px;}
@@ -59,6 +59,9 @@ body.cssstyle-style1 {color:black;background:url(http://superbooyah.com/images/s
  */
 .rt-container {width: 959px !important;}
 }
+
+/* Header - Search */
+
 
 /* Header - Menu */
 #rt-header .rt-container .rt-block {margin:0px;padding:0px;}
