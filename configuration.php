@@ -51,7 +51,7 @@ class JConfig {
 	public $feed_limit = '10';
 	public $log_path = '/var/www/html/www.worldwideinterweb.com/htdocs/logs';
 	public $tmp_path = '/var/www/html/www.worldwideinterweb.com/htdocs/tmp';
-	public $lifetime = '15';
+	public $lifetime = '75';
 	public $session_handler = 'database';
 	public $MetaRights = '';
 	public $sitename_pagetitles = '0';
