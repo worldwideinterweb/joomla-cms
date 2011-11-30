@@ -23,7 +23,8 @@ body.cssstyle-style1 {color:black;}
 #rt-main .rt-container #rt-sidebar-a .nobg .rt-block {background:none;border:none;}
 #rt-bottom .rt-container .nobg .rt-block {background:none;border:none;}
 
-/* Top Bar */
+
+/* Top Bar 
 #rt-top {background:url(http://uperbooyah.com/images/site/topbg.png) 0 0 repeat-x;height:40px;}
 #rt-top .rt-container {background:none;}
 #rt-top .date-block {margin:9px 0px 0px 0px;padding:0px;color:white;font-size:1em;}
@@ -31,6 +32,7 @@ body.cssstyle-style1 {color:black;}
 #rt-top .topbarslogan {margin:8px 0px 0px 0px;padding:0px;}
 #rt-top .topbarslogan .rt-block {color:#fdff00;font-size:1.3em;font-family:arial;}
 #rt-top .topbarslogan .rt-block:hover {color:white;}
+*/
 
 /* #rt-top #newsflash {margin:7px 0px 0px 0px;padding:0px;}
 #rt-top #newsflash ul li {border:0px;}
