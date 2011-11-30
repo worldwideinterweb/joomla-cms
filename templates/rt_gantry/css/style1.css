@@ -41,15 +41,10 @@ a:hover {color: #000;}
 #rt-header .rt-container #rt-logo {margin:6px 0px 0px 2px;}
 #rt-header .rt-container .rt-grid-2 {margin-left:0px;}
 #rt-header .rt-container .rt-grid-2 .rt-block {padding-left:0px;}
-/* #rt-header {margin:0px;}
-#rt-header .rt-container .rt-grid-10 .rt-block {margin:0px 0px 5px 0px;}
-#rt-header .rt-grid-2 {width:210px;}
-#rt-header .rt-grid-10 {width:730px;}
-/*#rt-header .logotop .rt-block p {margin:0px;}*/
 
 /* Header - 1px header hack for chrome/safari */
 @media screen and (-webkit-min-device-pixel-ratio:0){
-.rt-container {width: 959px !important;}
+#rt-header .rt-container {width: 959px !important;}
 }
 
 /* Header - Search */
