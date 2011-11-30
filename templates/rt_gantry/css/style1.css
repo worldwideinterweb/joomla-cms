@@ -54,7 +54,12 @@ body.cssstyle-style1 {color:black;background:url(http://superbooyah.com/images/s
 
 /* Header - 1px header hack for chrome/safari */
 @media screen and (-webkit-min-device-pixel-ratio:0){
-#rt-header .rt-container {background:url('/templates/rt_gantry/images/header/header_globe_big.gif') no-repeat 528px bottom !important;}
+/*#rt-header .rt-container {background:url('/templates/rt_gantry/images/header/header_globe_big.gif') no-repeat 528px bottom !important;}
+ */
+.rt-container {
+    margin: 0 auto;
+    width: 960px; !important
+}
 }
 
 /* Header - Menu */
