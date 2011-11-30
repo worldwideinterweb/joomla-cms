@@ -43,6 +43,7 @@ body.cssstyle-style1 {color:black;background:url(http://superbooyah.com/images/s
 /* Header - General */
 #rt-header {margin:0px;}
 #rt-header {background:url(/templates/rt_gantry/images/header/header_bg.gif);}
+#rt-header .rt-container {background:url(/templates/rt_gantry/images/header/header_globe_big.gif) !important;}
 #rt-header .rt-container .rt-grid-2 .rt-block {margin:0px 0px 5px 0px;}
 #rt-header .rt-container .rt-grid-10 .rt-block {margin:0px 0px 5px 0px;}
 #rt-header .rt-grid-2 {width:210px;}
@@ -50,7 +51,6 @@ body.cssstyle-style1 {color:black;background:url(http://superbooyah.com/images/s
 #rt-header .logotop .rt-block p {margin:0px;}
 
 /* Header - Container */
-#rt-container {background:url(/templates/rt_gantry/images/header/header_globe_big.gif) !important;}
 
 /* Header - Menu */
 #rt-header .rt-container .rt-block {margin:0px;padding:0px;}
