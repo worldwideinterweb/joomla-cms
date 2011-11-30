@@ -42,6 +42,7 @@ body.cssstyle-style1 {color:black;background:url(http://superbooyah.com/images/s
 
 /* Header - General */
 #rt-header {margin:0px;}
+#rt-header {background:url(http://superbooyah.com/images/site/topbg.png) 0 0 repeat-x;height:40px;}
 #rt-header .rt-container .rt-grid-2 .rt-block {margin:0px 0px 5px 0px;}
 #rt-header .rt-container .rt-grid-10 .rt-block {margin:0px 0px 5px 0px;}
 #rt-header .rt-grid-2 {width:210px;}
