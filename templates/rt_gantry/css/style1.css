@@ -50,4 +50,4 @@ a:hover {color: #000;}
 /* Header - Search */
 .search {float:right;margin-top:12px;}
 .search .button {position:absolute;}
-#mod-search-searchword{border:none;padding:0px}
+#mod-search-searchword{margin:0px}
