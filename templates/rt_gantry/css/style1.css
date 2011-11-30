@@ -24,7 +24,7 @@ body.cssstyle-style1 {color:black;}
 #rt-bottom .rt-container .nobg .rt-block {background:none;border:none;}
 
 /* Top Bar */
-#rt-top {background:url(http://superbooyah.com/images/site/topbg.png) 0 0 repeat-x;height:40px;}
+#rt-top {background:url(http://uperbooyah.com/images/site/topbg.png) 0 0 repeat-x;height:40px;}
 #rt-top .rt-container {background:none;}
 #rt-top .date-block {margin:9px 0px 0px 0px;padding:0px;color:white;font-size:1em;}
 #rt-top .rt-block {margin:0px;padding:0px;}
@@ -55,8 +55,6 @@ body.cssstyle-style1 {color:black;}
 
 /* Header - 1px header hack for chrome/safari */
 @media screen and (-webkit-min-device-pixel-ratio:0){
-/*#rt-header .rt-container {background:url('/templates/rt_gantry/images/header/header_globe_big.gif') no-repeat 528px bottom !important;}
- */
 .rt-container {width: 959px !important;}
 }
 
@@ -67,7 +65,7 @@ body.cssstyle-style1 {color:black;}
 #rt-header .rt-container .rt-block {margin:0px;padding:0px;}
 .nopill ul.menutop li.root a.orphan.item.bullet {height:auto;line-height:normal;}
 .nopill ul.menutop li.root a.item span {height:auto;line-height:normal;}
-.nopill .menutop {background:url(http://superbooyah.com/images/site/darkbg.png) 0 0 repeat;border:1px solid black;width:726px;height:32px;}
+.nopill .menutop {background:url(http://uperbooyah.com/images/site/darkbg.png) 0 0 repeat;border:1px solid black;width:726px;height:32px;}
 .nopill ul li {background:none;border:none;}
 .nopill ul {padding:0px;}
 .nopill ul li a.orphan.item.bullet {background:none;padding:7px 0px 0px 43px;font-size:1.4em;font-family:arial;font-weight:bold;}
@@ -84,7 +82,7 @@ body.cssstyle-style1 {color:black;}
 #rt-showcase .rt-container {background:none;}
 #rt-showcase .linkbartop p img {width:75px;height:75px;border:1px solid black;margin:4px 0px 0px 4px;} 
 #rt-showcase .linkbartop .rt-block {padding:0px;margin:0px;}
-#rt-showcase .rt-container .rt-grid-12 {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;padding:0px;margin:0px;width:976px;height:86px;position:relative;left:-9px;}
+#rt-showcase .rt-container .rt-grid-12 {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;padding:0px;margin:0px;width:976px;height:86px;position:relative;left:-9px;}
 
 /* Video Player Featured - General */
 #rt-feature .rt-container {background:none;padding:7px 0px 0px 7px;}
@@ -95,7 +93,7 @@ body.cssstyle-style1 {color:black;}
 #rt-main #rt-content-top #fpss-outer-container {margin:0px;padding:0px;border:1px black solid;}
 #rt-content-top #fpss-outer-container #fpss-container #fpss-slider .fpss-introtext {display:none;}
 #fpss-outer-container #fpss-slider .slide-inner img {height:300px;width:428px;z-index:1;}
-#rt-content-top #fpss-outer-container #fpss-container #navi-outer {margin:0px;padding:0px;border:none;background:url(http://superbooyah.com/images/site/slideshowtabbg.png);}
+#rt-content-top #fpss-outer-container #fpss-container #navi-outer {margin:0px;padding:0px;border:none;background:url(http://uperbooyah.com/images/site/slideshowtabbg.png);}
 #rt-content-top #fpss-outer-container #fpss-container #navi-outer ul {margin:0px;padding:0px;border:none;background:transparent;}
 #rt-content-top #fpss-outer-container #fpss-container #navi-outer ul li {margin:0px;padding:0px;border:none;background:transparent;}
 #rt-content-top #fpss-outer-container #fpss-container #navi-outer ul li a.navbutton.navi-active {height:75px;}
@@ -104,7 +102,7 @@ body.cssstyle-style1 {color:black;}
 #rt-content-top #fpss-outer-container #fpss-container #navi-outer ul li a .navbar-img {display:none;}
 #rt-content-top #fpss-outer-container #fpss-container #navi-outer ul li a span.navbar-title {position:relative;top:15%;padding:0px 10px;font-weight:bold;font-size:14px;color:#ffdf00;line-height:1.2em;}
 #rt-content-top #fpss-outer-container #fpss-container #navi-outer ul li a.navi-active span.navbar-title {position:relative;top:15%;padding:0px 10px;font-weight:bold;color:#000000;line-height:1.2em;}
-#rt-content-top #fpss-outer-container #fpss-container #navi-outer ul li a.navi-active {background:url(http://superbooyah.com/images/site/slider.jpg)no-repeat;position:relative;} */
+#rt-content-top #fpss-outer-container #fpss-container #navi-outer ul li a.navi-active {background:url(http://uperbooyah.com/images/site/slider.jpg)no-repeat;position:relative;} */
 
 /* Mainbody - General */
 #rt-main {margin-top:5px;}
@@ -121,28 +119,28 @@ body.cssstyle-style1 {color:black;}
 #rt-main .homevideos .moduleItemTitle {font-family:arial;color:black;font-weight:bold;line-height:1.1em;position:relative;top:10px;}
 #rt-main .homevideos ul {list-style-type:none;padding:0px 10px 0px 0px;}
 #rt-main .homevideos li {background:none;padding:0px 0px 0px 0px;}
-#k2ModuleBox188.homevideos {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
+#k2ModuleBox188.homevideos {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
 #rt-main .hometop10 {width:315px;float:left;margin:0px 0px 10px 0px;height:660px}
 #rt-main .hometop10 img {float:none;width:100px;height:100px;margin:2px 5px 4px 4px;}
 #rt-main .hometop10 .moduleItemIntrotext {float:left;height:100px;}
 #rt-main .hometop10 .moduleItemTitle {font-family:arial;color:black;font-weight:bold;line-height:1.1em;position:relative;top:10px;}
 #rt-main .hometop10 ul {list-style-type:none;padding:0px 10px 0px 0px;}
 #rt-main .hometop10 li {background:none;padding:0px 0px 0px 0px;}
-#k2ModuleBox124.hometop10 {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 5px;}
+#k2ModuleBox124.hometop10 {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 5px;}
 #rt-main .homegalleries {clear:both;width:315px;float:left;margin:0px 5px 10px 0px;height:775px;}
 #rt-main .homegalleries img {float:none;width:100px;height:100px;margin:2px 5px 4px 4px;}
 #rt-main .homegalleries .moduleItemIntrotext {float:left;height:100px;}
 #rt-main .homegalleries .moduleItemTitle {font-family:arial;color:black;font-weight:bold;line-height:1.1em;position:relative;top:10px;}
 #rt-main .homegalleries ul {list-style-type:none;padding:0px 10px 0px 0px;}
 #rt-main .homegalleries li {background:none;padding:0px 0px 0px 0px;}
-#k2ModuleBox126.homegalleries {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
+#k2ModuleBox126.homegalleries {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
 #rt-main .homepopular {clear:right;width:315px;float:left;margin:0px 0px 10px 5px;height:775px;}
 #rt-main .homepopular .moduleItemIntrotext .moduleItemImage img {float:none;width:100px;height:100px;margin:2px 5px 4px 4px;}
 #rt-main .homepopular .moduleItemIntrotext {float:left;height:100px;}
 #rt-main .homepopular .moduleItemTitle {font-family:arial;color:black;font-weight:bold;line-height:1.1em;position:relative;top:10px;}
 #rt-main .homepopular ul {list-style-type:none;padding:0px 10px 0px 0px;}
 #rt-main .homepopular li {background:none;padding:0px 0px 0px 0px;}
-#k2ModuleBox127.homepopular {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
+#k2ModuleBox127.homepopular {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
 
 /* Main Home Titles - General */
 #rt-main #rt-content-top .homevideotitle {float:left;width:315px;margin:0px 5px 0px 0px;}
@@ -166,22 +164,22 @@ body.cssstyle-style1 {color:black;}
 
 /* Facebook Module - General */
 .facebook {float:left;margin:0px 0px 5px 5px;width:315px;}
-.fbDarkWidget {background:url(http://superbooyah.com/images/site/darkbg.png) 0 0 repeat;border:1px solid black;}
+.fbDarkWidget {background:url(http://uperbooyah.com/images/site/darkbg.png) 0 0 repeat;border:1px solid black;}
 
 /* Linkbar Middle Home 1 - General */
-.linkbarmain {clear:both;background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;width:640px;padding:5px 0px 5px 0px;margin:0px 0px 5px 0px;}
+.linkbarmain {clear:both;background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;width:640px;padding:5px 0px 5px 0px;margin:0px 0px 5px 0px;}
 #rt-main .rt-container #rt-content-top .linkbarmain .rt-block {clear:both;}
 .linkbarmain .rt-block img {margin-left:5px;width:205px;height:99px;border:1px solid black;}
 .linkbarmain .rt-block p {margin:0px 0px 0px 0px;}
 
 /* Around the Web - General */
 #rt-main .rt-container #rt-content-top .aroundweb1 {float:left;clear:both;}
-#rt-main .rt-container #rt-content-top .aroundweb1 .rt-block {background:url(http://superbooyah.com/images/site/contentbg.png) repeat 0 0;border-top:1px solid black;border-left:1px solid black;border-bottom:1px solid black;width:320px;height:270px;margin-bottom:10px;padding-top:5px;}
+#rt-main .rt-container #rt-content-top .aroundweb1 .rt-block {background:url(http://uperbooyah.com/images/site/contentbg.png) repeat 0 0;border-top:1px solid black;border-left:1px solid black;border-bottom:1px solid black;width:320px;height:270px;margin-bottom:10px;padding-top:5px;}
 #rt-main .rt-container #rt-content-top .aroundweb1 .rt-block img {float:left;margin:0px 5px 0px 5px;}
 #rt-main .rt-container #rt-content-top .aroundweb1 .rt-block p {height:40px;padding-right:20px;}
 #rt-main .rt-container #rt-content-top .aroundweb1 .rt-block a {font-family:arial;font-size:1em;font-weight:bold;color:black;}
 #rt-main .rt-container #rt-content-top .aroundweb2 {float:left;}
-#rt-main .rt-container #rt-content-top .aroundweb2 .rt-block {background:url(http://superbooyah.com/images/site/contentbg.png) repeat 0 0;border-top:1px solid black;border-right:1px solid black;border-bottom:1px solid black;width:320px;height:270px;margin-bottom:10px;padding-top:5px;}
+#rt-main .rt-container #rt-content-top .aroundweb2 .rt-block {background:url(http://uperbooyah.com/images/site/contentbg.png) repeat 0 0;border-top:1px solid black;border-right:1px solid black;border-bottom:1px solid black;width:320px;height:270px;margin-bottom:10px;padding-top:5px;}
 #rt-main .rt-container #rt-content-top .aroundweb2 .rt-block img {float:left;margin:0px 5px 0px 5px;}
 #rt-main .rt-container #rt-content-top .aroundweb2 .rt-block p {height:40px;padding-right:20px;}
 #rt-main .rt-container #rt-content-top .aroundweb2 .rt-block a {font-family:arial;font-size:1em;font-weight:bold;color:black;}
@@ -193,7 +191,7 @@ body.cssstyle-style1 {color:black;}
 .aroundwebtitle2 .rt-block p {margin:0px 0px 0px 0px;}
 
 /* What's Hot Now - General */
-.whatshothome {clear:both;background:url(http://superbooyah.com/images/site/contentbg.png) repeat 0 0;border:1px solid black;width:640px;margin:0px 0px 5px 0px;}
+.whatshothome {clear:both;background:url(http://uperbooyah.com/images/site/contentbg.png) repeat 0 0;border:1px solid black;width:640px;margin:0px 0px 5px 0px;}
 
 /* What's Hot Now Title - General */
 #rt-main .rt-container #rt-content-top .homewhatshottitle {clear:both;width:640px;height:28px;border-top:1px solid black;border-right:1px solid black;border-left:1px solid black;}
@@ -208,19 +206,19 @@ body.cssstyle-style1 {color:black;}
 #rt-main .menulayout .moduleItemTitle {font-family:arial;color:black;font-weight:bold;line-height:1.1em;position:relative;top:10px;}
 #rt-main .menulayout ul {list-style-type:none;padding:0px 10px 0px 0px;}
 #rt-main .menulayout li {background:none;padding:0px 0px 0px 0px;}
-#k2ModuleBox165.menulayout {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
+#k2ModuleBox165.menulayout {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
 #k2ModuleBox165.menulayout ul li a.moduleItemTitle {font-size:2.2em;}
 #k2ModuleBox165.menulayout ul li.even {border-bottom:1px dotted #111;}
 #k2ModuleBox165.menulayout ul li.odd {border-bottom:1px dotted #111;}
-#k2ModuleBox170.menulayout {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
+#k2ModuleBox170.menulayout {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
 #k2ModuleBox170.menulayout ul li a.moduleItemTitle {font-size:2.2em;}
 #k2ModuleBox170.menulayout ul li.even {border-bottom:1px dotted #111;}
 #k2ModuleBox170.menulayout ul li.odd {border-bottom:1px dotted #111;}
-#k2ModuleBox168.menulayout {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
+#k2ModuleBox168.menulayout {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
 #k2ModuleBox168.menulayout ul li a.moduleItemTitle {font-size:2.2em;}
 #k2ModuleBox168.menulayout ul li.even {border-bottom:1px dotted #111;}
 #k2ModuleBox168.menulayout ul li.odd {border-bottom:1px dotted #111;}
-#k2ModuleBox173.menulayout {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
+#k2ModuleBox173.menulayout {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
 #k2ModuleBox173.menulayout ul li a.moduleItemTitle {font-size:2.2em;}
 #k2ModuleBox173.menulayout ul li.even {border-bottom:1px dotted #111;}
 #k2ModuleBox173.menulayout ul li.odd {border-bottom:1px dotted #111;}
@@ -231,27 +229,27 @@ body.cssstyle-style1 {color:black;}
 #rt-main .menulayoutlast .moduleItemTitle {font-family:arial;color:black;font-weight:bold;line-height:1.1em;position:relative;top:10px;}
 #rt-main .menulayoutlast ul {list-style-type:none;padding:0px 10px 0px 0px;}
 #rt-main .menulayoutlast li {background:none;padding:0px 0px 0px 0px;}
-#k2ModuleBox165.menulayoutlast {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
+#k2ModuleBox165.menulayoutlast {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
 #k2ModuleBox165.menulayoutlast ul li a.moduleItemTitle {font-size:2.2em;}
 #k2ModuleBox165.menulayoutlast ul li.even {border-bottom:1px dotted #111;}
 #k2ModuleBox165.menulayoutlast ul li.odd {border-bottom:1px dotted #111;}
-#k2ModuleBox170.menulayoutlast {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
+#k2ModuleBox170.menulayoutlast {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
 #k2ModuleBox170.menulayoutlast ul li a.moduleItemTitle {font-size:2.2em;}
 #k2ModuleBox170.menulayoutlast ul li.even {border-bottom:1px dotted #111;}
 #k2ModuleBox170.menulayoutlast ul li.odd {border-bottom:1px dotted #111;}
-#k2ModuleBox168.menulayoutlast {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
+#k2ModuleBox168.menulayoutlast {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
 #k2ModuleBox168.menulayoutlast ul li a.moduleItemTitle {font-size:2.2em;}
 #k2ModuleBox168.menulayoutlast ul li.even {border-bottom:1px dotted #111;}
 #k2ModuleBox168.menulayoutlast ul li.odd {border-bottom:1px dotted #111;}
-#k2ModuleBox173.menulayoutlast {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
+#k2ModuleBox173.menulayoutlast {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
 #k2ModuleBox173.menulayoutlast ul li a.moduleItemTitle {font-size:2.2em;}
 #k2ModuleBox173.menulayoutlast ul li.even {border-bottom:1px dotted #111;}
 #k2ModuleBox173.menulayoutlast ul li.odd {border-bottom:1px dotted #111;}
-#k2ModuleBox209.menulayoutlast {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
+#k2ModuleBox209.menulayoutlast {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
 #k2ModuleBox209.menulayoutlast ul li a.moduleItemTitle {font-size:2.2em;}
 #k2ModuleBox209.menulayoutlast ul li.even {border-bottom:1px dotted #111;}
 #k2ModuleBox209.menulayoutlast ul li.odd {border-bottom:1px dotted #111;}
-#k2ModuleBox210.menulayoutlast {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
+#k2ModuleBox210.menulayoutlast {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
 #k2ModuleBox210.menulayoutlast ul li a.moduleItemTitle {font-size:2.2em;}
 #k2ModuleBox210.menulayoutlast ul li.even {border-bottom:1px dotted #111;}
 #k2ModuleBox210.menulayoutlast ul li.odd {border-bottom:1px dotted #111;}
@@ -261,35 +259,35 @@ body.cssstyle-style1 {color:black;}
 #rt-main .menulayout5 .moduleItemTitle {font-family:arial;color:black;font-weight:bold;line-height:1.1em;position:relative;top:10px;}
 #rt-main .menulayout5 ul {list-style-type:none;padding:0px 10px 0px 0px;}
 #rt-main .menulayout5 li {background:none;padding:0px 0px 0px 0px;}
-#k2ModuleBox165.menulayout5 {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
+#k2ModuleBox165.menulayout5 {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
 #k2ModuleBox165.menulayout5 ul li a.moduleItemTitle {font-size:2.2em;}
 #k2ModuleBox165.menulayout5 ul li.even {border-bottom:1px dotted #111;}
 #k2ModuleBox165.menulayout5 ul li.odd {border-bottom:1px dotted #111;}
-#k2ModuleBox170.menulayout5 {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
+#k2ModuleBox170.menulayout5 {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
 #k2ModuleBox170.menulayout5 ul li a.moduleItemTitle {font-size:2.2em;}
 #k2ModuleBox170.menulayout5 ul li.even {border-bottom:1px dotted #111;}
 #k2ModuleBox170.menulayout5 ul li.odd {border-bottom:1px dotted #111;}
-#k2ModuleBox168.menulayout5 {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
+#k2ModuleBox168.menulayout5 {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
 #k2ModuleBox168.menulayout5 ul li a.moduleItemTitle {font-size:2.2em;}
 #k2ModuleBox168.menulayout5 ul li.even {border-bottom:1px dotted #111;}
 #k2ModuleBox168.menulayout5 ul li.odd {border-bottom:1px dotted #111;}
-#k2ModuleBox173.menulayout5 {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
+#k2ModuleBox173.menulayout5 {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
 #k2ModuleBox173.menulayout5 ul li a.moduleItemTitle {font-size:2.2em;}
 #k2ModuleBox173.menulayout5 ul li.even {border-bottom:1px dotted #111;}
 #k2ModuleBox173.menulayout5 ul li.odd {border-bottom:1px dotted #111;}
-#k2ModuleBox209.menulayout {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
+#k2ModuleBox209.menulayout {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
 #k2ModuleBox209.menulayout ul li a.moduleItemTitle {font-size:2.2em;}
 #k2ModuleBox209.menulayout ul li.even {border-bottom:1px dotted #111;}
 #k2ModuleBox209.menulayout ul li.odd {border-bottom:1px dotted #111;}
-#k2ModuleBox209.menulayout5 {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
+#k2ModuleBox209.menulayout5 {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
 #k2ModuleBox209.menulayout5 ul li a.moduleItemTitle {font-size:2.2em;}
 #k2ModuleBox209.menulayout5 ul li.even {border-bottom:1px dotted #111;}
 #k2ModuleBox209.menulayout5 ul li.odd {border-bottom:1px dotted #111;}
-#k2ModuleBox210.menulayout {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
+#k2ModuleBox210.menulayout {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
 #k2ModuleBox210.menulayout ul li a.moduleItemTitle {font-size:2.2em;}
 #k2ModuleBox210.menulayout ul li.even {border-bottom:1px dotted #111;}
 #k2ModuleBox210.menulayout ul li.odd {border-bottom:1px dotted #111;}
-#k2ModuleBox210.menulayout5 {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
+#k2ModuleBox210.menulayout5 {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;margin:0px 0px 0px 0px;}
 #k2ModuleBox210.menulayout5 ul li a.moduleItemTitle {font-size:2.2em;}
 #k2ModuleBox210.menulayout5 ul li.even {border-bottom:1px dotted #111;}
 #k2ModuleBox210.menulayout5 ul li.odd {border-bottom:1px dotted #111;}
@@ -302,12 +300,12 @@ body.cssstyle-style1 {color:black;}
 
 /* K2 - General */
 #rt-main .rt-container .rt-block {padding:0px; margin:0px;}
-#rt-main .rt-container .rt-block #rt-mainbody #k2Container.itemView {background:url(http://superbooyah.com/images/site/contentbg.png) repeat 0 0;border:1px solid black;padding:0px 15px 15px 15px;margin:0px 0px 5px 0px;}
+#rt-main .rt-container .rt-block #rt-mainbody #k2Container.itemView {background:url(http://uperbooyah.com/images/site/contentbg.png) repeat 0 0;border:1px solid black;padding:0px 15px 15px 15px;margin:0px 0px 5px 0px;}
 #rt-main .rt-container .rt-block #rt-mainbody #k2Container {padding:0px; margin:0px;}
 
 /* K2 - Category */
 #rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemListCategoriesBlock .itemListCategory {background:none;border:none;margin:0px;padding:0px;}
-#rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemListCategoriesBlock .itemListCategory h2 {background:url(http://superbooyah.com/images/site/titlebg.jpg)repeat-x 0 0;border:1px solid black;width:610px;position:relative;left:-24px;padding:3px 0px 3px 18px;margin:0px;font-weight:bold;}
+#rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemListCategoriesBlock .itemListCategory h2 {background:url(http://uperbooyah.com/images/site/titlebg.jpg)repeat-x 0 0;border:1px solid black;width:610px;position:relative;left:-24px;padding:3px 0px 3px 18px;margin:0px;font-weight:bold;}
 
 /* K2 - Sub-Category */
 #rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemListCategoriesBlock .itemListSubCategories {padding:0px; margin:15px 0px 0px 0px;}
@@ -326,7 +324,7 @@ body.cssstyle-style1 {color:black;}
 #rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemList #itemListPrimary .itemContainer {padding:0px 0px 20px 0px; margin:0px;}
 #rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemList #itemListPrimary .itemContainer .catItemView.groupPrimary {padding:0px;margin:0px;}
 #rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemList #itemListPrimary .itemContainer .catItemView span.catItemDateCreated {color:black;}
-#rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemList #itemListPrimary .itemContainer .catItemView .catItemHeader h3.catItemTitle {background:url(http://superbooyah.com/images/site/titlebg.jpg)repeat-x 0 0;border:1px solid black;width:610px;position:relative;left:-24px;padding:3px 0px 3px 18px;margin:0px 0px 0px 0px;font-weight:bold;}
+#rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemList #itemListPrimary .itemContainer .catItemView .catItemHeader h3.catItemTitle {background:url(http://uperbooyah.com/images/site/titlebg.jpg)repeat-x 0 0;border:1px solid black;width:610px;position:relative;left:-24px;padding:3px 0px 3px 18px;margin:0px 0px 0px 0px;font-weight:bold;}
 #rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemList #itemListPrimary .itemContainer .catItemView .catItemRatingBlock {padding:0px;margin:0px;}
 #rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemList #itemListPrimary .itemContainer .catItemView .catItemRatingBlock span {padding-top:2px;margin:0px;font-size:1em;color:black;}
 #rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemList #itemListPrimary .itemContainer .catItemView .catItemBody .catItemIntroText p a {font-size:10pt;color:black;}
@@ -339,7 +337,7 @@ body.cssstyle-style1 {color:black;}
 #rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemList #itemListPrimary .itemContainer .catItemView .catItemLinks .catItemTagsBlock {padding:0px;margin:0px;border-bottom:1px #555 solid;}
 #rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemList #itemListPrimary .itemContainer .catItemView .catItemCommentsLink {font-weight:bold;font-size:1.3em;color:black;border:none;}
 #rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemList #itemListPrimary .itemContainer .catItemView .catItemCommentsLink a {color:black;}
-#rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemList #itemListPrimary .itemContainer .catItemView .catItemReadMore {background:url(http://superbooyah.com/images/site/readmore.png) 0 0 no-repeat;position:relative;float:right;font-weight:bold;font-size:1.3em;}
+#rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemList #itemListPrimary .itemContainer .catItemView .catItemReadMore {background:url(http://uperbooyah.com/images/site/readmore.png) 0 0 no-repeat;position:relative;float:right;font-weight:bold;font-size:1.3em;}
 #rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemList #itemListPrimary .itemContainer .catItemView .catItemReadMore a {margin-left:14px;color:black;}
 
 /* K2 - Secondary Items */
@@ -350,7 +348,7 @@ body.cssstyle-style1 {color:black;}
 #rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemList #itemListLinks .itemContainer {padding:0px; margin:0px;}
 #rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemList #itemListLinks h3.catItemTitle {font-size:110%;padding:5px 0px 5px 0px;margin:0px;}
 #rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemList #itemListLinks h3.catItemTitle a {text-decoration:underline;color:black;}
-#rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemList #itemListLinks h4 {background:url(http://superbooyah.com/images/site/titlebg.jpg)repeat-x 0 0;border:1px solid black;width:610px;position:relative;left:-24px;padding:3px 0px 3px 18px;margin:0px 0px 0px 0px;font-weight:bold;font-family:Georgia;font-size:2em;}
+#rt-main .rt-container .rt-block #rt-mainbody #k2Container .itemList #itemListLinks h4 {background:url(http://uperbooyah.com/images/site/titlebg.jpg)repeat-x 0 0;border:1px solid black;width:610px;position:relative;left:-24px;padding:3px 0px 3px 18px;margin:0px 0px 0px 0px;font-weight:bold;font-family:Georgia;font-size:2em;}
 
 /* K2 - Pagination */
 #rt-main .rt-container .rt-block #rt-mainbody #k2Container .k2Pagination {margin:0px;padding:0px;}
@@ -363,14 +361,14 @@ body.cssstyle-style1 {color:black;}
 .catItemIntroText p {margin:0px 0px 5px 0px;}
 #itemListPrimary .catItemIntroText p {font-family:arial;font-size:1.3em;}
 #rt-main #rt-content-top #k2ModuleBox38.k2ItemsBlock ul {padding-left:0px;}
-#itemListPrimary .catItemIsFeatured {background:url(http://superbooyah.com/images/site/featured.png) 0 0 no-repeat;}
-#k2Container .catItemHeader h3.catItemTitle {background:url(http://superbooyah.com/images/site/titlebg.jpg)repeat-x 0 0;border:1px solid black;width:6380px;position:relative;left:-16px;padding:3px 0px 3px 5px;margin:0px 0px 0px 0px;font-weight:bold;font-size:1.5em;}
+#itemListPrimary .catItemIsFeatured {background:url(http://uperbooyah.com/images/site/featured.png) 0 0 no-repeat;}
+#k2Container .catItemHeader h3.catItemTitle {background:url(http://uperbooyah.com/images/site/titlebg.jpg)repeat-x 0 0;border:1px solid black;width:6380px;position:relative;left:-16px;padding:3px 0px 3px 5px;margin:0px 0px 0px 0px;font-weight:bold;font-size:1.5em;}
 #k2Container .catItemHeader h3.catItemTitle a {color:black;}
 ul li.even .moduleItemAuthor {color:black;font-size:0.8em;}
 .catItemTagsBlock ul li {border:none;}
 .catItemTagsBlock ul li a {font-size:1em;}
 #k2Container .itemListCategoriesBlock .itemListCategory {background:none;margin:0px;padding:3px 0px 0px 0px;border:none;}
-#k2Container .itemListCategoriesBlock .itemListCategory h2 {background:url(http://superbooyah.com/images/site/titlebg.jpg)repeat-x 0 0;border:1px solid black;width:640px;height:28px;position:relative;left:-24px;padding:3px 0px 3px 18px;margin:0px 0px 0px 0px;font-weight:bold;}
+#k2Container .itemListCategoriesBlock .itemListCategory h2 {background:url(http://uperbooyah.com/images/site/titlebg.jpg)repeat-x 0 0;border:1px solid black;width:640px;height:28px;position:relative;left:-24px;padding:3px 0px 3px 18px;margin:0px 0px 0px 0px;font-weight:bold;}
 .itemListSubCategories .subCategoryContainer .subCategory a.subCategoryImage img {background:none;border:1px solid black;padding:0px;margin:0px;}
 .itemListSubCategories {margin-top:15px;}
 .itemListSubCategories h3 {display:none;}
@@ -382,7 +380,7 @@ ul li.even .moduleItemAuthor {color:black;font-size:0.8em;}
 #k2Container.itemView .itemHeader {padding-top:3px;}
 #k2Container.itemView .itemHeader span.itemDateCreated {color:black;}
 #k2Container.itemView .itemHeader span.itemAuthor {display:none;}
-#k2Container.itemView .itemHeader h2 {background:url(http://superbooyah.com/images/site/titlebg.jpg)repeat-x 0 0;border:1px solid black;width:638px;height:20px;position:relative;left:-16px;padding:3px 0px 3px 5px;margin:0px 0px 0px 0px;font-weight:bold;font-size:1.5em;font-family:Georgia;}
+#k2Container.itemView .itemHeader h2 {background:url(http://uperbooyah.com/images/site/titlebg.jpg)repeat-x 0 0;border:1px solid black;width:638px;height:20px;position:relative;left:-16px;padding:3px 0px 3px 5px;margin:0px 0px 0px 0px;font-weight:bold;font-size:1.5em;font-family:Georgia;}
 #k2Container.itemView .itemBody .itemIntroText {font-size:1.3em;line-height:auto;color:black;padding:0px;font-weight:normal;font-family:arial;}
 #k2Container.itemView .itemBody .itemFullText {font-size:1.3em;line-height:auto;color:black;padding:0px;font-weight:normal;font-family:arial;}
 .itemAuthorLatest ul li {background:none;}
@@ -402,7 +400,7 @@ ul li.even .moduleItemAuthor {color:black;font-size:0.8em;}
 #k2Container.itemView .itemComments {background:none;}
 
 /* K2 - Galleries */
-#k2Container.itemView .itemNavigation {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;}
+#k2Container.itemView .itemNavigation {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;}
 #k2Container.itemView .itemNavigation span.itemNavigationTitle {color:black;}
 .itemImageGallery ul li.sig-block {background:transparent !important;}
 .itemImageGallery ul li.sig-block span.sig-link-wrapper {background:none;margin:0px 0px 15px 52px;}
@@ -411,11 +409,11 @@ ul li.even .moduleItemAuthor {color:black;font-size:0.8em;}
 #rt-main #rt-sidebar-a .rt-block {margin-bottom:10px;}
 #rt-sidebar-a {background:none;}
 #rt-sidebar-a .linkbarbest .linkbarbestimage {position:relative;}
-#rt-sidebar-a .linkbarbest .linkbarbesttext {background:url(http://superbooyah.com/images/site/darkerbg.png) repeat 0 0;width:283px;height:20px;margin:0px 0px 0px 0px;font-family:arial;color:white;font-weight:bold;position:absolute;top:120px;left:5px;padding:0px 0px 0px 4px;}
-#rt-sidebar-a .linkbarbest .rt-block {background:url(http://superbooyah.com/images/site/contentbg.png) repeat 0 0;border:1px black solid;padding-top:5px;}
+#rt-sidebar-a .linkbarbest .linkbarbesttext {background:url(http://uperbooyah.com/images/site/darkerbg.png) repeat 0 0;width:283px;height:20px;margin:0px 0px 0px 0px;font-family:arial;color:white;font-weight:bold;position:absolute;top:120px;left:5px;padding:0px 0px 0px 4px;}
+#rt-sidebar-a .linkbarbest .rt-block {background:url(http://uperbooyah.com/images/site/contentbg.png) repeat 0 0;border:1px black solid;padding-top:5px;}
 #rt-sidebar-a .linkbarbest .rt-block img {margin-left:5px;margin-bottom:5px;border:1px solid black;width:286px;height:145px;}
 #rt-sidebar-a .linkbarlook p {margin:0px 0px 0px 0px;}
-#rt-sidebar-a .linkbarlook .rt-block {background:url(http://superbooyah.com/images/site/contentbg.png) repeat 0 0;border:1px black solid;padding-top:5px;}
+#rt-sidebar-a .linkbarlook .rt-block {background:url(http://uperbooyah.com/images/site/contentbg.png) repeat 0 0;border:1px black solid;padding-top:5px;}
 #rt-sidebar-a .linkbarlook .rt-block p img {margin-left:5px;margin-bottom:5px;border:1px solid black;width:140px;height:140px;}
 
 /* Sidebar A - Titles */
@@ -427,7 +425,7 @@ ul li.even .moduleItemAuthor {color:black;font-size:0.8em;}
 #rt-main #rt-sidebar-a .linkbarlooktitle .rt-block {margin-bottom:0px;}
 
 /* Mainbottom - General */
-/* #rt-mainbottom .rt-container {background:url(http://superbooyah.com/images/site/contentbg.png) repeat 0 0;border:solid 1px black;margin-bottom:10px;}
+/* #rt-mainbottom .rt-container {background:url(http://uperbooyah.com/images/site/contentbg.png) repeat 0 0;border:solid 1px black;margin-bottom:10px;}
 #rt-mainbottom .rt-container .rt-grid-4 {width:320px;padding:0px;margin:0px;}
 #rt-mainbottom .rt-container .superfriends {padding:10px 10px 0px 10px;}
 #rt-mainbottom .rt-container .rt-block {margin:0px;padding:0px;}
@@ -436,18 +434,18 @@ ul li.even .moduleItemAuthor {color:black;font-size:0.8em;}
 #rt-mainbottom .rt-container .rt-block p a {font-family:arial;font-size:1em;font-weight:bold;line-height:1em;color:black;}
 #rt-mainbottom .rt-container .rt-block p a:hover {text-decoration:underline;}
 #rt-mainbottom .rt-container .superfriendstitle-spacer .rt-block {font-family:Georgia;font-weight:bold;font-size:2em;margin:20px 0px 0px 0px;}
-#rt-mainbottom .rt-container .superfriendstitle .rt-block {width:951px;font-family:Georgia;font-weight:bold;font-size:2em;margin:10px 0px 0px 0px;background:url(http://superbooyah.com/images/site/titlebg.jpg)repeat-x 0 0;border:1px solid black;padding:5px 0px 5px 18px;position:relative;left:-8px;} */
+#rt-mainbottom .rt-container .superfriendstitle .rt-block {width:951px;font-family:Georgia;font-weight:bold;font-size:2em;margin:10px 0px 0px 0px;background:url(http://uperbooyah.com/images/site/titlebg.jpg)repeat-x 0 0;border:1px solid black;padding:5px 0px 5px 18px;position:relative;left:-8px;} */
 
 /* Linkbar-Bottom-Home General */
 #rt-bottom .rt-container {background:none;}
 #rt-bottom .linkbarbottom p img {width:75px;height:75px;border:1px solid black;margin:4px 0px 0px 4px;} 
 #rt-bottom .linkbarbottom .rt-block {padding:0px;margin:0px;}
-#rt-bottom .rt-container .rt-grid-12 {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;padding:0px;margin:0px 0px 5px 0px;width:976px;height:206px;position:relative;left:-9px;}  /* Height changed from 86px by Peter Papp */
+#rt-bottom .rt-container .rt-grid-12 {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;padding:0px;margin:0px 0px 5px 0px;width:976px;height:206px;position:relative;left:-9px;}  /* Height changed from 86px by Peter Papp */
 #rt-bottom .rt-container .rt-grid-12 .rt-block {text-align: center; margin-bottom: -10px}   /* Added by Peter Papp */
 
 /* Footer */
 #rt-footer .rt-block {padding:0px;margin:0px;}
-#rt-footer {background:url(http://superbooyah.com/images/site/darkbg.png) 0 0 repeat;border-top:1px solid black;}
+#rt-footer {background:url(http://uperbooyah.com/images/site/darkbg.png) 0 0 repeat;border-top:1px solid black;}
 #rt-footer img {position:relative;margin-left:auto;margin-right:auto;display:block;padding-bottom:25px;}
 #rt-footer p {margin:0px;}
 #rt-footer td a {padding-right:10px;color:white;font-family:arial;}
@@ -456,11 +454,11 @@ ul li.even .moduleItemAuthor {color:black;font-size:0.8em;}
 #rt-maintop .rt-container {background:transparent; border:none;}
 #sot_scroll_container_219_5 {border:none; margin-top: -25px; margin-bottom: -30px;}
 .sot_center_scroll {font-size: 8px;}
-#rt-maintop .rt-container .rt-grid-12 {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;padding:0px;margin:3px 0px -5px 0px;width:976px;position:relative;left:-9px;}
+#rt-maintop .rt-container .rt-grid-12 {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;padding:0px;margin:3px 0px -5px 0px;width:976px;position:relative;left:-9px;}
 
-.homevideotitles {clear:both;background:url(http://superbooyah.com/images/site/contentbg.png) repeat 0 0;border:1px solid black;width:640px;height:28;margin:0px 0px -5px 0px;}
+.homevideotitles {clear:both;background:url(http://uperbooyah.com/images/site/contentbg.png) repeat 0 0;border:1px solid black;width:640px;height:28;margin:0px 0px -5px 0px;}
 #rt-breadcrumbs .rt-container {background:transparent; border:none;}
-#rt-breadcrumbs .rt-container .rt-grid-12 {background:url(http://superbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;padding:0px;margin:3px 0px -5px 0px;width:976px;height:28px;position:relative;left:-9px;}
+#rt-breadcrumbs .rt-container .rt-grid-12 {background:url(http://uperbooyah.com/images/site/contentbg.png) 0 0 repeat;border:1px solid black;padding:0px;margin:3px 0px -5px 0px;width:976px;height:28px;position:relative;left:-9px;}
 #rt-breadcrumbs .rt-container .homevideotitles {clear:both;border:none;width:640px;height:28px}
 #rt-breadcrumbs .rt-container .homevideotitles .rt-block {border:none;padding:0px}
 /* Addition end */
