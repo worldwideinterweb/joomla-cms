@@ -65,4 +65,6 @@
 .menutop ul li.grouped-parent > .daddy span {background: none;}
 
 /* Main Menu */
-.menutop {float:right;}
+.menutop {
+	top:-39px;
+	float:right;}
