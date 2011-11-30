@@ -48,6 +48,6 @@ a:hover {color: #000;}
 }
 
 /* Header - Search */
-.search {float:right;}
+.search {float:right;margin-top:12px;}
 .search .button {position:absolute;}
 #mod-search-searchword
