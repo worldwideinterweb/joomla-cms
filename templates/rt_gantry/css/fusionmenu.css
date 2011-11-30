@@ -63,3 +63,6 @@
 .menutop .fusion-module a {font-size: inherit;line-height: 130%;}
 .menutop .fusion-module p, .menutop .fusion-modules p {line-height: 160%;}
 .menutop ul li.grouped-parent > .daddy span {background: none;}
+
+/* Main Menu */
+.menutop {float:right;}
