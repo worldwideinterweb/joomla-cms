@@ -49,5 +49,5 @@ a:hover {color: #000;}
 
 /* Header - Search */
 .search {float:right;}
-.search .button {padding-top:5px;}
-#mod-search-searchword {top:5px;}
+.search .button {position:absolute;}
+#mod-search-searchword
