@@ -37,8 +37,8 @@ a:hover {color: #000;}
 /* Header - General */
 #rt-header {background:url('/templates/rt_gantry/images/header/header_bg.gif');}
 #rt-header .rt-container {background:url('/templates/rt_gantry/images/header/header_globe_big.gif') no-repeat 527px bottom !important;}
-/* #rt-header {margin:0px;}
 #rt-header .rt-container {height:105px}
+/* #rt-header {margin:0px;}
 #rt-header .rt-container .rt-grid-2 .rt-block {margin:0px 0px 5px 0px;top:21px;left:12px;}
 #rt-header .rt-container .rt-grid-10 .rt-block {margin:0px 0px 5px 0px;}
 #rt-header .rt-grid-2 {width:210px;}
