@@ -35,9 +35,13 @@ a:hover {color: #000;}
 .menutop .fusion-grouped ol li > .item {background: url(../images/menus/menu-arrow.png) 5px 50% no-repeat;}
 
 /* Header - General */
-#rt-header {background:url('/templates/rt_gantry/images/header/header_bg.gif');}
-#rt-header .rt-container {background:url('/templates/rt_gantry/images/header/header_globe_big.gif') no-repeat 527px bottom !important;}
-#rt-header .rt-container {height:105px;}
+#rt-header {
+	background:url('/templates/rt_gantry/images/header/header_bg.gif');
+	border-bottom: 3px solid white;}
+#rt-header .rt-container {
+	background:url('/templates/rt_gantry/images/header/header_globe_big.gif') no-repeat 527px bottom !important;
+	height:105px;
+}
 #rt-header .rt-container #rt-logo {margin:6px 0px 0px 2px;}
 #rt-header .rt-container .rt-grid-2 {margin-left:0px;}
 #rt-header .rt-container .rt-grid-2 .rt-block {padding-left:0px;}
