@@ -63,6 +63,9 @@ a:hover {color: #000;}
 	height:250px} 
 
 /* Sidebar Linkbar God Sent Us */
+#rt-sidebar-a .linkbar_godsent .rt-block{
+        padding:0px;
+        height:250px;}
 #linkbar_godsent {
         padding:0px;}
 
