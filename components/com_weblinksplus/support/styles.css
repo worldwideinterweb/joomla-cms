@@ -1,0 +1,10 @@
+fieldset {
+    border: 1px solid #CCCCCC !important;
+    margin-bottom: 10px !important;
+    padding: 5px !important;
+    text-align: left !important;
+}
+
+a:focus{
+    color:#ffffff !important;
+}

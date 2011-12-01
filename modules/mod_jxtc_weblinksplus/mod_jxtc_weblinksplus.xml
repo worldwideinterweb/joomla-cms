@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" method="upgrade">
+    <name>JoomlaXTC Weblinks Plus Wall</name>
+    <author>JoomlaXTC</author>
+    <creationDate>2011-09-19</creationDate>
+    <copyright>Copyright (C) 2008,2009,2010,2011 Monev Software LLC. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorUrl>http://www.joomlaxtc.com</authorUrl>
+    <version>1.0.0</version>
+    <description>JoomlaXTC Weblinks Plus Wall v1.0.0 - Visit www.joomlaxtc.com documents area for help.</description>
+    <files>
+        <filename module="mod_jxtc_weblinksplus">mod_jxtc_weblinksplus.php</filename>
+        <filename>index.html</filename>
+        <filename>incl_render.php</filename>
+		
+        <filename>func_parserow.php</filename>
+        <filename>LICENSE.php</filename>
+        <filename>COPYRIGHT.php</filename>
+        <folder>buttons</folder>
+        <folder>css</folder>
+        <folder>elements</folder>
+        <folder>images</folder>
+        <folder>templates</folder>
+    </files>
+    <media destination="JoomlaXTC" folder="media">
+        <filename>index.html</filename>
+        <filename>readme.txt</filename>
+        <filename>showcaseFX.js</filename>
+    </media>
+    <config>
+        <fields name="params" addfieldpath="/modules/mod_jxtc_weblinksplus/elements">
+            <fieldset name="basic">
+                <field type="xspacer" title="SELECTION PARAMETERS:" />
+                <field name="category" type="jxtcwlpcat" default="0" label="Category ID" description="Choose one category." />
+                <field name="sortfield" type="list" default="0" label="Sort field" description="Select a field to sort results.">
+                    <option value="0">Random</option>
+                    <option value="1">Entry date</option>
+                    <option value="2">Hits</option>
+                    <option value="3">Title</option>
+                    <option value="4">Ordering</option>
+                </field>
+                <field name="sortorder" type="list" default="0" label="Sort order" description="Select field sort order.">
+                    <option value="ASC">Ascending</option>
+                    <option value="DESC">Descending</option>
+                </field>
+
+                <field type="xspacer" title="DISPLAY PARAMETERS:" />
+                <field name="columns" type="text" default="1" label="Columns" description="Number of columns to show." />
+                <field name="rows" type="text" default="1" label="Rows" description="Number of rows to show." />
+                <field name="pages" type="text" default="1" label="Pages" description="Number of pages to show. Transition effects are enabled between page changes." />
+                <field name="transmode" type="list" default="hslide" label="Display Style" description="Transition effect mode.">
+                    <option value="hslide">Horizontal slider</option>
+                    <option value="vslide">Vertical slider</option>
+                    <option value="fade">Fader</option>
+                    <option value="wind">Draggable Window</option>
+                    <option value="winz">Zoom Window</option>
+                </field>
+                <field name="width" type="text" default="200" label="Window Width" description="Window width in pixels (only for Window mode)." />
+                <field name="height" type="text" default="200" label="Window Height" description="Window height in pixels (only for Window mode)." />
+                <field name="transpause" type="text" default="4000" label="Transition pause" description="Pause time between transitions (in milliseconds, default: 4000)." />
+                <field name="transspeed" type="text" default="1500" label="Transition duration" description="Transition duration in milliseconds (default: 1500)." />
+                <field name="transflow" type="list" default="0" label="Slide orientation" description="Starting transition orientation." >
+                    <option value="0">Top-Bottom / Left-Right</option>
+                    <option value="1">Bottom-Top / Right-Left</option>
+                </field>
+                <field name="transtype" type="list" default="1" label="Transition type" description="Transition animation type." >
+                    <option value="1">Linear</option>
+                    <option value="2">Quad</option>
+                    <option value="3">Cubic</option>
+                    <option value="4">Quart</option>
+                    <option value="5">Quint</option>
+                    <option value="6">Expo</option>
+                    <option value="7">Circ</option>
+                    <option value="8">Sine</option>
+                    <option value="9">Back</option>
+                    <option value="10">Bounce</option>
+                    <option value="11">Elastic</option>
+                </field>
+                <field name="button" type="folderlist" default="" label="Button Style" directory="modules/mod_jxtc_weblinksplus/buttons" hide_none="1" hide_default="1" filter="" exclude="" stripext="" description="Button graphic set to use (if enabled)."/>
+
+                <field name="template" type="folderlist" directory="modules/mod_jxtc_weblinksplus/templates" default="" hide_default="1" label="Template" description="Select an exisiting module template. If none used, the following fields will be used." />
+                <field name="moduletemplate" type="textarea" filter="RAW" rows="10" cols="40" default="{mainarea}" label="Module HTML template" description="HTML/CSS code to display the entire module." />
+                <field name="itemtemplate" type="textarea" filter="RAW" rows="10" cols="40" default="{name}" label="Group HTML template" description="HTML/CSS code to display each group." />
+                <field name="thumbnailx" type="text" default="120" label="Thumbnail image width" description="Width of Avatar image. Set to 0 for default size." />
+                <field name="thumbnaily" type="text" default="90" label="Thumbnail image height" description="Height of Avatar image. Set to 0 for default size." />
+                <field name="fullx" type="text" default="120" label="Original image width" description="Width of Avatar image. Set to 0 for default size." />
+                <field name="fully" type="text" default="90" label="Original image height" description="Height of Avatar image. Set to 0 for default size." />
+                <field name="maxlength" type="text" default="" label="Max. description length" description="Maximum length of {comment} tag. Empty = no limit." />
+                <field name="dateformat" type="text" default="Y-m-d" label="Date format" description="Date format (using PHP date function). Defaulty is: Y-m-d" />
+                <field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+            </fieldset>
+            <fieldset name="advanced">
+
+                <field name="translayer" type="text" default="0" label="Z layer" description="Define the z-index layer to use for the effects." />
+                <field type="xspacer" title="Tooltip / Pop-Up FX Settings:" />
+                <field name="npElement0FXH" type="text" default="80" label="FX X Position" description="Element 0 Horizontal Map Position." />
+                <field name="nptipoi" type="text" default="1" label="In Opacity" description="Tooltip / Popup In Opacity Value." />
+                <field name="nptipoo" type="text" default="0" label="Out Opacity" description="Tooltip / Popup Out Opacity Value." />
+                <field name="nptipvi" type="text" default="0" label="In Animation Vertical" description="Height of Vertical In Animation." />
+                <field name="nptipvo" type="text" default="0" label="Out Animation Vertical" description="Height of Vertical Out Animation." />
+                <field name="nptiphi" type="text" default="0" label="In Animation Horizontal" description="Width of Tooltip / Popup In Animation." />
+                <field name="nptipho" type="text" default="0" label="Out Animation Horizontal" description="Width of Tooltip Out / Popup Animation." />
+                <field name="nptipdi" type="text" default="550" label="Fade-In Duration" description="Tooltip / Popup Animation Fade In Duration." />
+                <field name="nptipdo" type="text" default="550" label="Fade-Out Duration" description="Tooltip / Popup Animation Fade Out Duration." />
+                <field name="nptpause" type="text" default="1000" label="Pause" description="Tooltip Pause Value (in millisencods)." />
+                <field name="nptipAnim" type="list" default="Quad" label="Tooltip animation mode" description="Tooltip / Popup animation mode." >
+                    <option value="Quad">Quadratic transition</option>
+                    <option value="linear">Linear transition</option>
+                    <option value="Cubic">Cubicular transition</option>
+                    <option value="Quart">Quartetic transition</option>
+                    <option value="Quint">Quintic transition</option>
+                    <option value="Expo">Exponential transition</option>
+                    <option value="Circ">Circular transition</option>
+                    <option value="Sine">Sineousidal transition</option>
+                    <option value="Back">Makes the transition go back, then all forth</option>
+                    <option value="Bounce">Makes the transition bouncy</option>
+                    <option value="Elastic">Elastic curve</option>
+                </field>
+                <field name="nptipEase" type="list" default="easeIn" label="Tooltip / Popup ease mode" description="Tooltip ease mode." >
+                    <option value="easeIn">Ease In</option>
+                    <option value="easeOut">Ease Out</option>
+                    <option value="easeInOut">Ease In/Out</option>
+                </field>
+                <field name="nptipCenter" type="radio" default="1" label="Centered Popup" description="Centers the pop-up window on the screen." >
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field type="xspacer" title="Slide FX Settings:" />
+                <field name="npslideitfx" type="list" default="easeIn" label="Sliding Panel Settings" description="Sliding Panel" >
+                    <option value="RSO">Right Slide Out</option>
+                    <option value="RSI">Right Slide In</option>
+                    <option value="LSO">Left Slide Out</option>
+                    <option value="LSI">Left Slide In</option>
+                    <option value="BSO">Bottom Slide Out</option>
+                    <option value="BSI">Bottom Slide In</option>
+                    <option value="TSO">Top Slide Out</option>
+                    <option value="TSI">Top Slide In</option>
+                    <option value="TRSO">Top Right Slide Out</option>
+                    <option value="TRSI">Top Right Slide In</option>
+                    <option value="TLSO">Top Left Slide Out</option>
+                    <option value="TLSI">Top Left Slide In</option>
+                    <option value="BRSO">Bottom Right Slide Out</option>
+                    <option value="BRSI">Bottom Right Slide In</option>
+                    <option value="BLSO">Bottom Left Slide Out</option>
+                    <option value="BLSI">Bottom Left Slide In</option>
+                    <option value="CM">Custom</option>
+                </field>
+                <field name="npslixin" type="text" default="" label="Slide Panel X In" description="Slide X coordiantes px"/>
+                <field name="npslixout" type="text" default="" label="Slide Panel X out" description="Slide X coordiantes px"/>
+                <field name="npsliyin" type="text" default="" label="Slide Panel Y In" description="Slide Y coordiantes px"/>
+                <field name="npsliyout" type="text" default="" label="Slide Panel Y Out" description="Slide Y coordiantes px"/>
+                <field name="npsliAnim" type="list" default="Quad" label="Slide animation mode" description="Slide Panel animation mode." >
+                    <option value="Quad">Quadratic transition</option>
+                    <option value="linear">Linear transition</option>
+                    <option value="Cubic">Cubicular transition</option>
+                    <option value="Quart">Quartetic transition</option>
+                    <option value="Quint">Quintic transition</option>
+                    <option value="Expo">Exponential transition</option>
+                    <option value="Circ">Circular transition</option>
+                    <option value="Sine">Sineousidal transition</option>
+                    <option value="Back">Makes the transition go back, then all forth</option>
+                    <option value="Bounce">Makes the transition bouncy</option>
+                    <option value="Elastic">Elastic curve</option>
+                </field>
+                <field name="npsliEase" type="list" default="easeIn" label="Slide ease mode" description="Slide ease mode." >
+                    <option value="easeIn">Ease In</option>
+                    <option value="easeOut">Ease Out</option>
+                    <option value="easeInOut">Ease In/Out</option>
+                </field>
+                <field name="npslidi" type="text" default="50" label="Frames Per Second" description="Frames per second" />
+                <field name="npslido" type="text" default="800" label="Frame Duration" description="Duration in Milliseconds." />
+                <field type="xspacer" title="Hover Color Change FX Settings:" />
+                <field name="hoifx" type="colorinput" default="CECECE" label="Hover Effect In Color" description="Hover Effect Color"/>
+                <field name="hoofx" type="colorinput" default="FFFFFF" label="Hover Effect Out Color" description="Original Background Color"/>
+
+            </fieldset>
+        </fields>
+    </config>
+</extension>

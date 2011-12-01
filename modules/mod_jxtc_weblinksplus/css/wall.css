@@ -1,0 +1,60 @@
+/*
+	Copyright (C) 2009,2010  Monev Software LLC.
+
+	All Rights Reserved.
+	
+	http://www-joomlaxtc.com
+*/
+
+.popuphover{
+  cursor:pointer;
+}
+
+.jxtcpopup{
+  position:absolute;
+  float:left;
+  top:0;
+  left:0;
+  margin:0px auto 0px auto;
+  padding:5px;
+  z-index:99999;
+  border:8px solid #d1d1d1;
+  background: #d1d1d1;
+}
+
+.jxtcinner{
+  width:auto;
+}
+
+.jxtcpopupclose{
+  position:absolute;
+  width:30px;
+  height:30px;
+  margin:0;
+  padding:0px;
+  top:-25px;
+  right:0px;
+  cursor:pointer;
+  background: url(../images/closebox.png) no-repeat;
+}
+
+.jxtcpopupdrag{
+  position:absolute;
+  width:30px;
+  height:30px;
+  margin:0;
+  padding:0px;
+  top:-25px;
+  right:35px;
+  cursor:pointer;
+  background: url(../images/movebox.png) no-repeat;
+}
+
+.tip{
+	display:none;
+}
+
+.pop{
+	display:none;
+	cursor:pointer;
+}
