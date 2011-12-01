@@ -68,5 +68,6 @@ a:hover {color: #000;}
 #linkbar_godsent {
         padding:0px;}
 .linkbar_godsent_title {
-	padding:0px;}
+	position:relative;
+	top:-30px;}
 
