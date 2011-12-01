@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5.2" type="plugin" group="system" method="upgrade">
+	<name>System - ScriptsDown</name>
+	<author>Michael Richey</author>
+	<creationDate>May 2010</creationDate>
+	<copyright>Copyright (C) 2008 Michael Richey. All rights reserved.</copyright>
+	<license>GNU General Public License</license>
+	<authorEmail>scriptsdown@richeyweb.com</authorEmail>
+	<authorUrl>http://www.richeyweb.com</authorUrl>
+	<version>1.8</version>
+	<description>Yahoo and Google both suggest moving your scripts to the bottom of your page to reduce loading time.  This plugin scans your document for any script source or file and relocates them just before the closing body tag.  The order and contents are not altered.  Note: Items within IE conditionals must be separated - if you use script, style and link elements within IE conditionals, separate the script statement into another IE conditional.  Update 1.1: fixed error where link elements within IE conditional statements were moved along with scripts. Update 1.2: fixed error when there are no IE conditionals. Update 1.3: prevent script elements within body from being moved. Update 1.4: fixed krsort error when no scripts are present.</description>
+	<files>
+		<filename plugin="scriptsdown">scriptsdown.php</filename>
+	</files>
+	<params>
+		<param name="omit" type="textarea" rows="10" cols="25" label="Omit" description="Enter a regex expression for the script element you wish to leave in place.  One entry per line.  To leave mootools at the top, type in 'mootools' (without quotes)." />
+	</params>
+</install>
