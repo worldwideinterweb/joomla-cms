@@ -40,16 +40,17 @@ a:hover {color: #000;}
 	border-bottom: 3px solid white;}
 #rt-header .rt-container {
 	background:url('/templates/rt_gantry/images/header/header_globe_big.gif') no-repeat 527px bottom !important;
-	height:105px;
-}
+	height:105px;}
 #rt-header .rt-container #rt-logo {margin:6px 0px 0px 2px;}
 #rt-header .rt-container .rt-grid-2 {margin-left:0px;}
-#rt-header .rt-container .rt-grid-2 .rt-block {padding:0px;}
+#rt-header .rt-container .rt-grid-2 .rt-block {
+	top:15px;
+	left:1px;
+	padding:0px;}
 
 /* Header - 1px header hack for chrome/safari */
 @media screen and (-webkit-min-device-pixel-ratio:0){
-#rt-header .rt-container {width: 959px !important;}
-}
+	#rt-header .rt-container {width: 959px !important;}}
 
 /* Header - Search */
 .search {float:right;margin-top:-24px;}
