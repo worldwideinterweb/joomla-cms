@@ -44,7 +44,7 @@ a:hover {color: #000;}
 }
 #rt-header .rt-container #rt-logo {margin:6px 0px 0px 2px;}
 #rt-header .rt-container .rt-grid-2 {margin-left:0px;}
-#rt-header .rt-container .rt-grid-2 .rt-block {padding-left:0px;}
+#rt-header .rt-container .rt-grid-2 .rt-block {padding:0px;}
 
 /* Header - 1px header hack for chrome/safari */
 @media screen and (-webkit-min-device-pixel-ratio:0){
