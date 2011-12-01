@@ -85,7 +85,7 @@ padding:0px;
    left: 0;
    width: 100%;
 }
-div#testtext {
+div#linkbar_godsent_text {
     position: relative;
     height: auto;
     width: auto;
@@ -98,7 +98,8 @@ div#testtext {
    padding: 2px 10px;
 }
 
-a#test {
+a#linkbar_godsent_link {
+background-repeat: no-repeat;height: 145px;width: 286px;
 display:block;
 
 }
