@@ -56,3 +56,8 @@ a:hover {color: #000;}
 .search {float:right;margin-top:-24px;}
 .search .button {position:absolute;}
 #mod-search-searchword{margin:0px}
+
+/* Sidebar Pos 1 */
+#rt-sidebar-a .rt-block .nopadding {
+	padding:0px;} 
+
