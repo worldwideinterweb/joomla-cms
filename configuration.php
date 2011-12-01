@@ -4,7 +4,7 @@ class JConfig {
 	public $offline_message = 'This site is down for maintenance.<br /> Please check back again soon.';
 	public $display_offline_message = '1';
 	public $sitename = 'World Wide Interweb';
-	public $editor = 'codemirror';
+	public $editor = 'jce';
 	public $list_limit = '20';
 	public $access = '1';
 	public $debug = '0';
