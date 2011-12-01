@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.6.0"
+	client="site">
+	<name>Blank Module</name>
+	<author>Bob Galway</author>
+	<creationDate>September 2011</creationDate>
+	<copyright>Copyright  Bob Galway. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 </license>
+	<authorEmail>reply@blackdale.com</authorEmail>
+	<authorUrl>www.blackdale.com</authorUrl>
+	<version>1.7</version>
+	<description>BLANKMODULE17V11</description>
+    <languages>
+	    	<language tag="en-GB">language/en-GB/en-GB.mod_blank17v11.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.mod_blank17v11.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.mod_blank17v11.ini</language>
+    </languages>
+
+	<files>
+		<filename module="mod_blank17v11">mod_blank17v11.php</filename>
+		<filename>index.html</filename>
+		<filename>gpl3.txt</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<filename>mod_blank17v11.xml</filename>
+
+	</files>
+
+		<config>
+			<fields name="params">
+				<fieldset name="HTML">
+
+
+		        <field name="codeeditor" type="textarea"  filter="raw" default="" label="BM11_HTML" description="BM11_HTML_DESC" cols="50" rows="12">
+		        </field>
+
+		        <field name="textareause" type="list" default="1" label="BM11_TEXT_AREA_USE_LABEL" description="BM11_TEXT_AREA_USE_LABEL">
+		            <option value="1">BM11_YES</option>
+		            <option value="2">BM11_NO</option>
+		        </field>
+
+
+
+			</fieldset>
+
+			<fieldset name="PHP">
+
+ 				<field name="phpcode" type="textarea"  filter="raw" default="" label="BM11_PLACE_CODE_LABEL" description="BM11_PLACE_CODE_DESC" cols="50" rows="12">
+		        </field>
+
+		        <field name="phpuse" type="list" default="1" label="PHPUSE" description="PHPUSE_DESC">
+		            <option value="1">BM11_YES</option>
+		            <option value="2">BM11_NO</option>
+		        </field>
+
+
+		        </fieldset>
+
+		     <fieldset name="SCRIPTS">
+
+
+
+			<field name="script" type="textarea" filter="raw" default="" label="CUSTOM_TAGS_LABEL" rows="12"  cols="50" description="CUSTOM_TAGS_DESC" >
+			</field>
+
+			<field name="scriptuse" type="list" default="1" label="BM11_SCRIPT" description="BM11_SCRIPT">
+		            <option value="1">BM11_YES</option>
+		            <option value="2">BM11_NO</option>
+
+		    </field>
+
+
+			</fieldset>
+			<fieldset name="ARTICLE">
+
+			<field name="itemid" type="text" default="" label="BM11_ARTICLE_CONTENT_ITEM_ID" description="BM11_ARTICLE_CONTENT_ID">
+		        </field>
+
+		        <field name="contenttitleuse" type="list" default="1" label="BM11_ARTICLE_TITLE" description="BM11_ARTICLE_TITLE">
+		            <option value="1">BM11_YES</option>
+		            <option value="2">BM11_NO</option>
+		        </field>
+
+		        <field name="contentuse" type="list" default="1" label="BM11_ARTICLE_CONTENT" description="BM11_ARTICLE_CONTENT">
+		            <option value="1">BM11_YES</option>
+		            <option value="2">BM11_NO</option>
+
+		        </field>
+
+
+
+			</fieldset>
+
+			<fieldset name="ORDER">
+
+
+
+		        <field name="content1" type="list" default="1" label="BM11_SELECTION1" description="BM11_SELECTION1">
+
+		            <option value="0">BM11_SELECT</option>
+		            <option value="1">BM11_HTML_CONTENT</option>
+		            <option value="2">BM11_PHP_CONTENT</option>
+		            <option value="3">BM11_ARTICLE_CONTENT</option>
+
+
+		        </field>
+
+		        <field name="content2" type="list" default="2" label="BM11_SELECTION2" description="BM11_SELECTION2">
+
+		            <option value="0">BM11_SELECT</option>
+		            <option value="1">BM11_HTML_CONTENT</option>
+		            <option value="2">BM11_PHP_CONTENT</option>
+		            <option value="3">BM11_ARTICLE_CONTENT</option>
+
+
+		        </field>
+		        <field name="content3" type="list" default="3" label="BM11_SELECTION3" description="BM11_SELECTION3">
+
+		            <option value="0">BM11_SELECT</option>
+		            <option value="1">BM11_HTML_CONTENT</option>
+		            <option value="2">BM11_PHP_CONTENT</option>
+		            <option value="3">BM11_ARTICLE_CONTENT</option>
+
+
+		        </field>
+
+
+
+			</fieldset>
+
+
+			<fieldset name="BM11_GRAPHICS">
+
+			<field name="graphics" type="list" default="2" label="BM11_GRAPHICS_LABEL" description="BM11_GRAPHICS_DESC">
+		            <option value="1">BM11_GRAPHICS_USE_OPT1</option>
+		            <option value="2">BM11_GRAPHICS_USE_OPT2</option>
+		        </field>
+
+		        <field name="keycolour" type="list" default="grey" label="BM11_MODULE_KEY_COLOUR" description="BM11_MODULE_KEY_COLOUR_DESC">
+
+		        <option value="grey">BM11_KEYCOLOUR_OPT7</option>
+		        <option value="red">BM11_KEYCOLOUR_OPT1</option>
+		        <option value="orange">BM11_KEYCOLOUR_OPT2</option>
+		        <option value="yellow">BM11_KEYCOLOUR_OPT3</option>
+		        <option value="green">BM11_KEYCOLOUR_OPT4</option>
+		        <option value="blue">BM11_KEYCOLOUR_OPT5</option>
+		        <option value="purple">BM11_KEYCOLOUR_OPT6</option>
+
+		    </field>
+
+		    <field name="surroundstyle" type="list" default="06roundcorner5" label="BM11_SURROUNDSTYLE_LABEL" description="BM11_SURROUNDSTYLE_DESC">
+
+		        <option value="00none0">BM11_SURROUNDSTYLE_OPTA</option>
+		        <option value="custom">BM11_SURROUNDSTYLE_OPTB</option>
+
+		        <option value=""> ---Integral------------- </option>
+
+		        <option value="06plain5">BM11_SURROUNDSTYLE_OPT1</option>
+		        <option value="06roundcorner5">BM11_SURROUNDSTYLE_OPT2</option>
+		        <option value="06bevel5">BM11_SURROUNDSTYLE_OPT3</option>
+		        <option value="06double5">BM11_SURROUNDSTYLE_OPT4</option>
+		        <option value="06tubular5">BM11_SURROUNDSTYLE_OPT5</option>
+		        <option value="06shadow5">BM11_SURROUNDSTYLE_OPT6</option>
+
+		        <option value=""> ---Media Addon------------ </option>
+
+		        <option value="20curve11">BM11_PREMSURROUNDSTYLE_OPT39</option>
+		        <option value="16curve11">BM11_PREMSURROUNDSTYLE_OPT1</option>
+		        <option value="12curve11">BM11_PREMSURROUNDSTYLE_OPT20</option>
+		        <option value="20deco1">BM11_PREMSURROUNDSTYLE_OPT40</option>
+		        <option value="16deco1">BM11_PREMSURROUNDSTYLE_OPT2</option>
+		        <option value="20glass21">BM11_PREMSURROUNDSTYLE_OPT41</option>
+		        <option value="16glass21">BM11_PREMSURROUNDSTYLE_OPT3</option>
+		        <option value="12glass21">BM11_PREMSURROUNDSTYLE_OPT22</option>
+		        <option value="20glass31">BM11_PREMSURROUNDSTYLE_OPT42</option>
+		        <option value="16glass31">BM11_PREMSURROUNDSTYLE_OPT4</option>
+		        <option value="12glass31">BM11_PREMSURROUNDSTYLE_OPT23</option>
+		        <option value="20picframes1">BM11_PREMSURROUNDSTYLE_OPT43</option>
+		        <option value="16picframes1">BM11_PREMSURROUNDSTYLE_OPT5</option>
+		        <option value="12picframes1">BM11_PREMSURROUNDSTYLE_OPT24</option>
+		        <option value="20plain1">BM11_PREMSURROUNDSTYLE_OPT44</option>
+		        <option value="16plain1">BM11_PREMSURROUNDSTYLE_OPT6</option>
+		        <option value="12plain1">BM11_PREMSURROUNDSTYLE_OPT25</option>
+		        <option value="20plain-curve1">BM11_PREMSURROUNDSTYLE_OPT45</option>
+		        <option value="16plain-curve1">BM11_PREMSURROUNDSTYLE_OPT7</option>
+		        <option value="12plain-curve1">BM11_PREMSURROUNDSTYLE_OPT26</option>
+		        <option value="20plastick1">BM11_PREMSURROUNDSTYLE_OPT46</option>
+		        <option value="16plastick1">BM11_PREMSURROUNDSTYLE_OPT8</option>
+		        <option value="12plastick1">BM11_PREMSURROUNDSTYLE_OPT27</option>
+		        <option value="20plastick21">BM11_PREMSURROUNDSTYLE_OPT47</option>
+		        <option value="16plastick21">BM11_PREMSURROUNDSTYLE_OPT9</option>
+		        <option value="12plastick21">BM11_PREMSURROUNDSTYLE_OPT28</option>
+		        <option value="20roman3">BM11_PREMSURROUNDSTYLE_OPT48</option>
+		        <option value="16roman2">BM11_PREMSURROUNDSTYLE_OPT10</option>
+		        <option value="12roman2">BM11_PREMSURROUNDSTYLE_OPT29</option>
+		        <option value="20sharp-fade3">BM11_PREMSURROUNDSTYLE_OPT49</option>
+		        <option value="16sharp-fade2">BM11_PREMSURROUNDSTYLE_OPT11</option>
+		        <option value="12sharp-fade2">BM11_PREMSURROUNDSTYLE_OPT30</option>
+		        <option value="20soft-fade3">BM11_PREMSURROUNDSTYLE_OPT50</option>
+
+		        <option value="16soft-fade3">BM11_PREMSURROUNDSTYLE_OPT12</option>
+		        <option value="12soft-fade2">BM11_PREMSURROUNDSTYLE_OPT31</option>
+		        <option value="20speckled3">BM11_PREMSURROUNDSTYLE_OPT51</option>
+		        <option value="16speckled3">BM11_PREMSURROUNDSTYLE_OPT13</option>
+		        <option value="12speckled2">BM11_PREMSURROUNDSTYLE_OPT32</option>
+		        <option value="20speckled23">BM11_PREMSURROUNDSTYLE_OPT52</option>
+		        <option value="16speckled23">BM11_PREMSURROUNDSTYLE_OPT14</option>
+		        <option value="12speckled22">BM11_PREMSURROUNDSTYLE_OPT33</option>
+
+		        <option value="20tubular3">BM11_PREMSURROUNDSTYLE_OPT53</option>
+		        <option value="16tubular3">BM11_PREMSURROUNDSTYLE_OPT15</option>
+		        <option value="12tubular2">BM11_PREMSURROUNDSTYLE_OPT34</option>
+		        <option value="32hacked3">BM11_PREMSURROUNDSTYLE_OPT54</option>
+
+		        <option value="16contour2">BM11_PREMSURROUNDSTYLE_OPT17</option>
+		        <option value="12contour2">BM11_PREMSURROUNDSTYLE_OPT36</option>
+
+		        <option value="16contour22">BM11_PREMSURROUNDSTYLE_OPT18</option>
+		        <option value="12contour22">BM11_PREMSURROUNDSTYLE_OPT37</option>
+
+		        <option value="20soft3">BM11_PREMSURROUNDSTYLE_OPT58</option>
+		        <option value="20webtwo3">BM11_PREMSURROUNDSTYLE_OPT59</option>
+
+		    </field>
+
+
+		    <field name="bgpattern" type="list" default="herring" label="BM11_BG_PATTERN" description="BM11_BG_PATTERN_DESC">
+				<option value="none0">BM11_BG_PATTERN_OPTA</option>
+		        <option value="custom">BM11_BG_PATTERN_OPTB</option>
+
+		        <option value=""> ---Integral------------- </option>
+		        <option value="herring">BM11_BG_PATTERN_OPT1</option>
+		        <option value="twisted">BM11_BG_PATTERN_OPT2</option>
+		        <option value="metal">BM11_BG_PATTERN_OPT3</option>
+		        <option value="mosaic">BM11_BG_PATTERN_OPT4</option>
+		        <option value="mesh">BM11_BG_PATTERN_OPT7</option>
+		        <option value="snowflake2">BM11_BG_PATTERN_OPT9</option>
+		        <option value="pipes">BM11_BG_PATTERN_OPT10</option>
+		        <option value="linen">BM11_BG_PATTERN_OPT11</option>
+		        <option value="bgstripe18">BM11_BG_PATTERN_OPT12</option>
+		        <option value="marble">BM11_BG_PATTERN_OPT13</option>
+
+		        <option value=""> ---Media Addon------------- </option>
+
+		        <option value="dashes">BM11_BG_PATTERN_OPT14</option>
+		        <option value="bubbles">BM11_BG_PATTERN_OPT15</option>
+		        <option value="metalherring">BM11_BG_PATTERN_OPT16</option>
+		        <option value="brushed">BM11_BG_PATTERN_OPT17</option>
+		        <option value="canvas">BM11_BG_PATTERN_OPT18</option>
+		        <option value="cube">BM11_BG_PATTERN_OPT19</option>
+		        <option value="diamond">BM11_BG_PATTERN_OPT20</option>
+		        <option value="hex2">BM11_BG_PATTERN_OPT21</option>
+		        <option value="crossword">BM11_BG_PATTERN_OPT22</option>
+		        <option value="crossword2">BM11_BG_PATTERN_OPT23</option>
+		        <option value="brick">BM11_BG_PATTERN_OPT24</option>
+		        <option value="barcode2">BM11_BG_PATTERN_OPT25</option>
+		        <option value="square2">BM11_BG_PATTERN_OPT26</option>
+
+
+		        <option value="halftone">BM11_BG_PATTERN_OPT27</option>
+		        <option value="grunge2">BM11_BG_PATTERN_OPT28</option>
+		        <option value="dot4">BM11_BG_PATTERN_OPT29</option>
+		        <option value="enamel">BM11_BG_PATTERN_OPT30</option>
+		        <option value="finestripe">BM11_BG_PATTERN_OPT31</option>
+		        <option value="vertical">BM11_BG_PATTERN_OPT32</option>
+		        <option value="horizontal">BM11_BG_PATTERN_OPT33</option>
+		    </field>
+
+		    <field name="bgautocolour" type="list" default="1" label="BM11_BG_AUTOCOLOUR_LABEL" description="BM11_BG_AUTOCOLOUR_DESC">
+		        <option value="1">BM11_BG_AUTOCOLOUR_OPT1</option>
+		        <option value="2">BM11_BG_AUTOCOLOUR_OPT2</option>
+		    </field>
+
+		    <field name="bgcustomcolour" type="text" default="#ffffff" label="BM11_BG_CUSTOMCOLOUR_LABEL" description="BM11_BG_CUSTOMCOLOUR_DESC"/>
+
+		     <field name="colour2" type="text" default="" label="BM11_MODULE_INTERIOR_COLOUR_BACKGROUND_LABEL" description="BM11_MODULE_INTERIOR_COLOUR_BACKGROUND_DESC">
+		     </field>
+
+
+		    	<field name="custompx" label="BM11_CUSTOM_LABEL" description="BM11_CUSTOM_DESC" type="text" default="20"></field>
+			</fieldset>
+
+
+			<fieldset name="BM11_ADMIN">
+					<field name="spacer1" type="radio" label="BM11_STYLES_SPACER" />
+
+		        <field name="margin-leftmodule" type="text" default="" label="BM11_LEFT_MARGIN_LABEL" description="BM11_LEFT_MARGIN_DESC">
+		        </field>
+
+
+		        <field name="paddingleft" type="text" default="" label="BM11_PADDING_LEFT" description="BM11_PADDING_LEFT_DESC">
+		        </field>
+
+		        <field name="paddingright" type="text" default="" label="BM11_PADDING_RIGHT" description="BM11_PADDING_RIGHT_DESC">
+		        </field>
+
+		        <field name="paddingtop" type="text" default="" label="BM11_PADDING_TOP" description="BM11_PADDING_TOP_DESC">
+		        </field>
+
+		        <field name="paddingbottom" type="text" default="" label="BM11_PADDING_BOTTOM" description="BM11_PADDING_BOTTOM_DESC">
+		        </field>
+
+		        <field name="margin-top" type="text" default="" label="BM11_TOP_MARGIN" description="BM11_TOP_MARGIN_DESC">
+		        </field>
+
+		        <field name="margin-bottom" type="text" default="" label="BM11_BOTTOM_MARGIN" description="BM11_BOTTOM_MARGIN_DESC">
+		        </field>
+
+
+		        <field name="width" type="text" default="100" label="BM11_WIDTH" description="BM11_MODULE_WIDTH">
+		        </field>
+
+		        <field name="widthunit" type="list" default="%" label="BM11_WIDTH_UNIT" description="BM11_WIDTH_UNIT">
+			   <option value="px">BM11_WIDTH_UNIT_OPT1</option>
+		           <option value="%">BM11_WIDTH_UNIT_OPT2</option>
+		        </field>
+
+
+		        <field name="colour1" type="text" default="" label="BM11_MODULE_COLOUR_BACKGROUND" description="BM11_MODULE_COLOUR_BACKGROUND_DESC">
+		        </field>
+
+
+			<field name="spacer2" type="radio" label="BM11_ADMIN_SPACER" />
+		        <field name="moduleclass_sfx" type="text" default="" label="BM11_MODULE_CLASS_SUFFIX_LABEL" description="BM11_MODULE_CLASS_SUFFIX_DESC" >
+				</field>
+
+
+				<field name="modno_bm" type="list" default="IBM" label="BM11_MODNO_LABEL" description="BM11_MODNO_DESC">
+					<option value="1BM">1</option>
+		            		<option value="2BM">2</option>
+		            		<option value="3BM">3</option>
+		            		<option value="4BM">4</option>
+		            		<option value="5BM">5</option>
+		            		<option value="6BM">6</option>
+		            		<option value="7BM">7</option>
+		            		<option value="8BM">8</option>
+		            		<option value="9BM">9</option>
+		            		<option value="10BM">10</option>
+		            		<option value="11BM">11</option>
+		            		<option value="12BM">12</option>
+		            		<option value="13BM">13</option>
+		            		<option value="14BM">14</option>
+		            		<option value="15BM">15</option>
+		            		<option value="16BM">16</option>
+		            		<option value="17BM">17</option>
+		            		<option value="18BM">18</option>
+		            		<option value="19BM">19</option>
+		            		<option value="20BM">20</option>
+		        </field>
+
+
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>
+
