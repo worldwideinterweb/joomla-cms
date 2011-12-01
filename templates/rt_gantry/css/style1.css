@@ -96,5 +96,9 @@ div#testtext {
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.7);
    padding: 2px 10px;
+}
+
+a#test {
+display:block;
 
 }
