@@ -85,3 +85,10 @@ padding:0px;
    left: 0;
    width: 100%;
 }
+div#testtext {
+    position: relative;
+    height: auto;
+    width: auto;
+    left: 25px;
+    top: 200px;
+}
