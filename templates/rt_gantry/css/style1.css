@@ -68,7 +68,8 @@ a:hover {color: #000;}
 #rt-sidebar-a .linkbar_godsent .rt-block{
         padding:0px;}
 #linkbar_godsent {
-        padding:0px;}
+        padding:0px;
+	background-color:brown;}
 .linkbar_godsent_title {
 	position:relative;
 	top:-30px;}
