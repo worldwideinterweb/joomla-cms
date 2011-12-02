@@ -101,9 +101,9 @@ div#linkbar_godsent_text {
 }
 
 a#linkbar_godsent_link {
-background-repeat: no-repeat;height: 145px;width: 286px;
-display:block;
-
+	background-repeat: no-repeat;height: 145px;width: 286px;
+	display:block;
+	margin-bottom:10px;
 }
 
 /* Content */
