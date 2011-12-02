@@ -105,3 +105,8 @@ background-repeat: no-repeat;height: 145px;width: 286px;
 display:block;
 
 }
+
+/* Content */
+#rt-main {
+        background:url('/templates/rt_gantry/images/body/content_bg.gif');
+
