@@ -6,7 +6,9 @@
  *      */
 
 /* Core */
-body {color: #333;}
+body {
+	color: #333;
+	background: url(../images/body/main_bg.gif) white center no-repeat fixed;}
 #rt-header, #rt-bottom {color: #aaa;}
 .rt-container {background: #fff;}
 a:hover {color: #000;}
