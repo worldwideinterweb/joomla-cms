@@ -13,7 +13,7 @@ body {
 .rt-container {background: #fff;}
 a:hover {color: #000;}
 #rt-footer, #rt-copyright {color: #ddd;}
-#rt-sidebar-a {}
+#rt-sidebar-a {background-color: transparent;}
 #rt-sidebar-b {background-color: #e9e9e9;}
 #rt-sidebar-c {background-color: #f0f0f0;}
 #gantry-viewswitcher {margin: 5px auto;position: relative;top:auto;right:0;}
