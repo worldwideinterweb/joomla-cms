@@ -107,6 +107,7 @@ display:block;
 }
 
 /* Content */
-#rt-main {
+#rt-main .rt-container {
         background:url('/templates/rt_gantry/images/body/content_bg.gif');
+}
 
