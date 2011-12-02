@@ -7,8 +7,7 @@
 
 /* Core */
 body {
-	color: #333;
-	background: url(../images/body/main_bg.gif) center repeat-y fixed !important;}
+	color: #333;}
 #rt-header, #rt-bottom {color: #aaa;}
 .rt-container {background: #fff;}
 a:hover {color: #000;}
@@ -36,6 +35,9 @@ a:hover {color: #000;}
 .menutop ul li > .daddy span {background: url(../images/menus/dropdown-daddy.png) 100% 50% no-repeat;}
 .menutop .fusion-grouped ol li > .item {background: url(../images/menus/menu-arrow.png) 5px 50% no-repeat;}
 
+#rt-main {
+ background: url(../images/body/main_bg.gif) center repeat-y fixed !important;
+}
 /* Header - General */
 #rt-header {
 	background:url('/templates/rt_gantry/images/header/header_bg.gif');
