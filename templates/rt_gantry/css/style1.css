@@ -70,8 +70,9 @@ a:hover {color: #000;}
 	margin:0px;}
 .ad_header_lb {
 	background: url("/images/linkbars/demo/leaderboard.gif") no-repeat center bottom;
-	height:90px;
-	padding:0px;}
+	height:110px;
+	padding:0px;
+	float:right;}
 
 /* Sidebar Pos 1 */
 #rt-sidebar-a .nopadding .rt-block{
