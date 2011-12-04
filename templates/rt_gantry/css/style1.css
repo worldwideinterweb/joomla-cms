@@ -170,5 +170,9 @@ a#linkbar_godsent_link {
 	position:relative;
 	padding: 0;}
 .moduleItemIT {
-	padding: 0px;}
+        float:left;
+        width:448px;
+        margin:0px 10px;
+        position:relative;
+        padding: 0;}
 
