@@ -153,8 +153,8 @@ a#linkbar_godsent_link {
 	margin:0px;
 	width: 320px;}
 .featured .rt-block {
-	width:0px
-	margin:0px}
+	width:0px;
+	margin:0px;}
 /* Content */
 #rt-main .rt-container {
         background:url('/templates/rt_gantry/images/body/content_bg.gif');
