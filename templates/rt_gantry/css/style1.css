@@ -168,6 +168,8 @@ a#linkbar_godsent_link {
 	width:448px;
 	margin:0px 10px;
 	position:relative;
+	font:bolder 19px Verdana;
+	color: gray;
 	padding: 0;}
 .moduleItemIT {
         float:left;
