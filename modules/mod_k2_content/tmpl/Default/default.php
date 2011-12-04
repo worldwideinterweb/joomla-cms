@@ -34,10 +34,6 @@ defined('_JEXEC') or die('Restricted access');
 			</a>
       <?php endif; ?>
 
-      <?php if($params->get('itemTitle')): ?>
-      <a class="moduleItemTitle" href="<?php echo $item->link; ?>"><?php echo $item->title; ?></a>
-      <?php endif; ?>
-
       <?php if($params->get('itemAuthor')): ?>
       <div class="moduleItemAuthor">
 	      <?php echo K2HelperUtilities::writtenBy($item->authorGender); ?>
@@ -69,6 +65,10 @@ defined('_JEXEC') or die('Restricted access');
 	      	<img src="<?php echo $item->image; ?>" alt="<?php echo K2HelperUtilities::cleanHtml($item->title); ?>"/>
 	      </a>
 	      <?php endif; ?>
+
+      <?php if($params->get('itemTitle')): ?>
+      <a class="moduleItemTitle" href="<?php echo $item->link; ?>"><?php echo $item->title; ?></a>
+      <?php endif; ?>
 
       	<?php if($params->get('itemIntroText')): ?>
       	<?php echo $item->introtext; ?>
