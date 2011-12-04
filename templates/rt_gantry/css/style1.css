@@ -163,10 +163,5 @@ a#linkbar_godsent_link {
 .k2ItemsBlock ul {
 	list-style:none;
 }
-.k2ItemsBlock .b {
-   float: left;
-    left: 121px;
-    padding: 0;
-    position: relative;
-    text-align: left;
-    top: -24px;}
+.k2ItemsBlock a {
+    padding: 0;}
