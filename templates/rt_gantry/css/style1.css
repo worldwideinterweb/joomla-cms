@@ -10,7 +10,7 @@ body {
 	color: #333;
 	background: url(../images/body/main_bg.gif) center repeat fixed !important;}
 #rt-header, #rt-bottom {color: #aaa;}
-.rt-container {background: #fff;}
+.rt-container {background: transparent;}
 a:hover {color: #000;}
 #rt-footer, #rt-copyright {color: #ddd;}
 #rt-sidebar-a {background-color: transparent;}
