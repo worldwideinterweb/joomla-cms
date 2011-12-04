@@ -63,6 +63,9 @@ a:hover {color: #000;}
 #rt-showcase {
 	height:136px;}
 /* Leaderboard ads */
+#rt-showcase .rt-grid-2 {
+        width:230px;
+        margin:0px;}
 .ad_header_special {
 	padding:0px;}
 
