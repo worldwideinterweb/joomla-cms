@@ -154,9 +154,9 @@ a#linkbar_godsent_link {
 	width: 320px;}
 .featured .rt-block {
 	padding:0px 10px;
-	margin:0px;}
+	margin-top:15px;}
 /* Content */
-#rt-main .rt-container {
+#rt-main .rt-container, #rt-feature .rt-container {
         background:url('/templates/rt_gantry/images/body/content_bg.gif');
 }
 .moduleItemIntrotext img {
