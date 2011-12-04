@@ -59,6 +59,9 @@ a:hover {color: #000;}
 .search .button {position:absolute;}
 #mod-search-searchword{margin:0px}
 
+/* Showcase */
+#rt-showcase {
+	height:135px;}
 /* Leaderboard ads */
 .ad_header_special {
 	padding:0px;}
