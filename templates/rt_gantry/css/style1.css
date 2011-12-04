@@ -71,13 +71,15 @@ a:hover {color: #000;}
 
 #rt-showcase .rt-grid-10 {
 	width:728px;
+	position: relative;
+	top: 13px;
 	margin:0px;}
 .ad_header_lb_text {
 	background: black;
 	color: white;
 	font: bold 14px trebuchet MS;
 	padding: 0;
-	text-align: center;;}
+	text-align: center;}
 .ad_header_lb {
 	background: url("/images/linkbars/demo/leaderboard.gif") no-repeat center bottom;
 	height:110px;
