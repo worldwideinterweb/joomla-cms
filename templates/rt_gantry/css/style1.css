@@ -66,6 +66,8 @@ a:hover {color: #000;}
 .ad_header_special {
 	padding:0px;}
 
+#rt-showcase .rt-grid-10 {
+	margin:0px;}
 .ad_header_lb {
 	background: url("/images/linkbars/demo/leaderboard.gif") no-repeat center bottom;
 	height:90px;
