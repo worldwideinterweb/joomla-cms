@@ -153,7 +153,7 @@ a#linkbar_godsent_link {
 	margin:0px;
 	width: 320px;}
 .featured .rt-block {
-	width:0px;
+	padding:0px 10px;
 	margin:0px;}
 /* Content */
 #rt-main .rt-container {
