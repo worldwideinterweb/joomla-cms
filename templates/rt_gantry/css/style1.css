@@ -155,8 +155,8 @@ a#linkbar_godsent_link {
 }
 .moduleItemIntrotext img {
 	border: 2px solid #DDDDDD;
-	float: left;
-	height: 95px;
+	float: left !important;
+	height: 95px !important;
 	margin: 2px 0 4px 4px;
 	padding: 0;
-	width: 95px;}
+	width: 95px !important;}
