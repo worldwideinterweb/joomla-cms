@@ -71,6 +71,7 @@ a:hover {color: #000;}
 .ad_header_lb {
 	background: url("/images/linkbars/demo/leaderboard.gif") no-repeat center bottom;
 	height:110px;
+	width: 728px;
 	padding:0px;
 	float:right;}
 
