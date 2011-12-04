@@ -155,7 +155,9 @@ a#linkbar_godsent_link {
 }
 .moduleItemIntrotext img {
 	border: 2px solid #DDDDDD;
-	float: left !important;
+	/*float: left !important;*/
+	position:relative;
+	left: -464px;
 	height: 95px !important;
 	margin: 2px 0 4px 4px;
 	padding: 0;
@@ -164,4 +166,9 @@ a#linkbar_godsent_link {
 	list-style:none;
 }
 .k2ItemsBlock h2 {
-	padding:0px;}
+   float: left;
+    left: 121px;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    top: -24px;}
