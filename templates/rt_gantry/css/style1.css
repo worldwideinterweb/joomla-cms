@@ -164,6 +164,6 @@ a#linkbar_godsent_link {
 	list-style:none;
 }
 .moduleItemTitle {
-
-
-    padding: 0;}
+	float:left;
+	position:relative;
+	padding: 0;}
