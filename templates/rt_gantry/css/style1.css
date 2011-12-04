@@ -67,6 +67,7 @@ a:hover {color: #000;}
         width:230px;
         margin:0px;}
 .ad_header_special {
+        background: url("/images/linkbars/demo/small_ad.gif") no-repeat center bottom;
 	padding:0px;}
 
 #rt-showcase .rt-grid-10 {
