@@ -35,7 +35,7 @@ defined('_JEXEC') or die('Restricted access');
       <?php endif; ?>
 
       <?php if($params->get('itemTitle')): ?>
-      <h2><a class="moduleItemTitle" href="<?php echo $item->link; ?>"><?php echo $item->title; ?></a></h2>
+      <a class="moduleItemTitle" href="<?php echo $item->link; ?>"><?php echo $item->title; ?></a>
       <?php endif; ?>
 
       <?php if($params->get('itemAuthor')): ?>
