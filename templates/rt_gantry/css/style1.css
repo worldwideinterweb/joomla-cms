@@ -80,6 +80,9 @@ a:hover {color: #000;}
 	width: 728px;
 	padding:0px;
 	float:right;}
+.ad_header_lb .rt-block {
+	padding:0px;
+	margin:0px}	
 
 /* Sidebar Pos 1 */
 #rt-sidebar-a .nopadding .rt-block{
