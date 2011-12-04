@@ -160,3 +160,6 @@ a#linkbar_godsent_link {
 	margin: 2px 0 4px 4px;
 	padding: 0;
 	width: 95px !important;}
+.k2ItemsBlock ul {
+	list-style:none;
+}
