@@ -59,6 +59,13 @@ a:hover {color: #000;}
 .search .button {position:absolute;}
 #mod-search-searchword{margin:0px}
 
+/* Leaderboard ads */
+.ad_header_special {
+	padding:0px;}
+
+.ad_header_lb {
+	padding:0px;}
+
 /* Sidebar Pos 1 */
 #rt-sidebar-a .nopadding .rt-block{
 	padding:0px;
