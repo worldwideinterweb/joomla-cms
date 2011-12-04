@@ -168,7 +168,7 @@ a#linkbar_godsent_link {
 	width:448px;
 	margin:0px 10px;
 	position:relative;
-	font:bolder 19px Verdana;
+	font:bolder 20px Verdana;
 	color: gray;
 	padding: 0;}
 .moduleItemIT {
@@ -176,5 +176,7 @@ a#linkbar_godsent_link {
         width:448px;
         margin:0px 10px;
         position:relative;
+	font:16px Verdana;
+	color:gray;
         padding: 0;}
 
