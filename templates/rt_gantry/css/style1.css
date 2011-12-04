@@ -61,7 +61,7 @@ a:hover {color: #000;}
 
 /* Showcase */
 #rt-showcase {
-	height:135px;}
+	height:136px;}
 /* Leaderboard ads */
 .ad_header_special {
 	padding:0px;}
@@ -116,6 +116,8 @@ a#linkbar_godsent_link {
 	display:block;
 	margin:3px 7px;
 }
+
+
 
 /* Content */
 #rt-main .rt-container {
