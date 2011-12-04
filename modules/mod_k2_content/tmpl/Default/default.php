@@ -71,7 +71,7 @@ defined('_JEXEC') or die('Restricted access');
       <?php endif; ?>
 
       	<?php if($params->get('itemIntroText')): ?>
-      	<?php echo $item->introtext; ?>
+      	<span class="moduleItemIT"><?php echo $item->introtext; ?></span>
       	<?php endif; ?>
       </div>
       <?php endif; ?>
