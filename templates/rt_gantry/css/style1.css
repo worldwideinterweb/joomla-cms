@@ -155,7 +155,7 @@ a#linkbar_godsent_link {
 }
 .moduleItemIntrotext img {
 	border: 2px solid #DDDDDD;
-	float: none !important;
+	float: left !important;
 	height: 95px !important;
 	margin: 2px 0 4px 4px;
 	padding: 0;
@@ -167,6 +167,6 @@ a#linkbar_godsent_link {
 	float:left;
 	position:relative;
 	padding: 0;}
-.modulteItemIT {
+.moduleItemIT {
 	padding: 0px;}
-}
+
