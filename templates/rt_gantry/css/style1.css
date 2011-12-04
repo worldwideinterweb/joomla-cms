@@ -165,6 +165,8 @@ a#linkbar_godsent_link {
 }
 .moduleItemTitle {
 	float:left;
+	width:458px;
+	margin-left:10px;
 	position:relative;
 	padding: 0;}
 .moduleItemIT {
