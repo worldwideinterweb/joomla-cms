@@ -187,6 +187,9 @@ a#linkbar_godsent_link {
 	position: relative;
 	left: 46px;
 }
+#rt-feature .moduleItemIntrotext a {
+        padding:0px;
+}
 
 /* Content */
 #rt-main .rt-container, #rt-feature .rt-container {
