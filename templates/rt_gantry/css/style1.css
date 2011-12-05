@@ -236,6 +236,11 @@ a#linkbar_top8_link {
 }
 
 /* Content */
+.main-content .rt-block {
+	margin:20px 0px 0px 0px;
+	padding:0px;
+}
+
 #rt-main .rt-container, #rt-feature .rt-container {
         background:url('/templates/rt_gantry/images/body/content_bg.gif');
 }
