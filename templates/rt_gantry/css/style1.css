@@ -157,6 +157,14 @@ a#linkbar_godsent_link {
 }
 
 
+
+a#linkbar_top8_link {
+        background-repeat: no-repeat;height: 145px;width: 286px;
+        display:block;
+        margin:3px 7px;
+}
+
+
 /* Features */
 #rt-feature .rt-container {
 }
