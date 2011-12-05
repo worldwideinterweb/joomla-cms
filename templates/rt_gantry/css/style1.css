@@ -160,6 +160,7 @@ a#linkbar_godsent_link {
 #rt-feature .rt-block, #rt-feature .rt-grid-12 {
 	padding: 0px;
 	margin: 0px;
+	width: 960px !important;
 }
 .featured .rt-block {
 	padding:0px 10px;
