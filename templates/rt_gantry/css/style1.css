@@ -156,7 +156,9 @@ a#linkbar_godsent_link {
 /* Features */
 #rt-feature .rt-grid-4 {
 	margin:0px;
-	width: 320px;}
+	width: 316px;
+	height: 200px;
+}
 #rt-feature .rt-block, #rt-feature .rt-grid-12 {
 	padding: 0px;
 	margin: 0px;
