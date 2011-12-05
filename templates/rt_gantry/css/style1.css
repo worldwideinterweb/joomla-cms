@@ -189,6 +189,12 @@ a#linkbar_godsent_link {
 }
 #rt-feature .moduleItemIntrotext a.moduleItemTitle {
         padding:0px;
+	background: rgb(0, 0, 0); /* fallback color */
+	background: rgba(0, 0, 0, 0.7);
+	float: right;
+	margin: 0;
+	top: -200px;
+	width: 292px;
 }
 
 /* Content */
