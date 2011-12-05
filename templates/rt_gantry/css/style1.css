@@ -161,7 +161,10 @@ a#linkbar_godsent_link {
         padding:0px;
         background:url('/templates/rt_gantry/images/body/title_bg.gif');
 }
-
+.linkbar_top8 .rt-block{
+	padding:0px;
+	margin:0px;
+}
 a#linkbar_top8_link {
 	background-repeat: no-repeat;
         height: 65px;
