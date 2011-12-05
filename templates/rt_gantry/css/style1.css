@@ -175,7 +175,9 @@ a#linkbar_godsent_link {
 	width: 292px;
 	padding: 0px;
 }
-
+#rt-feature .moduleItemIntrotext {
+	padding:0px;
+}
 
 /* Content */
 #rt-main .rt-container, #rt-feature .rt-container {
