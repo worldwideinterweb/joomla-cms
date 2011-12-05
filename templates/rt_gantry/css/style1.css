@@ -188,17 +188,18 @@ a#linkbar_godsent_link {
 	left: 46px;
 }
 #rt-feature .moduleItemIntrotext a.moduleItemTitle {
-        padding:0px;
 	background: rgb(0, 0, 0); /* fallback color */
 	background: rgba(0, 0, 0, 0.7);
-    border-bottom-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
     float: right;
     font-size: 16px;
     height: 66px;
-    padding-left: 30px;
+    padding: 0px 0px 0px 30px;
     text-align: center;
     vertical-align: baseline;
-    width: 252px;
+    width: 262px;
+	margin:0px;
 }
 #rt-feature .moduleItemIntrotext .moduleItemIT {
         padding:0px;
