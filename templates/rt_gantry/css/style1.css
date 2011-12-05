@@ -159,7 +159,7 @@ a#linkbar_godsent_link {
 
 .linkbar_top8 {
         padding:0px;
-	padding: 10px;
+	padding: 7px 10px;
 	padding-right:0px;
         background:url('/templates/rt_gantry/images/body/title_bg.gif');
 }
@@ -169,6 +169,7 @@ a#linkbar_godsent_link {
 }
 a#linkbar_top8_link {
 	background-repeat: no-repeat;
+	border: 1px solid gray;
         height: 65px;
 	width: 65px;
         display:block;
