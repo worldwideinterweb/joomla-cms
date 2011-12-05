@@ -107,8 +107,9 @@ a:hover {color: #000;}
 /* Sidebar Linkbar God Sent Us */
 #rt-sidebar-a .linkbar_godsent .rt-block{
         padding:0px;}
-#rt-sidebar-a .module-title {
+#rt-sidebar-a .module-title h2 {
 	border: none;
+	background: transparent;
 }
 .linkbar_godsent {
         padding:0px;
