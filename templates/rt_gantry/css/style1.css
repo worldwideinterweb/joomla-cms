@@ -196,10 +196,10 @@ a#linkbar_godsent_link {
     font-size: 16px;
     height: 66px;
     padding: 0px 0px 0px 30px;
+
     text-align: center;
-    vertical-align: baseline;
     width: 262px;
-	margin:0px;
+	margin:0px 0px 1px 0px;
 }
 #rt-feature .moduleItemIntrotext .moduleItemIT {
         padding:0px;
