@@ -184,6 +184,8 @@ a#linkbar_godsent_link {
 	border:0px;
 	height: 200px !important;
 	width: 200px !important;
+	position: relative;
+	left: 46px;
 }
 
 /* Content */
