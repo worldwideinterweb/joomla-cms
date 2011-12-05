@@ -191,7 +191,7 @@ a#linkbar_godsent_link {
 }
 #rt-feature .moduleItemIntrotext a.moduleItemTitle {
 	background: white;
-    border: 2px solid;
+    border: 2px solid gray;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     float: right;
@@ -199,9 +199,8 @@ a#linkbar_godsent_link {
     height: 66px;
     left: 2px;
     margin: 0 0 1px;
-    padding: 0 0 0 75px;
-    text-align: center;
-    width: 218px;
+    padding: 0 85px 0 5px;
+    width: 202px;
     color: #264040;
 }
 #rt-feature .moduleItemIntrotext .moduleItemIT {
