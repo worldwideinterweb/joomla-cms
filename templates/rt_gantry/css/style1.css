@@ -109,7 +109,8 @@ a:hover {color: #000;}
         padding:0px;}
 .linkbar_godsent {
         padding:0px;
-	background-color:#803c13;}
+	background:url('/templates/rt_gantry/images/body/title_bg.gif');
+}
 .linkbar_godsent_title {
 	position:relative;
 	top:-30px;}
