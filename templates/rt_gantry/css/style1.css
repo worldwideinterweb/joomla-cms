@@ -164,6 +164,9 @@ a#linkbar_godsent_link {
 .module-title h2 {
 	background:url('/templates/rt_gantry/images/body/title_bg.gif');
 	color: #ffff33;
+	margin:0px;
+	padding: 5px 10px;
+	border: 2px solid gray;
 }
 .moduleItemIntrotext img {
 	border: 2px solid #DDDDDD;
