@@ -157,11 +157,16 @@ a#linkbar_godsent_link {
 }
 
 
+.linkbar_top8 {
+        padding:0px;
+        background:url('/templates/rt_gantry/images/body/title_bg.gif');
+}
 
 a#linkbar_top8_link {
-        background-repeat: no-repeat;height: 145px;width: 286px;
+	background-repeat: no-repeat;
+        height: 145px;
+	width: 286px;
         display:block;
-        margin:3px 7px;
 }
 
 
