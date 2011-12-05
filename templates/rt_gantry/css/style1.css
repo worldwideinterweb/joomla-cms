@@ -186,21 +186,22 @@ a#linkbar_godsent_link {
         margin:0px;
 	border:0px;
 	height: 200px !important;
-	width: 200px !important;
+	width: 292px !important;
 	position: relative;
-	left: 46px;
 }
 #rt-feature .moduleItemIntrotext a.moduleItemTitle {
 	background: rgb(0, 0, 0); /* fallback color */
-	border-bottom-right-radius: 15px;
-	border-bottom-left-radius: 15px;
-	float: right;
-	font-size: 16px;
-	height: 66px;
-	padding: 0px 0px 0px 55px;
-	text-align: center;
-	width: 238px;
-	margin:0px 0px 1px 0px;
+    border: 2px solid;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    float: right;
+    font-size: 16px;
+    height: 66px;
+    left: 2px;
+    margin: 0 0 1px;
+    padding: 0 0 0 75px;
+    text-align: center;
+    width: 218px;
 }
 #rt-feature .moduleItemIntrotext .moduleItemIT {
         padding:0px;
