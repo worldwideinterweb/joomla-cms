@@ -167,9 +167,10 @@ a#linkbar_godsent_link {
         padding:0px;
         diplay:block;
 }
-.k2ItemsBlock ul li {
+#rt-feature .k2ItemsBlock ul li {
         float:left;
         width: 316px;
+	height: 200px
 }
 
 
