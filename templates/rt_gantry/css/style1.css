@@ -159,6 +159,10 @@ a#linkbar_godsent_link {
 #rt-main .rt-container, #rt-feature .rt-container {
         background:url('/templates/rt_gantry/images/body/content_bg.gif');
 }
+
+.module-title h2 {
+	background:url('/templates/rt_gantry/images/body/title_bg.gif');
+}
 .moduleItemIntrotext img {
 	border: 2px solid #DDDDDD;
 	float: left !important;
