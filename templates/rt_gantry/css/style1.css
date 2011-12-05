@@ -155,10 +155,8 @@ a#linkbar_godsent_link {
 
 /* Features */
 #rt-feature {
-	margin-bottom:10px;
-}
-#rt-main {
-	margin-top:10px;
+	margin-bottom:35px;
+        background:url('/templates/rt_gantry/images/body/content_bg.gif');
 }
 #rt-feature .rt-grid-4 {
 	margin:0px;
