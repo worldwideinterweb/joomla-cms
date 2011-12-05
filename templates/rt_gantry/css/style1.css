@@ -154,6 +154,9 @@ a#linkbar_godsent_link {
 
 
 /* Features */
+#rt-feature {
+	margin-bottom:10px;
+}
 #rt-feature .rt-grid-4 {
 	margin:0px;
 	width: 320px;}
