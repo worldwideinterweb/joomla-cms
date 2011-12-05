@@ -190,7 +190,7 @@ a#linkbar_godsent_link {
 	position: relative;
 }
 #rt-feature .moduleItemIntrotext a.moduleItemTitle {
-	background: white;
+	background: url('/templates/rt_gantry/images/body/title_bg.gif') white no-repeat right center;
     border: 2px solid gray;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
