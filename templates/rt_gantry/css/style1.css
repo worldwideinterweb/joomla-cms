@@ -156,23 +156,22 @@ a#linkbar_godsent_link {
 /* Features */
 #rt-feature .rt-grid-4 {
 	margin:0px;
-	width: 316px;
-	height: 200px;
-}
+	width: 320px;}
 #rt-feature .rt-block, #rt-feature .rt-grid-12 {
 	padding: 0px;
 	margin: 0px;
 	width: 960px !important;
 }
-.K2ItemsBlock ul {
+.k2ItemsBlock ul {
         list-style:none;
         padding:0px;
         diplay:block;
 }
 .k2ItemsBlock ul li {
         float:left;
-        width: 316px;
+        width: 320px;
 }
+
 
 /* Content */
 #rt-main .rt-container, #rt-feature .rt-container {
