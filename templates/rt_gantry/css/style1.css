@@ -190,7 +190,7 @@ a#linkbar_godsent_link {
 	position: relative;
 }
 #rt-feature .moduleItemIntrotext a.moduleItemTitle {
-	background: rgb(0, 0, 0); /* fallback color */
+	background: white;
     border: 2px solid;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
