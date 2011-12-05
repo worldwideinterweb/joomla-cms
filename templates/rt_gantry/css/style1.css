@@ -168,9 +168,11 @@ a#linkbar_godsent_link {
         diplay:block;
 }
 #rt-feature .k2ItemsBlock ul li {
-        float:left;
-        width: 316px;
-	height: 200px
+	border: 2px solid gray;
+	float: left;
+	height: 200px;
+	margin: 10px;
+	width: 292px;
 }
 
 
