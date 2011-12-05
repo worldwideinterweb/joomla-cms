@@ -181,6 +181,7 @@ a#linkbar_godsent_link {
 	width: 95px !important;}
 .k2ItemsBlock ul {
 	list-style:none;
+	padding:0px;
 }
 .moduleItemTitle {
 	float:left;
