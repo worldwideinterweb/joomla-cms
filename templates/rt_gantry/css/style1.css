@@ -203,6 +203,7 @@ a#linkbar_top8_link {
 
 /* Features */
 #rt-feature .rt-container {
+	height:160px;
 }
 #rt-feature .rt-grid-4 {
 	margin:0px;
