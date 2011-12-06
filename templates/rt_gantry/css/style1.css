@@ -187,6 +187,10 @@ a#linkbar_top8_link {
 }
 
 
+#rt-content-top .rt-grid-8 {
+	float: left;
+}
+
 /* Features */
 #rt-feature .rt-container {
 }
