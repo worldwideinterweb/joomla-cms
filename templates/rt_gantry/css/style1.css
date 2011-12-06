@@ -275,6 +275,10 @@ a#linkbar_top8_link {
 	font-family: Tahoma;
 	font-weight: bolder;
 }
+.main-content .module-title h2 {
+	color: white;
+	text-transform: uppercase;
+}
 .moduleItemIntrotext img {
 	border: 2px solid #DDDDDD;
 	float: left !important;
