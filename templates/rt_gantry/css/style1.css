@@ -212,6 +212,7 @@ a#linkbar_top8_link {
         list-style:none;
         padding:0px;
         diplay:block;
+	padding-left:6px;
 }
 #rt-feature .k2ItemsBlock ul li {
 	border: 2px solid gray;
