@@ -39,6 +39,7 @@ margin-top: 80px;
 .menutop .fusion-grouped ol li > .item {background: url(../images/menus/menu-arrow.png) 5px 50% no-repeat;}
 .menutop li {font-family:Tahoma !important;
 	font-weight: bolder;
+	font-size: 13px;
 }
 /* Header - General */
 #rt-header {
