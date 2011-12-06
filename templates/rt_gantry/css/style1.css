@@ -155,7 +155,8 @@ div#linkbar_godsent_text {
 a#linkbar_godsent_link {
 	background-repeat: no-repeat;height: 145px;width: 286px;
 	display:block;
-	margin:3px 7px;
+	margin:3px 5px;
+	border: 2px solid gray
 }
 
 
