@@ -58,7 +58,9 @@ margin-top: 80px;
 
 /* Header - Search */
 .search {float:right;margin-top:-24px;}
-.search .button {position:absolute;}
+.search .button {position:absolute;
+height: 19px;
+}
 #mod-search-searchword{margin:0px}
 
 /* Showcase */
