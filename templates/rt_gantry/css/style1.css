@@ -37,7 +37,7 @@ margin-top: 80px;
 .menutop ul li > .item:hover, .menutop ul li.f-menuparent-itemfocus > .item {background: #333;color: #ccc;}
 .menutop ul li > .daddy span {background: url(../images/menus/dropdown-daddy.png) 100% 50% no-repeat;}
 .menutop .fusion-grouped ol li > .item {background: url(../images/menus/menu-arrow.png) 5px 50% no-repeat;}
-
+.menutop li {font-family:Tahoma !important;}
 /* Header - General */
 #rt-header {
 	background:url('/templates/rt_gantry/images/header/header_bg.gif');
@@ -153,7 +153,7 @@ div#linkbar_godsent_text {
 	width: auto;
 	top: 125px;
 	color: #441f01;
-	font: bold 13px Verdana;
+	font: bold 13px Tahoma;
 	padding: 2px 8px;
 	text-align:center;
 	text-transform:uppercase;
