@@ -296,7 +296,9 @@ a#linkbar_top8_link {
 	position:relative;
 	font:bolder 20px Tahoma;
 	color: #264040;
-	padding: 0;}
+	padding: 0;
+	text-transform:uppercase;
+}
 .moduleItemIT {
         float:left;
         width:448px;
