@@ -246,6 +246,8 @@ a#linkbar_top8_link {
     padding: 0 85px 0 5px;
     width: 202px;
     color: #264040;
+	font-family: Tahoma;
+	text-transform: uppercase;
 }
 #rt-feature .moduleItemIntrotext .moduleItemIT {
         padding:0px;
