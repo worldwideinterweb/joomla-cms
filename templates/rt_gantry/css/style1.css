@@ -149,7 +149,7 @@ padding:0px;
 }
 .linkbar_bottom {
 	margin-top:0px !important;
-	margin-bottom:10px !important;
+	padding-bottom:10px !important;
 }
 div#linkbar_godsent_text {
 	position: relative;
