@@ -37,7 +37,9 @@ margin-top: 80px;
 .menutop ul li > .item:hover, .menutop ul li.f-menuparent-itemfocus > .item {background: #333;color: #ccc;}
 .menutop ul li > .daddy span {background: url(../images/menus/dropdown-daddy.png) 100% 50% no-repeat;}
 .menutop .fusion-grouped ol li > .item {background: url(../images/menus/menu-arrow.png) 5px 50% no-repeat;}
-.menutop li {font-family:Tahoma !important;}
+.menutop li {font-family:Tahoma !important;
+	font-weight: bolder;
+}
 /* Header - General */
 #rt-header {
 	background:url('/templates/rt_gantry/images/header/header_bg.gif');
