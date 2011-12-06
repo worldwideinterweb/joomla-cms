@@ -139,14 +139,15 @@ padding:0px;
 }
 div#linkbar_godsent_text {
 	position: relative;
-	height: 35px;
+	height: 19px;
 	width: auto;
-	top: 106px;
+	top: 122px;
 	color: #441f01;
-	font: bold 14px Helvetica;
+	font: bold 14px Verdana;
 	padding: 2px 8px;
 	text-align:center;
 	text-transform:uppercase;
+	overflow:hidden;
 /*   background: rgb(0, 0, 0); /* fallback color */
 /*   background: rgba(0, 0, 0, 0.7);*/
 	background: url('/templates/rt_gantry/images/body/linkbar_titles.png');
