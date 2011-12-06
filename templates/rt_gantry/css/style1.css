@@ -148,7 +148,7 @@ div#linkbar_godsent_text {
 	padding: 2px 8px;
 /*   background: rgb(0, 0, 0); /* fallback color */
 /*   background: rgba(0, 0, 0, 0.7);*/
-	background: url('/templates/rt_gantry/images/body/linkbar_titles.gif');
+	background: url('/templates/rt_gantry/images/body/linkbar_titles.png');
 }
 
 a#linkbar_godsent_link {
