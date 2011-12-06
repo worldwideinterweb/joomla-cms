@@ -114,6 +114,8 @@ margin-top: 80px;
 #rt-sidebar-a .module-title h2 {
 	border: none;
 	background: transparent;
+	color: #e3e1a3 !important;
+	text-transform: uppercase;
 }
 .linkbar_godsent {
         padding:0px;
