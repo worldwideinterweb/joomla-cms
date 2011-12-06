@@ -88,8 +88,9 @@ margin-top: 80px;
 .ad_header_lb_text {
 	background: black;
 	color: white;
-	font: bold 14px trebuchet MS;
+	font: bold 12px trebuchet MS;
 	padding: 0;
+	height:20px;
 	text-align: center;}
 .ad_header_lb {
 	background: url("/images/linkbars/demo/leaderboard.gif") no-repeat center bottom;
