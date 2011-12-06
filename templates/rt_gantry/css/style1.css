@@ -188,7 +188,7 @@ a#linkbar_top8_link {
 
 
 #rt-content-top {
-	float: left;
+	padding:0px;
 }
 
 /* Features */
