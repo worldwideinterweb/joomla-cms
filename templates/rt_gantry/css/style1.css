@@ -272,6 +272,8 @@ a#linkbar_top8_link {
 	margin:0px;
 	padding: 5px 10px;
 	border: 2px solid gray;
+	font-family: Tahoma;
+	font-weight: bolder;
 }
 .moduleItemIntrotext img {
 	border: 2px solid #DDDDDD;
