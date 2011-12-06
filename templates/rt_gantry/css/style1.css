@@ -73,7 +73,7 @@ margin-top: 80px;
 .ad_header_special {
         background: url("/images/linkbars/demo/small_ad.gif") no-repeat center bottom;
 	height: 110px;
-	width: 230px;
+	width: 220px;
 	padding:0px;}
 .ad_header_special .rt-block {
         padding:0px;
@@ -93,7 +93,7 @@ margin-top: 80px;
 	text-align: center;}
 .ad_header_lb {
 	background: url("/images/linkbars/demo/leaderboard.gif") no-repeat center bottom;
-	height:107px;
+	height:110px;
 	width: 728px;
 	padding:0px;
 	float:right;}
