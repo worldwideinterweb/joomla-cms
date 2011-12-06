@@ -139,11 +139,11 @@ padding:0px;
 }
 div#linkbar_godsent_text {
 	position: relative;
-	height: auto;
+	height: 35px;
 	width: auto;
-	top: 127px;
+	top: 106px;
 	color: #441f01;
-	font: bold 12px Helvetica;
+	font: bold 14px Helvetica;
 	padding: 2px 8px;
 	text-align:center;
 	text-transform:uppercase;
