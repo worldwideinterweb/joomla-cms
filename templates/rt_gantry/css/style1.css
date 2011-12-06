@@ -142,10 +142,11 @@ div#linkbar_godsent_text {
 	height: auto;
 	width: auto;
 	top: 124px;
-	color: white;
+	color: #441f01;
 	font: bolder 14px Trebuchet MS,Sans-Serif;
 	letter-spacing: -1px;
 	padding: 2px 8px;
+	text-align:center;
 /*   background: rgb(0, 0, 0); /* fallback color */
 /*   background: rgba(0, 0, 0, 0.7);*/
 	background: url('/templates/rt_gantry/images/body/linkbar_titles.png');
