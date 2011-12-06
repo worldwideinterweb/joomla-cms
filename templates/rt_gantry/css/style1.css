@@ -216,6 +216,8 @@ a#linkbar_top8_link {
         list-style:none;
         padding:0px;
         diplay:block;
+}
+#rt-feature .k2ItemsBlock ul {
 	padding-left:6px;
 }
 #rt-feature .k2ItemsBlock ul li {
