@@ -195,10 +195,8 @@ a#linkbar_top8_link {
 
 
 #rt-content-top {
-    height: 98px;
-    padding-bottom: 97px;
+    padding: 0px;
     position: relative;
-    top: 64px;
 }
 
 /* Features */
