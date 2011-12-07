@@ -333,7 +333,8 @@ a#linkbar_top8_link {
 	height:28px;
 	border: 2px solid gray;
 	text-transform: uppercase;
-        background:url('/templates/rt_gantry/images/body/title_bg.gif');	
+        background:url('/templates/rt_gantry/images/body/title_bg.gif');
+	letter-spacing: 0.1px;	
 }
 .linkbar_top8 .module-title h2 {
 	border: none;
