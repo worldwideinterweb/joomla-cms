@@ -123,6 +123,17 @@ require_once('lib/gantry/gantry.php');
 			</div>
 		</div>
 		<?php /** End Footer **/ endif; ?>
+		<?php /** Begin Debug **/ if ($gantry->countModules('debug')) : ?>
+		<div id="rt-debug">
+			<div class="rt-container">
+				<?php echo $gantry->displayModules('debug','standard','standard'); ?>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<?php /** End Debug **/ endif; ?>
+		<?php /** Begin Analytics **/ if ($gantry->countModules('analytics')) : ?>
+		<?php echo $gantry->displayModules('analytics','basic','basic'); ?>
+		<?php /** End Analytics **/ endif; ?>
 	</body>
 </html>
 <?php
