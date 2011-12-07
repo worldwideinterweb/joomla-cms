@@ -328,7 +328,7 @@ a#linkbar_top8_link {
 	font-family: Tahoma !important;
 	font-weight: bold !important;
 	font-size: 30px !important;
-	line-spacing: 1px
+	letter-spacing: 1px;
 	padding: 5px 0px 0px 3px  !important;
 	color: white;
 	height:34px;
