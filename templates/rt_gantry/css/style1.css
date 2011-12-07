@@ -359,3 +359,6 @@ span.itemImage img {
 .itemFullText p {
 	font-size:14px;
 }
+.itemImageBlock {
+	padding-top: 0px !important;
+}
