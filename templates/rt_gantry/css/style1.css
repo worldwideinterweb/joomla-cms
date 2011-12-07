@@ -318,8 +318,10 @@ a#linkbar_top8_link {
 	font:16px Verdana;
 	color:gray;
         padding: 0;}
-
-
 .component-content {
-	float:left;
+    float: left;
+    left: -15px;
+    position: relative;
+    width: 620px;
 }
+
