@@ -353,3 +353,6 @@ div.itemToolbar {
 top:-3000px;
 left:-3000px;
 }
+span.itemImage img {
+    width: 530px !important;
+}
