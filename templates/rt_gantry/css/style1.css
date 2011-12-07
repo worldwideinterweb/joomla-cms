@@ -336,7 +336,7 @@ a#linkbar_top8_link {
 	text-transform: uppercase;
         background:url('/templates/rt_gantry/images/body/title_bg.gif');	
 }
-.linkbar_top8 .module-title {
+.linkbar_top8 .module-title h2 {
 	border: none;
 	text-transform: uppercase;
 	color: white;
