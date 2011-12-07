@@ -139,9 +139,6 @@ require_once('lib/gantry/gantry.php');
 			</div>
 		</div>
 		<?php /** End Debug **/ endif; ?>
-		<?php /** Begin Analytics **/ if ($gantry->countModules('analytics')) : ?>
-		<?php echo $gantry->displayModules('analytics','basic','basic'); ?>
-		<?php /** End Analytics **/ endif; ?>
 	</body>
 </html>
 <?php
