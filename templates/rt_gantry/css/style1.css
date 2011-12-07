@@ -98,7 +98,7 @@ height: 19px;
 	height:20px;
 	text-align: center;}
 .ad_header_lb_text div {
-	padding-top:3px;
+	.padding-top:3px;
 }
 
 .ad_header_lb {
@@ -318,8 +318,3 @@ a#linkbar_top8_link {
 	font:16px Verdana;
 	color:gray;
         padding: 0;}
-
-
-.component-content {
-	padding-top:60px;
-}
