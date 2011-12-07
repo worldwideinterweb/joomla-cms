@@ -356,3 +356,6 @@ left:-3000px;
 span.itemImage img {
     width: 530px !important;
 }
+.itemFullText p {
+	font-size:14px;
+}
