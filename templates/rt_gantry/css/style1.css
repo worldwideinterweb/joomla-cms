@@ -365,7 +365,7 @@ span.itemImage img {
 .itemRatingBlock {
         padding-bottom: 0px !important;
 }
-.component-content ul {
+.component-content ul.itemRatingList {
     margin: 0px 0px 10px 0px;
     padding: 0 0 0 15px;
     width: 110px;
