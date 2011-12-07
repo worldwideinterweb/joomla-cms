@@ -324,4 +324,13 @@ a#linkbar_top8_link {
     position: relative;
     width: 620px;
 }
-
+.component-content .itemTitle {
+	font-family: Tahoma;
+	font-weight: bold;
+	font-size: 14px;
+	color: white;
+	height:34px;
+	border: 2px solid gray;
+	text-transform: uppercase;
+        background:url('/templates/rt_gantry/images/body/title_bg.gif');	
+}
