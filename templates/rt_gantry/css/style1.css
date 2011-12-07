@@ -362,3 +362,7 @@ span.itemImage img {
 .itemImageBlock {
 	padding-top: 0px !important;
 }
+.itemRatingBlock {
+        padding-bottom: 0px !important;
+}
+
