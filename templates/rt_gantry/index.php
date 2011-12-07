@@ -123,22 +123,6 @@ require_once('lib/gantry/gantry.php');
 			</div>
 		</div>
 		<?php /** End Footer **/ endif; ?>
-		<?php /** Begin Copyright **/ if ($gantry->countModules('copyright')) : ?>
-		<div id="rt-copyright">
-			<div class="rt-container">
-				<?php echo $gantry->displayModules('copyright','standard','standard'); ?>
-				<div class="clear"></div>
-			</div>
-		</div>
-		<?php /** End Copyright **/ endif; ?>
-		<?php /** Begin Debug **/ if ($gantry->countModules('debug')) : ?>
-		<div id="rt-debug">
-			<div class="rt-container">
-				<?php echo $gantry->displayModules('debug','standard','standard'); ?>
-				<div class="clear"></div>
-			</div>
-		</div>
-		<?php /** End Debug **/ endif; ?>
 	</body>
 </html>
 <?php
