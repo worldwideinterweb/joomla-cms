@@ -302,7 +302,7 @@ a#linkbar_top8_link {
 	width: 140px !important;}
 .moduleItemTitle {
 	float:left;
-	width:448px;
+	width:418px;
 	margin:0px 10px;
 	position:relative;
 	font:bolder 20px Tahoma;
@@ -312,7 +312,7 @@ a#linkbar_top8_link {
 }
 .moduleItemIT {
         float:left;
-        width:448px;
+        width:418px;
         margin:0px 10px;
         position:relative;
 	font:16px Verdana;
