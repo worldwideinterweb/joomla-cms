@@ -153,12 +153,12 @@ div.itemHeader {}
 	div.itemHeader span.itemAuthor {display:block;padding:0;margin:0;}
 	div.itemHeader span.itemAuthor a {}
 	div.itemHeader span.itemAuthor a:hover {}
-
+/*
 div.itemToolbar {padding:2px 0;margin:16px 0 0 0;border-top:1px dotted #ccc;border-bottom:1px dotted #ccc;background:#f7fafe;}
 	div.itemToolbar ul {text-align:right;list-style:none;padding:0;margin:0;}
 	div.itemToolbar ul li {display:inline;list-style:none;padding:0 4px 0 8px;margin:0;border-left:1px solid #ccc;text-align:center;background:none;font-size:12px;}
 	div.itemToolbar ul > li:first-child {border:none;} /* remove the first CSS border from the left of the toolbar */
-	div.itemToolbar ul li a {font-size:12px;font-weight:normal;}
+/*	div.itemToolbar ul li a {font-size:12px;font-weight:normal;}
 	div.itemToolbar ul li a:hover {}
 	div.itemToolbar ul li a span {}
 	div.itemToolbar ul li a.itemPrintLink {}
@@ -179,7 +179,7 @@ div.itemToolbar {padding:2px 0;margin:16px 0 0 0;border-top:1px dotted #ccc;bord
 	div.itemToolbar ul li a#fontIncrease img {width:13px;height:13px;background:url(../images/system/font_increase.gif) no-repeat;}
 	div.itemToolbar ul li a#fontDecrease span,
 	div.itemToolbar ul li a#fontIncrease span {display:none;}
-
+*/
 div.itemRatingBlock {padding:8px 0;}
 	div.itemRatingBlock span {display:block;float:left;font-style:normal;padding:0 4px 0 0;margin:0;color:#999;}
 
