@@ -372,8 +372,10 @@ span.itemImage img {
 }
 .fb-like {
 	height:40px;
-	position:fixed !important;
         background: rgb(0, 0, 0); /* fallback color */
         background: rgba(0, 0, 0, 0.7);
-
+    bottom: 0px;
+    left: 0;
+    position: fixed !important;
+    width: 100%;
 }
