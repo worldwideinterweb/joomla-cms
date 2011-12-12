@@ -379,3 +379,7 @@ span.itemImage img {
     position: fixed !important;
     width: 100%;
 }
+.fb_ltr {
+	width: 300px;
+	margin: 0 auto;
+}
