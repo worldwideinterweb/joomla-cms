@@ -382,7 +382,6 @@ span.itemImage img {
 	font-size:22px;
 	text-align: center;
 }
-.connect_widget .like_button_dark .connect_widget_text, .connect_widget .like_button_dark .connect_widget_confirmation {
-	color: white !important;
-	font-size: 19px !important;
+.fb_ltr {
+	top:5px;
 }
