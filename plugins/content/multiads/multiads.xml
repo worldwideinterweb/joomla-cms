@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="content">
+	<name>plg_content_multiads</name>
+	<author>Joe Guo</author>
+	<creationDate>Oct. 15 2011</creationDate>
+
+	<copyright>GNU/GPLv2</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>joeguo@gmail.com</authorEmail>
+	<authorUrl>www.roseo.net</authorUrl>
+	<version>2.3</version>
+       <description>PLG_CONTENT_MULTIADS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="multiads">multiads.php</filename>
+      <folder>language</folder>	
+	</files>	
+  
+	<languages folder="language">
+	       <language tag="en-GB">en-GB/en-GB.plg_content_multiads.ini</language>   
+	</languages>
+<config>
+	<fields name="params">
+	 <fieldset name="basic">	
+      <field name="Before_content_ads" type="textarea" filter="raw" default="" label="BEFORE_CONTENT_ADS" description="BEFORE_CONTENT_ADS_DESC" rows="8" cols="40"></field>
+      <field name="Content_top_ads" type="textarea"  filter="raw"  default="" label="CONTENT_TOP_ADS" description="CONTENT_TOP_ADS_DESC"  rows="8" cols="40"></field>
+      <field name="Content_bottom_ads" type="textarea"  filter="raw"  default="" label="CONTENT_BOTTOM_ADS" description="CONTENT_BOTTOM_ADS_DESC"  rows="8" cols="40"></field>
+		<field name="After_content_ads" type="textarea"  filter="raw"  default="" label="AFTER_CONTENT_ADS" description="AFTER_CONTENT_ADS_DESC"  rows="8" cols="40" ></field>
+
+	
+	   <field name="@spacer" type="spacer" default="" label="" description="" ></field>
+	   <field name="adsense_section" type="list" default="0" label="ENABLE_ADSENSE_SECTION" description="ENABLE_ADSENSE_SECTION_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</field>
+	   <field name="@spacer" type="spacer" default="" label="" description="" ></field>
+  		<field name="align" type="list" default="0" label="Align" description="ALIGN_DESC">
+			<option value="0">Right</option>
+			<option value="1">Left</option>
+         <option value="2">Center</option>
+         <option value="3">None</option>
+		</field>
+	<field name="margin" type="text" default="1" label="MARGIN_LABEL" description="MARGIN_DESC"></field>
+      <field name="Front_page_ads_count" type="text" default="1" label="FRONT_PAGE_ADS_COUNT" description="FRONT_PAGE_ADS_COUNT_DESC"></field>
+      <field name="@spacer" type="spacer" default="" label="" description="" ></field>
+      <field name="ONLY_GUEST" type="list" default="0" label="ONLY_GUEST" description="ONLY_GUEST_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+      <field name="Exclude_Article_Ids" type="text" default="" label="EXCLUDE_ARTICLE_IDS" description="EXCLUDE_ARTICLE_IDS_DESC"></field>
+      <field name="Exclude_Category_Ids" type="text" default="" label="EXCLUDE_CATEGORY_IDS" description="EXCLUDE_CATEGORY_IDS_DESC"></field>
+      <field name="Block_IPs" type="textarea" default="" label="BLOCK_IPS" description="BLOCK_IPS_DESC" rows="4" cols="40"></field>
+      <field name="Block_User_Agent" type="textarea" default="" label="BLOCK_USER_AGENT" description="BLOCK_USER_AGENT_DESC" rows="4" cols="40"></field>
+      <field name="Only_Authors" type="text" default="" label="ONLY_AUTHORS_LABEL" description="ONLY_AUTHORS_DESC"></field>
+      <field name="Only_templates" type="text" default="" label="ONLY_TEMPLATES_LABEL" description="ONLY_TEMPLATES_DESC"></field>
+ 
+	 </fieldset>
+	</fields>
+</config>
+
+
+</extension>
