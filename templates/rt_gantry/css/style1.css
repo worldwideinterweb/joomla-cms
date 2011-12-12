@@ -380,6 +380,7 @@ span.itemImage img {
     width: 100%;
 	padding:10px 0 0 10px;
 	font-size:22px;
+	text-align: center;
 }
 .connect_widget .like_button_dark .connect_widget_text, .connect_widget .like_button_dark .connect_widget_confirmation {
 	color: white !important;
