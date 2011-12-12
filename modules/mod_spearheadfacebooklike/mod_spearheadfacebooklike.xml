@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="1.6.0" method="upgrade" client="site">
+	<name>Spearhead Facebook Like Button.</name>
+	<author>Thomas George</author>
+	<creationDate>November 2011</creationDate>
+	<copyright>All rights reserved Spearhead Softwares.</copyright>  
+	<version>3.0</version>
+	<licence>GNU/GPL v3 http://www.gnu.org/licenses/gpl.html</licence>
+	<authorEmail>spearheadsoftwares@gmail.com</authorEmail> 
+	<description>MOD_SPEARHEADFACEBOOKLIKE_SPLASH</description>
+	<files>
+		<filename>images/like.png</filename>
+		<filename>images/spearhead.png</filename>
+		<filename>images/index.html</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename module="mod_spearheadfacebooklike">mod_spearheadfacebooklike.php</filename>
+		<filename>mod_spearheadfacebooklike.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">languages/en-GB.mod_spearheadfacebooklike.sys.ini</language>
+		<language tag="en-GB">languages/en-GB.mod_spearheadfacebooklike.ini</language>
+		<language tag="it-IT">languages/it-IT.mod_spearheadfacebooklike.sys.ini</language>
+		<language tag="it-IT">languages/it-IT.mod_spearheadfacebooklike.ini</language>
+		<language tag="de-DE">languages/de-DE.mod_spearheadfacebooklike.sys.ini</language>
+		<language tag="de-DE">languages/de-DE.mod_spearheadfacebooklike.ini</language>
+		<language tag="es-ES">languages/es-ES.mod_spearheadfacebooklike.sys.ini</language>
+		<language tag="es-ES">languages/es-ES.mod_spearheadfacebooklike.ini</language>
+		<language tag="hu-HU">languages/hu-HU.mod_spearheadfacebooklike.sys.ini</language>
+		<language tag="hu-HU">languages/hu-HU.mod_spearheadfacebooklike.ini</language>
+		<language tag="nl-NL">languages/nl-NL.mod_spearheadfacebooklike.sys.ini</language>
+		<language tag="nl-NL">languages/nl-NL.mod_spearheadfacebooklike.ini</language>
+		<language tag="pl-PL">languages/pl-PL.mod_spearheadfacebooklike.sys.ini</language>
+		<language tag="pl-PL">languages/pl-PL.mod_spearheadfacebooklike.ini</language>				
+	</languages>	
+	<config>
+		<fields name="params">
+			<fieldset name="basic" label="Module Parameters" description="Configure Module">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="MOD_SPEARHEADFACEBOOKLIKE_MODULE_CLASS_SUFFIX"/>
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="like_button_type" type="radio" default="iframe" label="MOD_SPEARHEADFACEBOOKLIKE_BUTTON_TYPE_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_BUTTON_TYPE_DESC">
+					<option value="iframe">iFrame</option>
+					<option value="xfbml">XFBML</option>
+				</field>
+				<param name="spearheadspacer" type="spacer" default="" label="" description="" />		
+				<field name="send_button" type="radio" default="0" label="MOD_SPEARHEADFACEBOOKLIKE_SEND_BUTTON_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_SEND_BUTTON_DESC">
+					<option value="1">MOD_SPEARHEADFACEBOOKLIKE_YES</option>
+					<option value="0">MOD_SPEARHEADFACEBOOKLIKE_NO</option>
+				</field>
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" />					
+				<field name="auto_discovery" type="list" default="yes" label="MOD_SPEARHEADFACEBOOKLIKE_AUTO_DISCOVERY_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_AUTO_DISCOVERY_DESC">
+					<option value="yes">MOD_SPEARHEADFACEBOOKLIKE_YES</option>
+					<option value="no">MOD_SPEARHEADFACEBOOKLIKE_NO</option>
+				</field>
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="like_url" type="text" default="" label="MOD_SPEARHEADFACEBOOKLIKE_LIKE_URL_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_LIKE_URL_DESC"/>
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="layout_style" type="list" default="" label="MOD_SPEARHEADFACEBOOKLIKE_LAYOUT_STYLE_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_LAYOUT_STYLE_DESC">
+					<option value="standard">standard</option>
+					<option value="button_count">button_count</option>
+					<option value="box_count">box_count</option>
+				</field>
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="show_faces" type="radio" default="1" label="MOD_SPEARHEADFACEBOOKLIKE_SHOW_FACES_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_SHOW_FACES_DESC">
+					<option value="1">MOD_SPEARHEADFACEBOOKLIKE_SHOW_FACES_SHOW</option>
+					<option value="0">MOD_SPEARHEADFACEBOOKLIKE_SHOW_FACES_HIDE</option>
+				</field>
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="width" type="text" default="450" label="MOD_SPEARHEADFACEBOOKLIKE_WIDTH_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_WIDTH_DESC"/>
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="verb_to_display" type="list" default="like" label="MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_DESC">
+					<option value="like">MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_LIKE</option>
+					<option value="recommend">MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_RECOMMEND</option>			
+				</field>
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="font" type="list" default="" label="MOD_SPEARHEADFACEBOOKLIKE_FONT_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_FONT_DESC">
+					<option value=""></option>		
+					<option value="arial">arial</option>
+					<option value="lucida grande">lucida grande</option>
+					<option value="segoe ui">segoe ui</option>	
+					<option value="tahoma">tahoma</option>
+					<option value="trebuchet ms">trebuchet ms</option>
+					<option value="verdana">verdana</option>
+				</field>
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="color_scheme" type="list" default="light" label="MOD_SPEARHEADFACEBOOKLIKE_COLOR_SCHEME_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_COLOR_SCHEME_DESC">
+					<option value="light">MOD_SPEARHEADFACEBOOKLIKE_COLOR_SCHEME_LIGHT</option>
+					<option value="dark">MOD_SPEARHEADFACEBOOKLIKE_COLOR_SCHEME_DARK</option>
+				</field>
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="language" type="text" default="en_GB" label="MOD_SPEARHEADFACEBOOKLIKE_LANGUAGE_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_LANGUAGE_DESC"/>
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="height" type="text" default="80" label="MOD_SPEARHEADFACEBOOKLIKE_HEIGHT_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_HEIGHT_DESC"/>
+		
+			</fieldset>			
+		</fields>
+	</config>
+</extension>
