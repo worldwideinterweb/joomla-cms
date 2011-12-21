@@ -385,3 +385,7 @@ span.itemImage img {
 .fb_ltr {
 	top:5px;
 }
+#rt-showcase .rt-grid-2 .rt-block {
+	margin:0px;
+	padding:0px;
+}
