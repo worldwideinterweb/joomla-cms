@@ -9,3 +9,4 @@
 2011-12-16	01:19:39	INFO	74.212.251.170	Joomla FAILURE: 	Invalid password
 2011-12-16	23:47:37	INFO	74.212.251.170	Joomla FAILURE: 	User does not exist
 2012-01-03	04:27:52	INFO	75.84.221.16	Joomla FAILURE: 	Invalid password
+2012-01-03	04:28:07	INFO	75.84.221.16	Joomla FAILURE: 	Invalid password
