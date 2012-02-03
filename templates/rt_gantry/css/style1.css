@@ -76,7 +76,8 @@ height: 19px;
 	top: 13px;
         margin:0px;}
 .ad_header_special {
-        background: url("/images/linkbars/demo/small_ad.gif") no-repeat center bottom;
+        /* background: url("/images/linkbars/demo/small_ad.gif") no-repeat center bottom; */
+	background: none;
 	height: 110px;
 	width: 220px;
 	padding:0px;}
@@ -102,7 +103,8 @@ height: 19px;
 }
 
 .ad_header_lb {
-	background: url("/images/linkbars/demo/leaderboard.gif") no-repeat center bottom;
+	/* background: url("/images/linkbars/demo/leaderboard.gif") no-repeat center bottom; */
+	background: none;
 	height:110px;
 	width: 728px;
 	padding:0px;
@@ -115,7 +117,8 @@ height: 19px;
 #rt-sidebar-a .nopadding .rt-block{
 	padding:0px;
 	height:250px;
-        background: url("/images/linkbars/demo/300x250_default.png") no-repeat center bottom;
+        /* background: url("/images/linkbars/demo/300x250_default.png") no-repeat center bottom; */
+	background: none;
 } 
 
 /* Sidebar Linkbar God Sent Us */
