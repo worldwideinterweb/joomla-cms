@@ -404,6 +404,21 @@ echo $this->loadTemplate('header'); ?>
   </div>
 <?php endif;
       if($this->params->get('show_voting_area')): ?>
+<div id="traffic module">
+<script type='text/javascript'>
+var _CI = _CI || {};
+(function() {
+var script = document.createElement('script');
+ref = document.getElementsByTagName('script')[0];
+_CI.counter = (_CI.counter) ? _CI.counter + 1 : 1;
+document.write('<div id="_CI_widget_');
+document.write(_CI.counter+'"></div>');
+script.type = 'text/javascript';
+script.src = 'http://widget.crowdignite.com/widgets/2785?_ci_wid=_CI_widget_'+_CI.counter;
+script.async = true;
+ref.parentNode.insertBefore(script, ref);
+})(); </script>
+</div>
   <div id="jg_voting" class="jg_voting">
     <div class="sectiontableheader">
       <h4 <?php echo $this->toggler; ?>>
