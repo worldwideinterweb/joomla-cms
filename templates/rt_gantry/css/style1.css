@@ -278,7 +278,7 @@ a#linkbar_top8_link {
 }
 
 #rt-main .rt-container, #rt-feature .rt-container, #rt-bottom .rt-container {
-        background:url('/templates/rt_gantry/images/body/content_bg.gif');
+        background:url('/templates/rt_gantry/images/body/content_bg.gif') !important;
 }
 #rt-content-top, #rt-content-bottom {
 	float:left;
