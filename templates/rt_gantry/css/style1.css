@@ -400,4 +400,5 @@ background-size: 100%;
 
 .widget_table {
 	background: transparent !important;
+	margin-left: 30px;
 }
