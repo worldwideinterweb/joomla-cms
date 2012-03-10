@@ -283,6 +283,9 @@ a#linkbar_top8_link {
 #rt-content-top, #rt-content-bottom {
 	float:left;
 }
+#rt-bottom .rt-container {
+	padding-bottom: 10px;
+}
 .module-title h2 {
 	background:url('/templates/rt_gantry/images/body/title_bg.gif');
 	color: #ffff33;
