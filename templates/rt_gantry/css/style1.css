@@ -277,7 +277,7 @@ a#linkbar_top8_link {
 	padding:0px;
 }
 
-#rt-main .rt-container, #rt-feature .rt-container {
+#rt-main .rt-container, #rt-feature .rt-container, #rt_bottom .rt-container {
         background:url('/templates/rt_gantry/images/body/content_bg.gif');
 }
 #rt-content-top, #rt-content-bottom {
