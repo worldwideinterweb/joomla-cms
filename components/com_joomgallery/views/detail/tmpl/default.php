@@ -405,7 +405,8 @@ echo $this->loadTemplate('header'); ?>
 <?php endif;
       if($this->params->get('show_voting_area')): ?>
 <div id="traffic module">
-<h2 id="" class="itemTitle" style="visibility: visible;">
+t
+<h2 id="" class="itemTitle" style="visibility: visible;">What's Hot Now</h2>
 <script type='text/javascript'>
 var _CI = _CI || {};
 (function() {
