@@ -397,3 +397,7 @@ span.itemImage img {
 	height: 100px;
 background-size: 100%;
 }
+
+.widget_table {
+	background: transparent !important;
+}
