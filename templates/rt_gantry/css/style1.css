@@ -422,3 +422,12 @@ background-size: 100%;
 .rt-fusionmenu .nopill .rt-menubar .menutop li.item519 a.item span {
 	text-indent:-5000px;
 }
+.rt-fusionmenu .nopill .rt-menubar .menutop li.item520 a.item  {
+	background:url('/templates/rt_gantry/images/menus/nav_videos.png') !important;
+	width:79px;
+	height:31px;
+}
+
+.rt-fusionmenu .nopill .rt-menubar .menutop li.item520 a.item span {
+	text-indent:-5000px;
+}
