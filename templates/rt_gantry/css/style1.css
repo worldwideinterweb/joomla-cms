@@ -426,6 +426,7 @@ background-size: 100%;
 	background:url('/templates/rt_gantry/images/menus/nav_videos.png') !important;
 	width:79px;
 	height:31px;
+	padding-left:2px;
 }
 
 .rt-fusionmenu .nopill .rt-menubar .menutop li.item520 a.item span {
