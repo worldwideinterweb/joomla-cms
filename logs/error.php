@@ -39,3 +39,4 @@
 2012-03-12	04:48:45	INFO	75.84.221.16	Joomla FAILURE: 	Invalid password
 2012-03-12	04:48:58	INFO	75.84.221.16	Joomla FAILURE: 	Empty password not allowed
 2012-03-12	04:49:09	INFO	75.84.221.16	Joomla FAILURE: 	Invalid password
+2012-03-14	07:30:11	INFO	75.84.221.16	Joomla FAILURE: 	Invalid password
