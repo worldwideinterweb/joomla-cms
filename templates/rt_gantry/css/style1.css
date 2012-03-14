@@ -432,6 +432,16 @@ background-size: 100%;
 	text-indent:-5000px;
 }
 
+.rt-fusionmenu .nopill .rt-menubar .menutop li.item521 a.item  {
+	background:url('/templates/rt_gantry/images/menus/nav_photos.png') !important;
+	width:86px;
+	height:31px;
+	margin-left:4px;
+}
+.rt-fusionmenu .nopill .rt-menubar .menutop li.item521 a.item span {
+	text-indent:-5000px;
+}
+
 .rt-fusionmenu .nopill .rt-menubar .menutop li.item522 a.item  {
 	background:url('/templates/rt_gantry/images/menus/nav_sports.png') !important;
 	width:64px;
@@ -449,15 +459,5 @@ background-size: 100%;
 	margin-left:4px;
 }
 .rt-fusionmenu .nopill .rt-menubar .menutop li.item523 a.item span {
-	text-indent:-5000px;
-}
-
-.rt-fusionmenu .nopill .rt-menubar .menutop li.item522 a.item  {
-	background:url('/templates/rt_gantry/images/menus/nav_sports.png') !important;
-	width:64px;
-	height:31px;
-	margin-left:4px;
-}
-.rt-fusionmenu .nopill .rt-menubar .menutop li.item522 a.item span {
 	text-indent:-5000px;
 }
