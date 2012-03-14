@@ -452,6 +452,16 @@ background-size: 100%;
 	text-indent:-5000px;
 }
 
+.rt-fusionmenu .nopill .rt-menubar .menutop li.item524 a.item  {
+	background:url('/templates/rt_gantry/images/menus/nav_celebs.png') !important;
+	width:86px;
+	height:31px;
+	margin-left:4px;
+}
+.rt-fusionmenu .nopill .rt-menubar .menutop li.item524 a.item span {
+	text-indent:-5000px;
+}
+
 .rt-fusionmenu .nopill .rt-menubar .menutop li.item523 a.item  {
 	background:url('/templates/rt_gantry/images/menus/nav_gaming.png') !important;
 	width:79px;
