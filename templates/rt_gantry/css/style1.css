@@ -410,7 +410,7 @@ background-size: 100%;
 .menutop {
 	top: 74px !important;
 }
-.item:hover, .menu-type-splitmenu .menutop li.active .item  {
+.item:hover  {
 	background:none;
 }
 .rt-fusionmenu .nopill .rt-menubar .menutop li.item519 a.item  {
