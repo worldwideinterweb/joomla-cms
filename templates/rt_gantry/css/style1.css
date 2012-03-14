@@ -418,17 +418,26 @@ background-size: 100%;
 	width:64px;
 	height:31px;
 }
-
 .rt-fusionmenu .nopill .rt-menubar .menutop li.item519 a.item span {
 	text-indent:-5000px;
 }
+
 .rt-fusionmenu .nopill .rt-menubar .menutop li.item520 a.item  {
 	background:url('/templates/rt_gantry/images/menus/nav_videos.png') !important;
 	width:79px;
 	height:31px;
 	margin-left:4px;
 }
-
 .rt-fusionmenu .nopill .rt-menubar .menutop li.item520 a.item span {
+	text-indent:-5000px;
+}
+
+.rt-fusionmenu .nopill .rt-menubar .menutop li.item521 a.item  {
+	background:url('/templates/rt_gantry/images/menus/nav_photos.png') !important;
+	width:86px;
+	height:31px;
+	margin-left:4px;
+}
+.rt-fusionmenu .nopill .rt-menubar .menutop li.item521 a.item span {
 	text-indent:-5000px;
 }
