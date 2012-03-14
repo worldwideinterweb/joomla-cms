@@ -412,4 +412,6 @@ background-size: 100%;
 }
 .rt-fusionmenu .nopill .rt-menubar .menutop li.item519 a.item  {
 	background:url('/templates/rt_gantry/images/menus/nav_home.png') !important;
+	width:64px;
+	height:31px;
 }
