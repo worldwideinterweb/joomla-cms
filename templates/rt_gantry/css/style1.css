@@ -407,6 +407,7 @@ background-size: 100%;
 .widget_table td {
 	padding-right: 20px !important;
 }
-.item:hover, .menu-type-splitmenu .menutop li.active .item519  {
+/*  .item:hover, .menu-type-splitmenu .menutop li.active .item  { */
+.menu-type-splitmenu .menutop li.item519  {
 	background:url('/templates/rt_gantry/images/menus/nav_home.png') !important;
 }
