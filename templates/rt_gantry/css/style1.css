@@ -407,6 +407,6 @@ background-size: 100%;
 .widget_table td {
 	padding-right: 20px !important;
 }
-.rt-menubar .menutop li {
+.rt-menubar .menutop li.item519 {
 	background:url('/templates/rt_gantry/images/menus/nav_home.png') !important;
 }
