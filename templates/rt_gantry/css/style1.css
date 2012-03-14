@@ -410,6 +410,6 @@ background-size: 100%;
 .item:hover, .menu-type-splitmenu .menutop li.active .item  {
 	background:none;
 }
-.menu-type-splitmenu .menutop li.item519 a  {
+.rt-fusionmenu .nopill .rt-menubar .menutop li.item519 a.item  {
 	background:url('/templates/rt_gantry/images/menus/nav_home.png') !important;
 }
