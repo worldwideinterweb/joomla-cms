@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.7" type="plugin" group="content" method="upgrade">
+	<name>Q_K2_FACEBOOK_COMMENT</name>
+	<author>Netq Creative Software</author>
+	<creationDate>13th December, 2011</creationDate>
+	<copyright>Copyright (C) 2008 - 2011 NetQ Creative Software. All rights reserved.</copyright>
+	<authorEmail>service@netqcreative.com</authorEmail>
+	<authorUrl>http://www.netqcreative.com/</authorUrl>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.7.0</version>
+	<description>Q_K2_FACEBOOK_COMMENT_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="qk2facebookcomment">qk2facebookcomment.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="spacer" type="spacer" label="FACEBOOK_APP_API" description="CREATE_API_USE_PLUGIN"/>
+				<field name="api" type="text" 
+					default="170039526351901" 
+					label="Q_K2_FACEBOOK_COMMENT_FACEBOOK_APP_API" 
+					description="FACEBOOK_APP_API_DESCRIPTION" 
+				/>
+				<field name="numposts" type="text" 
+					default="5" 
+					label="Q_K2_FACEBOOK_COMMENT_NUMBER_OF_COMMENT" 
+					description="Q_K2_FACEBOOK_COMMENT_NUMBER_OF_COMMENT_DESC" 
+				/>
+				<field name="width" type="text" 
+					default="500" 
+					label="Q_K2_FACEBOOK_COMMENT_WIDTH" 
+					description="Q_K2_FACEBOOK_COMMENT_WIDTH_DESC" 
+				/>
+				<field name="lang" type="list" 
+					default="en_US" 
+					label="Q_K2_FACEBOOK_COMMENT_LANGUAGE" 
+					description="Q_K2_FACEBOOK_COMMENT_LANGUAGE_DESC">
+					<option value="af_ZA">Afrikaans</option>
+					<option value="id_ID">Bahasa Indonesia</option>
+					<option value="ms_MY">Bahasa Melayu</option>
+					<option value="ca_ES">Català</option>
+					<option value="cs_CZ">Čeština</option>
+					<option value="cy_GB">Cymraeg</option>
+					<option value="da_DK">Dansk</option>
+					<option value="de_DE">Deutsch</option>
+					<option value="en_GB">English (UK)</option>
+					<option value="en_US">English (US)</option>
+					<option value="en_UD">English (Upside Down)</option>
+					<option value="es_LA">Español</option>
+					<option value="es_ES">Español (España)</option>
+					<option value="tl_PH">Filipino</option>
+					<option value="fr_CA">Français (Canada)</option>
+					<option value="fr_FR">Français (France)</option>
+					<option value="ko_KR">한국어</option>
+					<option value="hr_HR">Hrvatski</option>
+					<option value="it_IT">Italiano</option>
+					<option value="lt_LT">Lietuvių</option>
+					<option value="hu_HU">Magyar</option>
+					<option value="nl_NL">Nederlands</option>
+					<option value="ja_JP">日本語</option>
+					<option value="nb_NO">Norsk (bokmål)</option>
+					<option value="pl_PL">Polski</option>
+					<option value="pt_BR">Português (Brasil)</option>
+					<option value="pt_PT">Português (Portugal)</option>
+					<option value="ro_RO">Română</option>
+					<option value="ru_RU">Русский</option>
+					<option value="sk_SK">Slovenčina</option>
+					<option value="sl_SI">Slovenščina</option>
+					<option value="fi_FI">Suomi</option>
+					<option value="sv_SE">Svenska</option>
+					<option value="th_TH">ภาษาไทย</option>
+					<option value="vi_VN">Tiếng Việt</option>
+					<option value="tr_TR">Türkçe</option>
+					<option value="zh_CN">中文(简体)</option>
+					<option value="zh_TW">中文(台灣)</option>
+					<option value="zh_HK">中文(香港)</option>
+					<option value="el_GR">Ελληνικά</option>
+					<option value="bg_BG">Български</option>
+					<option value="sr_RS">Српски</option>
+					<option value="he_IL">עברית</option>
+					<option value="ar_AR">العربية</option>
+					<option value="hi_IN">हिन्दी</option>
+					<option value="bn_IN">বাংলা</option>
+					<option value="pa_IN">ਪੰਜਾਬੀ</option>
+					<option value="ta_IN">தமிழ்</option>
+					<option value="te_IN">తెలుగు</option>
+					<option value="ml_IN">മലയാളം</option>
+					<option value="az_AZ">Azərbaycan dili</option>
+					<option value="bs_BA">Bosanski</option>
+					<option value="et_EE">Eesti</option>
+					<option value="en_PI">English (Pirate)</option>
+					<option value="eo_EO">Esperanto</option>
+					<option value="eu_ES">Euskara</option>
+					<option value="fy_NL">Frisian</option>
+					<option value="fo_FO">Føroyskt</option>
+					<option value="ga_IE">Gaeilge</option>
+					<option value="gl_ES">Galego</option>
+					<option value="is_IS">Íslenska</option>
+					<option value="sw_KE">Kiswahili</option>
+					<option value="ku_TR">Kurdî</option>
+					<option value="lv_LV">Latviešu</option>
+					<option value="fb_LT">Leet Speak</option>
+					<option value="la_VA">lingua latina</option>
+					<option value="nn_NO">Norsk (nynorsk)</option>
+					<option value="sq_AL">Shqip</option>
+					<option value="ka_GE">ქართული</option>
+					<option value="be_BY">Беларуская</option>
+					<option value="mk_MK">Македонски</option>
+					<option value="uk_UA">Українська</option>
+					<option value="hy_AM">Հայերեն</option>
+					<option value="fa_IR">فارسی</option>
+					<option value="ps_AF">پښتو</option>
+					<option value="ne_NP">नेपाली</option>
+					<option value="gn_PY">Avañe'ẽ</option>
+					<option value="ay_BO">Aymar aru</option>
+					<option value="jv_ID">Basa Jawa</option>
+					<option value="ck_US">Cherokee</option>
+					<option value="se_NO">Davvisámegiella</option>
+					<option value="en_IN">English (India)</option>
+					<option value="es_CL">Español (Chile)</option>
+					<option value="es_CO">Español (Colombia)</option>
+					<option value="es_MX">Español (México)</option>
+					<option value="es_VE">Español (Venezuela)</option>
+					<option value="tl_ST">tlhIngan-Hol</option>
+					<option value="li_NL">Limburgs</option>
+					<option value="mg_MG">Malagasy</option>
+					<option value="mt_MT">Malti</option>
+					<option value="nl_BE">Nederlands (België)</option>
+					<option value="uz_UZ">O'zbek</option>
+					<option value="qu_PE">Qhichwa</option>
+					<option value="rm_CH">Rumantsch</option>
+					<option value="so_SO">Soomaaliga</option>
+					<option value="fb_FI">Suomi (koe)</option>
+					<option value="tt_RU">Tatarça</option>
+					<option value="xh_ZA">isiXhosa</option>
+					<option value="zu_ZA">isiZulu</option>
+					<option value="mn_MN">Монгол</option>
+					<option value="tg_TJ">тоҷикӣ</option>
+					<option value="kk_KZ">Қазақша</option>
+					<option value="yi_DE">ייִדיש</option>
+					<option value="ur_PK">اردو</option>
+					<option value="sy_SY">ܐܪܡܝܐ</option>
+					<option value="mr_IN">मराठी</option>
+					<option value="sa_IN">संस्कृतम्</option>
+					<option value="gu_IN">ગુજરાતી</option>
+					<option value="kn_IN">ಕನ್ನಡ</option>
+					<option value="km_KH">ភាសាខ្មែរ</option>
+				</field>
+				<field name="displayfronpage" type="radio" 
+					default="0" 
+					label="DISPLAY_ARTICLE_FEATURED" 
+					Description="DISPLAY_ARTICLE_FEATURED_DESC">
+					<option value="0">Q_K2_FACEBOOK_COMMENT_NO</option>
+					<option value="1">Q_K2_FACEBOOK_COMMENT_YES</option>
+				</field>
+				<field name="displaycategory" type="radio" 
+					default="0" label="DISPLAY_CATEGORY" 
+					Description="DISPLAY_CATEGORY_DESCRIPTION">
+					<option value="0">Q_K2_FACEBOOK_COMMENT_NO</option>
+					<option value="1">Q_K2_FACEBOOK_COMMENT_YES</option>
+				</field>
+				<field name="fb_position" type="list" 
+					default="2" 
+					label="Position" 
+					description="Position comment facebook">
+						<option value="1">PLG_QSOCIALSHAREPRO_ABOVE_ITEMIMAGEBLOCK</option>
+						<option value="2">PLG_QSOCIALSHAREPRO_ABOVE_ITEM_TEXT</option>
+						<option value="3">PLG_QSOCIALSHAREPRO_BELOW_ITEM_TEXT</option>
+						<option value="4">PLG_QSOCIALSHAREPRO_ABOVE_SOCIAL_SHARING</option>
+						<option value="5">PLG_QSOCIALSHAREPRO_ABOVE_ITEMCOMMENTS</option>
+						<option value="6">PLG_QSOCIALSHAREPRO_ABOVE_BACK_TO_TOP</option>
+				</field>
+				<field name="excludecategories" type="text" 
+					default="" size="50" 
+					label="CATEGORIES_TO_EXCLUDE" 
+					description="CATEGORIES_TO_EXCLUDE_DESC"/> 	
+				<field name="excludeitem" type="text" 
+					default="" size="50" 
+					label="ITEMS_TO_EXCLUDE" 
+					description="ITEMS_TO_EXCLUDE_DESC"/> 		
+			</fieldset>
+		</fields>
+	</config>
+</install>
