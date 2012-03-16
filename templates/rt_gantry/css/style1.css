@@ -504,3 +504,8 @@ background-size: 100%;
 	margin: 0px !important;
 	padding: 0px !important;
 }
+.linkbar_nailed_it .moduleItemItemTitle {
+	float:right;
+	margin: 0px !important;
+	padding: 0px !important;
+}
