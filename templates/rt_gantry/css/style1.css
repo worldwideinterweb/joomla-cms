@@ -487,6 +487,6 @@ background-size: 100%;
 .linkbar_nailed_it .rt-block {
 	padding:0px;
 }
-.linkbar_nailed_it .rt-block h2 {
-   width: 100%;
+.linkbar_nailed_it .rt-block .module-title h2 {
+	border: 2px solid gray;
 }
