@@ -29,7 +29,7 @@ defined('_JEXEC') or die('Restricted access');
 
 	<!-- K2 Plugins: K2BeforeDisplay -->
 	<?php echo $this->item->event->K2BeforeDisplay; ?>
-
+<div class="sharepoint">{itpsharepoint}</div>
 	<div class="itemHeader">
 
 		<?php if($this->item->params->get('itemDateCreated')): ?>
