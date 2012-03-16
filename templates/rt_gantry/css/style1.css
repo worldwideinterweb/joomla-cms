@@ -500,3 +500,6 @@ background-size: 100%;
 .linkbar_nailed_it .even .moduleItemIntrotext img, .linkbar_nailed_it .odd .moduleItemIntrotext img{
 	margin: 0px !important;
 }
+.linkbar_nailed_it .moduleItemIntrotext {
+	margin: 0px !important;
+}
