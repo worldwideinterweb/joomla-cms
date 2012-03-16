@@ -479,9 +479,14 @@ background-size: 100%;
         padding:0px;
 	background:url('/templates/rt_gantry/images/body/title_bg.gif');
 }
+
 .linkbar_nailed_it_title {
 	position:relative;
-	top:-30px;}
+	top:-30px;
+}
+.linkbar_nailed_it .rt-block {
+	padding:0px;
+}
 .linkbar_nailed_it_text {
 padding:0px;
 }
