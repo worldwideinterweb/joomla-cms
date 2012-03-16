@@ -496,7 +496,7 @@ padding:0px;
    width: 100%; /* for IE 6 */
 }
 
-#linkbar_nailed_it .rt-block h2 {
+#linkbar_nailed_it .rt-block .module-title h2 {
    position: absolute;
    top: 200px;
    left: 0;
