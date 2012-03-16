@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+	<name>Content - KA Social Sharing</name>
+	<author>Khawaib Ahmed</author>
+	<creationDate>22 August 2010</creationDate>
+	<copyright>Copyright (C) 2010. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>khawaib@yahoo.co.uk</authorEmail>
+	<authorUrl>www.Khawaib.co.uk</authorUrl>
+	<version>3.5.2</version>
+	<description>KA_SOCIAL_SHARING_INSTALLED_SUCCESSFULLY</description>
+	<files>
+		<filename plugin="kasocialsharing">kasocialsharing.php</filename>
+		<folder>kasocialsharing</folder>
+        <folder>kaframework</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_kasocialsharing.ini</language>
+	</languages>
+	<params addpath="/plugins/content/kasocialsharing/elements">
+        <param name="" type="separator1" default="DISPLAY SETTINGS" label="" description="" />
+	    <param name="" type="separator2" default="MENU_ID_SETTINGS" label="Tooltip" description="MENU_ID_SETTINGS_DESC" />
+        <param name="menu_display_mode" type="list" default="-1" label="MENU_DISPLAY_MODE" description="MENU_DISPLAY_MODE_DESC">
+			<option value="-1"> - Select Menu Mode - </option>
+			<option value="0">SHOW_ONLY_FOLLOWING_SELECTED_MENUS</option>
+			<option value="1">DO_NOT_SHOW_ON_FOLLOWING_SELECTED_MENUS</option>
+        </param>
+        <param name="menuIDs" type="menus" default="" label="MENU_IDS" description="MENU_IDS_DESC" />
+
+        <param name="" type="separator2" default="COM_CONTENT_DISPLAY_SETTINGS" label="Tooltip" description="COM_CONTENT_DISPLAY_SETTINGS_DESC" />
+        <param name="display_mode" type="list" default="-1" label="DISPLAY_MODE" description="DISPLAY_MODE_DESC">
+			<option value="-1">SELECT_CONTENT_MODE</option>
+			<option value="0">SHOW_ON_ONLY_FOLLOWING_SELECTED_CONTENT</option>
+			<option value="1">DO_NOT_SHOW_ON_FOLLOWING_SELECTED_CONTENT</option>
+        </param>
+	    <param name="sectionIDs" type="sections" default="" label="SECTION_ID" description="SECTION_ID_DESC" />
+	    <param name="categoryIDs" type="categories"  default="" label="CATEGORY_ID" description="CATEGORY_ID_DESC" />
+	    <param name="articleIDs" type="textarea" cols="35" rows="1" default="" label="ARTICLE_ID" description="ARTICLE_ID_DESC" />
+
+        <param name="" type="separator2" default="OTHER_DISPLAY_SETTINGS" label="" description="" />
+		<param name="view_restrictions" type="multilist" default="" multiple="multiple" size="7" label="CONTENT_RESCRICTIONS" description="CONTENT_RESCRICTIONS_DESC">
+	        <option value="view_article">DO_NOT_SHOW_CONTENT_ARTICLES</option>
+            <option value="view_frontpage">DO_NOT_SHOW_ON_FRONTPAGE</option>
+            <option value="view_cat_layout_blog">DO_NOT_SHOW_ON_CATEGORY_BLOG_LAYOUTS</option>
+            <option value="view_cat">DO_NOT_SHOW_ON_STANDARD_CATEGORY_LAYOUTS</option>            
+            <option value="view_sec_layout_blog">DO_NOT_SHOW_ON_SECTION_BLOG_LAYOUTS</option>
+            <option value="view_sec">DO_NOT_SHOW_ON_SECTION_LAYOUTS</option>
+		</param>
+        <param name="" type="separator2" default="LOCATION_FOR_DISPLAY" label="" description="" />
+        <param name="display_location" type="list" default="bottom" label="DISPLAY_LOCATION" description="DISPLAY_LOCATION_DESC">
+            <option value="top">Top</option>
+            <option value="bottom">Bottom</option>
+            <option value="both">Top and Bottom</option>
+        </param>
+
+		<param name="" type="separator1" default="EXTENSION_INTEGRATIONS" label="" description="" />
+		<param name="integrations" type="multilist" default="" multiple="multiple" size="7" label="INTEGRATIONS" description="INTEGRATIONS_DESC">
+            <option value="eventlist_detail_layout">SHOW_ON_EVENTLIST_DETAIL_LAYOUT</option>
+	        <option value="k2_cats">SHOW_ON_K2_CATEGORY_PAGE</option>
+	        <option value="k2_latest_items">SHOW_ON_K2_LATEST_PAGE_ITEMS</option>
+	        <option value="k2_items">SHOW_ON_K2_PAGE_ITEM</option>
+            <option value="mosets_tree_page">SHOW_ON_MOSETS_TREE_DESCRIPTION_PAGE</option>
+            <option value="quick_faq_items">SHOW_ON_QUICK_FAQ_ITEMS</option>
+	        <option value="virtuemart_category">SHOW_ON_VIRTUEMART_CATEGORY_PAGE</option>
+            <option value="virtuemart_products">SHOW_ON_VIRTUEMART_PRODUCT_PAGE</option>
+	        <option value="zoo_items">SHOW_ON_ZOO_ITEMS</option>
+	        <!--<option value="zoo_cats">SHOW_ON_ZOO_CATEGORIES</option>-->
+		</param>
+        
+        <param name="" type="separator1" default="BUTTONS_ORDERING" label="" description="" />
+        <param name="ordering" type="textarea" cols="35" rows="3" default="[share][send][like][twitter][tweetme][stumbleupon][reddit][digg][linkedin][buzz][plus1][sharethis]" label="ORDERING" description="ORDERING_DESC" />
+        
+        <param name="" type="separator1" default="FACEBOOK" label="" description="" />
+		<param name="render_mode" type="list" default="javascript" label="RENDERING_MODE" description="RENDERING_MODE_DESC">
+			<option value="javascript">JAVASCRIPT_RENDERING_MODE</option>
+			<option value="xfbml">XFBML_RENDERING_MODE</option>
+		</param>
+        
+        <param name="" type="separator2" default="FACEBOOK_SHARE" label="" description="" />
+        <param name="enable_share" type="list" default="1" label="SHARE_BUTTON" description="SHARE_BUTTON_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+        </param>
+        <param name="share_url" type="list" default="1" label="LINK_URL" description="LINK_URL_DESC">
+            <option value="0">LINK_URL_HOPEPAGE</option>
+            <option value="1">LINK_URL_CURRENT_PAGE</option>
+        </param>
+        <param name="share_btn_style" type="list" default="button_count" label="BUTTON_STYLE" description="BUTTON_STYLE_DESC">
+            <option value="icon_link">BUTTON_STYLE_ICON_LINK</option>
+            <option value="icon">BUTTON_STYLE_ICON</option>
+            <option value="button">BUTTON_STYLE_BUTTON</option>
+            <option value="button_count">BUTTON_STYLE_BUTTON_COUNT</option>
+        </param>
+        
+        <param name="" type="separator2" default="FACEBOOK_SEND" label="" description="" />
+		<param name="enable_fb_send" type="list" default="1" label="SEND_BUTTON" description="SEND_BUTTON_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+		<param name="fb_send_font" type="list" default="arial" label="SEND_BUTTON_FONT" description="SEND_BUTTON_FONT_DESC">
+            <option value=""></option>
+            <option value="arial">ARIAL</option>
+            <option value="lucida grande">LUCIDA_GRANDE</option>
+            <option value="segoe ui">SEGOE_UI</option>
+            <option value="tahoma">TAHOMA</option>
+            <option value="trebuchet ms">TREBUCHET_MS</option>
+            <option value="verdana">VERDANA</option>
+		</param>
+		<param name="fb_send_cs" type="list" default="light" label="COLOUR_SCHEME" description="COLOUR_SCHEME_DESC">
+            <option value="light">LIGHT</option>
+            <option value="dark">DARK</option>
+		</param>
+        <param name="fb_send_ref" type="text" default="" label="REFERRAL_LABEL" description="REFERRAL_LABEL_DESC" />
+		
+        <param name="" type="separator2" default="FACEBOOK_LIKE" label="" description="" />
+		<param name="enable_like" type="list" default="1" label="LIKE_BUTTON" description="LIKE_BUTTON_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+		<param name="layout_style" type="list" default="button_count" label="LAYOUT_STYLE" description="LAYOUT_STYLE_DESC">
+			<option value="standard">STANDARD</option>
+			<option value="button_count">BUTTON_COUNT</option>
+		</param>
+		<param name="show_faces" type="list" default="1" label="SHOW_FACES" description="SHOW_FACES_DESC">
+			<option value="0">HIDE</option>
+			<option value="1">SHOW</option>
+		</param>
+		<param name="width" type="text" default="75" label="WIDTH" description="WIDTH_DESC" />
+		<param name="height" type="text" default="30" label="HEIGHT" description="HEIGHT_DESC" />
+		<param name="verb" type="list" default="like" label="VERB_TO_DISPLAY" description="VERB_TO_DISPLAY_DESC">
+			<option value="like">LIKE</option>
+			<option value="recommend">RECOMMEND</option>
+		</param>
+		<param name="font" type="list" default="" label="FONT" description="FONT_DESC">
+			<option value="">DEFAULT</option>
+			<option value="arial">ARIAL</option>
+			<option value="lucida+grande">LUCIDA_GRANDE</option>
+			<option value="segoe+ui">SEGOE_UI</option>
+			<option value="tahoma">TAHOMA</option>
+			<option value="trebuchet+ms">TREBUCHET_MS</option>
+			<option value="verdana">VERDANA</option>
+		</param>	
+		<param name="colour_scheme" type="list" default="light" label="COLOUR_SCHEME" description="COLOUR_SCHEME_DESC">
+			<option value="light">LIGHT</option>
+			<option value="dark">DARK</option>
+		</param>
+		<param name="" type="separator2" default="FACEBOOK_OPEN_GRAPH_SETTINGS" label="" description="" />
+		<param name="social_graph_tags" type="list" default="1" label="OPEN_GRAPH_TAGS" description="OPEN_GRAPH_TAGS_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+		<param name="fb_admin_ids" type="text" default="" label="FB_ADMIN_IDS" description="FB_ADMIN_IDS_DESC" />
+		<param name="fb_image_tag" type="list" default="1" label="FB_IMAGE_TAG" description="FB_IMAGE_TAG_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+        
+        <param name="" type="separator1" default="TWITTER" label="" description="" />
+        <param name="" type="separator2" default="=== TWITTER OFFICIAL BUTTON ===" label="" description="" />
+		<param name="enable_twitter_btn" type="list" default="1" label="TWITTER_BUTTON" description="TWITTER_BUTTON_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+        <param name="twitter_btn_style" type="list" default="horizontal" label="TWITTER_BUTTON_STYLE" description="TWITTER_BUTTON_STYLE_DESC">
+            <option value="vertical">Vertical</option>
+            <option value="horizontal">Horizontal</option>
+            <option value="none">No Count</option>
+        </param>
+        <param name="twitter_btn_twt_text" type="textarea" cols="35" rows="1" default="" label="TWITTER_TWEET_TEXT" description="TWITTER_TWEET_TEXT_DESC" />
+        <param name="twitter_btn_url" type="textarea" cols="35" rows="1" default="" label="TWITTER_CUSTOM_URL" description="TWITTER_CUSTOM_URL_DESC" />
+        <param name="twitter_btn_lang" type="list" default="" label="TWITTER_BUTTON_LANGUAGE" description="TWITTER_BUTTON_LANGUAGE_DESC">
+            <option value="">TWITTER_BUTTON_LANGUAGE_ENGLISH</option>
+            <option value="fr">TWITTER_BUTTON_LANGUAGE_FRENCH</option>
+            <option value="de">TWITTER_BUTTON_LANGUAGE_GERMAN</option>
+            <option value="es">TWITTER_BUTTON_LANGUAGE_SPANISH</option>
+            <option value="ja">TWITTER_BUTTON_LANGUAGE_JAPANESE</option>
+            <option value="nl">TWITTER_BUTTON_LANGUAGE_DUTCH</option>
+            <option value="id">TWITTER_BUTTON_LANGUAGE_INDONESIAN</option>
+            <option value="it">TWITTER_BUTTON_LANGUAGE_ITALIAN</option>
+            <option value="ko">TWITTER_BUTTON_LANGUAGE_KOREAN</option>
+            <option value="pt">TWITTER_BUTTON_LANGUAGE_PORTUGUESE</option>
+            <option value="ru">TWITTER_BUTTON_LANGUAGE_RUSSIAN</option>
+            <option value="tr">TWITTER_BUTTON_LANGUAGE_TURKISH</option>
+        </param>
+        <param name="twitter_id" type="text" default="" label="TWITTER_ID" description="TWITTER_ID_DESC" />
+        <param name="twitter_btn_rel_acc" type="text" default="" label="TWITTER_RELATED_ACCOUNT_ID" description="TWITTER_RELATED_ACCOUNT_ID_DESC" />
+        <param name="twitter_btn_rel_acc_desc" type="text" default="" label="TWITTER_RELATED_ACCOUNT_DESCRIPTION" description="TWITTER_RELATED_ACCOUNT_DESCRIPTION_DESC" />
+
+        <param name="" type="separator2" default="TWEETME" label="" description="" />
+		<param name="enable_tweetme" type="list" default="0" label="SHOW_TWEETME" description="SHOW_TWEETME_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+
+        <param name="" type="separator1" default="STUMBLEUPON" label="" description="" />
+		<param name="enable_stumbleupon" type="list" default="0" label="STUMBLEUPON_BUTTON" description="STUMBLEUPON_BUTTON_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+        <param name="su_btn_style" type="list" default="1" label="STUMBLEUPON_BUTTON_STYLE" description="STUMBLEUPON_BUTTON_STYLE_DESC">
+            <option value="1">STYLE_1</option>
+            <option value="2">STYLE_2</option>
+            <option value="3">STYLE_3</option>
+            <option value="4">STYLE_4</option>
+            <option value="5">STYLE_5</option>
+            <option value="6">STYLE_6</option>
+            <option value="7">STYLE_7</option>
+        </param>
+
+        <param name="" type="separator1" default="REDDIT" label="" description="" />
+		<param name="enable_reddit" type="list" default="1" label="Reddit" description="REDDIT_SHOW_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+
+        <param name="" type="separator1" default="DIGG" label="" description="" />
+		<param name="enable_digg" type="list" default="1" label="DIGG_SHOW" description="DIGG_SHOW_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+
+        <param name="" type="separator1" default="LINKEDIN" label="" description="" />
+		<param name="enable_linkedin" type="list" default="1" label="LINKEDIN_SHOW" description="LINKEDIN_SHOW_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+		<param name="linkedin_btn_style" type="list" default="0" label="LINKEDIN_COUNTER" description="LINKEDIN_COUNTER_DESC">
+			<option value="0">LINKEDIN_COUNTER_NO_COUNT</option>
+			<option value="1">LINKEDIN_COUNTER_RIGHT</option>
+            <option value="2">LINKEDIN_COUNTER_TOP</option>
+		</param>
+        
+        <param name="" type="separator1" default="GOOGLE" label="" description="" />
+        <param name="" type="separator2" default="GOOGLE_PLUS" label="" description="" />
+		<param name="enable_googleplus1" type="list" default="1" label="GOOGLE_PLUS_SHOW" description="GOOGLE_PLUS_SHOW_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+        
+        <param name="" type="separator2" default="GOOGLE_BUZZ" label="" description="" />
+		<param name="enable_googlebuzz" type="list" default="0" label="GOOGLE_BUZZ_SHOW" description="GOOGLE_BUZZ_SHOW_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+        
+        <param name="" type="separator1" default="SHARETHIS" label="" description="" />
+		<param name="enable_sharethis" type="list" default="0" label="SHARETHIS_SHOW" description="SHARETHIS_SHOW_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+		<param name="publisher_id" type="textarea" cols="35" rows="1" default="" label="SHARETHIS_PUB_ID" description="SHARETHIS_PUB_ID_DESC" />
+		<param name="sharethis_popup" type="list" default="1" label="SHARETHIS_POPUP_MODE" description="SHARETHIS_POPUP_MODE_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+	</params>
+	<params group="advanced" addpath="/plugins/content/kasocialsharing/elements">
+		<param name="" type="separator1" default="URL SETTINGS" label="" description="" />
+		<param name="url_method" type="list" default="article_url" label="URL_METHOD" description="URL_METHOD_DESC">
+			<option value="request_uri">REQUEST_URI (Default)</option>
+			<option value="article_url">Article URL</option>
+			<option value="juri">JURI::current</option>
+			<option value="php">PHP</option>
+		</param>
+		<param name="base_method" type="list" default="0" label="BASE_METHOD" description="BASE_METHOD_DESC">
+			<option value="0">JURI::base();</option>
+			<option value="1">JURI::root();</option>
+			<option value="2">JURI::getInstance();</option>
+			<option value="3">Custom (Specify Below)</option>
+		</param>
+		<param name="custom_base" type="textarea" cols="35" rows="1" default="" label="CUSTOM_BASE" description="CUSTOM_BASE_DESC" />
+		<param name="use_ids" type="list" default="1" label="USE_ID_OR_SLUG" description="USE_ID_OR_SLUG_DESC">
+			<option value="0">Use Slug</option>
+			<option value="1">Use ID</option>
+		</param>
+		<param name="url_encode" type="list" default="1" label="URL_ENCODE" description="URL_ENCODE_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+
+		<param name="" type="separator1" default="DEBUG SETTINGS" label="" description="" />
+		<param name="debug" type="list" default="0" label="DEBUG" description="DEBUG_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+	</params>
+    <config>
+        <fields name="params" addfieldpath="/plugins/content/kasocialsharing/kasocialsharing/fields">
+            <fieldset name="basic">
+                <field name="" type="separator1" default="DISPLAY_SETTINGS" label="" description="" />
+                <field name="" type="separator2" default="MENU_ID_SETTINGS" label="" description="MENU_ID_SETTINGS_DESC" />
+                <field name="menu_display_mode" type="list" default="-1" label="MENU_DISPLAY_MODE" description="MENU_DISPLAY_MODE_DESC_17">
+                    <option value="-1">SELECT_MENU_MODE</option>
+                    <option value="0">SHOW_ONLY_FOLLOWING_SELECTED_MENUS</option>
+                    <option value="1">DO_NOT_SHOW_ON_FOLLOWING_SELECTED_MENUS</option>
+                </field>
+<!--                <field name="menuIDs" type="menus" default="" label="MENU_IDS" description="MENU_IDS_DESC" />-->
+                <field name="menuIDs" type="textarea" cols="35" rows="1" default="" label="MENU_IDS" description="MENU_IDS_DESC_17" />
+
+                <field name="" type="separator2" default="COM_CONTENT_DISPLAY_SETTINGS" label="" description="COM_CONTENT_DISPLAY_SETTINGS_DESC" />
+                <field name="display_mode" type="list" default="-1" label="DISPLAY_MODE" description="DISPLAY_MODE_DESC_17">
+                    <option value="-1">SELECT_CONTENT_MODE</option>
+                    <option value="0">SHOW_ON_ONLY_FOLLOWING_SELECTED_CONTENT</option>
+                    <option value="1">DO_NOT_SHOW_ON_FOLLOWING_SELECTED_CONTENT</option>
+                </field>
+                <field name="categoryIDs" type="textarea" cols="35" rows="1" default="" label="CATEGORY_ID" description="CATEGORY_ID_DESC_17" />
+                <field name="articleIDs" type="textarea" cols="35" rows="1" default="" label="ARTICLE_ID" description="ARTICLE_ID_DESC_17" />
+<!--
+                <field name="sectionIDs" type="sections" default="" label="SECTION_ID" description="SECTION_ID_DESC" />
+                <field name="categoryIDs" type="categories"  default="" class="inputbox" style="width:62%;" multiple="multiple" size="10" label="CATEGORY_ID" description="CATEGORY_ID_DESC" />
+                <field name="articleIDs" type="textarea" cols="35" rows="1" default="" label="ARTICLE_ID" description="ARTICLE_ID_DESC" />
+-->
+                <field name="" type="separator2" default="OTHER_DISPLAY_SETTINGS" label="" description="" />
+                <field name="view_restrictions" type="multilist" default="" multiple="multiple" size="3" label="CONTENT_RESCRICTIONS" description="CONTENT_RESCRICTIONS_DESC">
+                    <option value="view_article">DO_NOT_SHOW_CONTENT_ARTICLES</option>
+                    <option value="view_featured_articles">DO_NOT_SHOW_ON_FEATURED_ARTICLES_17</option>
+                    <option value="view_cat_layout_blog">DO_NOT_SHOW_ON_CATEGORY_BLOG_LAYOUTS</option>
+<!--                    <option value="view_cat">DO_NOT_SHOW_ON_STANDARD_CATEGORY_LAYOUTS</option>-->
+<!--                    <option value="view_sec_layout_blog">DO_NOT_SHOW_ON_SECTION_BLOG_LAYOUTS</option>-->
+<!--                    <option value="view_sec">DO_NOT_SHOW_ON_SECTION_LAYOUTS</option>-->
+                </field>
+                <field name="" type="separator2" default="LOCATION_FOR_DISPLAY" label="" description="" />
+                <field name="display_location" type="list" default="bottom" label="DISPLAY_LOCATION" description="DISPLAY_LOCATION_DESC">
+                    <option value="top">Top</option>
+                    <option value="bottom">Bottom</option>
+                    <option value="both">Top and Bottom</option>
+                </field>
+
+<!--                <field name="" type="separator1" default="EXTENSION_INTEGRATIONS" label="" description="" />-->
+<!--                <field name="integrations" type="multilist" default="" multiple="multiple" size="3" label="INTEGRATIONS" description="INTEGRATIONS_DESC">-->
+<!--                    <option value="eventlist_detail_layout">SHOW_ON_EVENTLIST_DETAIL_LAYOUT</option>-->
+<!--                    <option value="k2_cats">SHOW_ON_K2_CATEGORY_PAGE</option>-->
+<!--                    <option value="k2_latest_items">SHOW_ON_K2_LATEST_PAGE_ITEMS</option>-->
+<!--                    <option value="k2_items">SHOW_ON_K2_PAGE_ITEM</option>-->
+<!--                    <option value="mosets_tree_page">SHOW_ON_MOSETS_TREE_DESCRIPTION_PAGE</option>-->
+<!--                    <option value="quick_faq_items">SHOW_ON_QUICK_FAQ_ITEMS</option>-->
+<!--                    <option value="virtuemart_category">SHOW_ON_VIRTUEMART_CATEGORY_PAGE</option>-->
+<!--                    <option value="virtuemart_products">SHOW_ON_VIRTUEMART_PRODUCT_PAGE</option>-->
+<!--                    <option value="zoo_items">SHOW_ON_ZOO_ITEMS</option>-->
+<!--                    <option value="zoo_cats">Show on Zoo Categories</option>-->
+<!--                </field>-->
+
+                <field name="" type="separator1" default="BUTTONS_ORDERING" label="" description="" />
+                <field name="ordering" type="textarea" cols="35" rows="3" default="[share][send][like][twitter][tweetme][stumbleupon][reddit][digg][linkedin][buzz][plus1][sharethis]" label="ORDERING" description="" />
+
+                <field name="" type="separator1" default="FACEBOOK" label="" description="" />
+                <field name="render_mode" type="list" default="javascript" label="RENDERING_MODE" description="RENDERING_MODE_DESC">
+                    <option value="javascript">JAVASCRIPT_RENDERING_MODE</option>
+                    <option value="xfbml">XFBML_RENDERING_MODE</option>
+                </field>
+
+                <field name="" type="separator2" default="FACEBOOK_SHARE" label="" description="" />
+                <field name="enable_share" type="list" default="1" label="SHARE_BUTTON" description="SHARE_BUTTON_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+                <field name="share_url" type="list" default="1" label="LINK_URL" description="LINK_URL_DESC">
+                    <option value="0">LINK_URL_HOPEPAGE</option>
+                    <option value="1">LINK_URL_CURRENT_PAGE</option>
+                </field>
+                <field name="share_btn_style" type="list" default="button_count" label="BUTTON_STYLE" description="BUTTON_STYLE_DESC">
+                    <option value="icon_link">BUTTON_STYLE_ICON_LINK</option>
+                    <option value="icon">BUTTON_STYLE_ICON</option>
+                    <option value="button">BUTTON_STYLE_BUTTON</option>
+                    <option value="button_count">BUTTON_STYLE_BUTTON_COUNT</option>
+                </field>
+
+                <field name="" type="separator2" default="FACEBOOK_SEND" label="" description="" />
+                <field name="enable_fb_send" type="list" default="1" label="SEND_BUTTON" description="SEND_BUTTON_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+                <field name="fb_send_font" type="list" default="arial" label="SEND_BUTTON_FONT" description="SEND_BUTTON_FONT_DESC">
+                    <option value=""></option>
+                    <option value="arial">ARIAL</option>
+                    <option value="lucida grande">LUCIDA_GRANDE</option>
+                    <option value="segoe ui">SEGOE_UI</option>
+                    <option value="tahoma">TAHOMA</option>
+                    <option value="trebuchet ms">TREBUCHET_MS</option>
+                    <option value="verdana">VERDANA</option>
+                </field>
+                <field name="fb_send_cs" type="list" default="light" label="COLOUR_SCHEME" description="COLOUR_SCHEME_DESC">
+                    <option value="light">LIGHT</option>
+                    <option value="dark">DARK</option>
+                </field>
+                <field name="fb_send_ref" type="text" default="" label="REFERRAL_LABEL" description="REFERRAL_LABEL_DESC" />
+
+                <field name="" type="separator2" default="FACEBOOK_LIKE" label="" description="" />
+                <field name="enable_like" type="list" default="1" label="LIKE_BUTTON" description="LIKE_BUTTON_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+                <field name="layout_style" type="list" default="button_count" label="LAYOUT_STYLE" description="LAYOUT_STYLE_DESC">
+                    <option value="standard">STANDARD</option>
+                    <option value="button_count">BUTTON_COUNT</option>
+                </field>
+                <field name="show_faces" type="list" default="1" label="SHOW_FACES" description="SHOW_FACES_DESC">
+                    <option value="0">HIDE</option>
+                    <option value="1">SHOW</option>
+                </field>
+                <field name="width" type="text" default="75" label="WIDTH" description="WIDTH_DESC" />
+                <field name="height" type="text" default="30" label="HEIGHT" description="HEIGHT_DESC" />
+                <field name="verb" type="list" default="like" label="VERB_TO_DISPLAY" description="VERB_TO_DISPLAY_DESC">
+                    <option value="like">LIKE</option>
+                    <option value="recommend">RECOMMEND</option>
+                </field>
+                <field name="font" type="list" default="" label="FONT" description="FONT_DESC">
+                    <option value="">DEFAULT</option>
+                    <option value="arial">ARIAL</option>
+                    <option value="lucida grande">LUCIDA_GRANDE</option>
+                    <option value="segoe ui">SEGOE_UI</option>
+                    <option value="tahoma">TAHOMA</option>
+                    <option value="trebuchet ms">TREBUCHET_MS</option>
+                    <option value="verdana">VERDANA</option>
+                </field>	
+                <field name="colour_scheme" type="list" default="light" label="COLOUR_SCHEME" description="COLOUR_SCHEME_DESC">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </field>
+<!--                <field name="" type="separator2" default="FACEBOOK_OPEN_GRAPH_SETTINGS" label="" description="" />
+                <field name="social_graph_tags" type="list" default="1" label="OPEN_GRAPH_TAGS" description="OPEN_GRAPH_TAGS_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+                <field name="fb_admin_ids" type="text" default="" label="FB_ADMIN_IDS" description="FB_ADMIN_IDS_DESC" />
+                <field name="fb_image_tag" type="list" default="1" label="FB_IMAGE_TAG" description="FB_IMAGE_TAG_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>-->
+
+                <field name="" type="separator1" default="TWITTER" label="" description="" />
+                <field name="" type="separator2" default="TWITTER_OFFICIAL_BUTTON" label="" description="" />
+                <field name="enable_twitter_btn" type="list" default="1" label="TWITTER_BUTTON" description="TWITTER_BUTTON_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+                <field name="twitter_btn_style" type="list" default="horizontal" label="TWITTER_BUTTON_STYLE" description="TWITTER_BUTTON_STYLE_DESC">
+                    <option value="vertical">TWITTER_VERTICAL</option>
+                    <option value="horizontal">TWITTER_HORIZONTAL</option>
+                    <option value="none">TWITTER_NO_COUNT</option>
+                </field>
+                <field name="twitter_btn_twt_text" type="textarea" cols="35" rows="1" default="" label="TWITTER_TWEET_TEXT" description="TWITTER_TWEET_TEXT_DESC" />
+                <field name="twitter_btn_url" type="textarea" cols="35" rows="1" default="" label="TWITTER_CUSTOM_URL" description="TWITTER_CUSTOM_URL_DESC" />
+                <field name="twitter_btn_lang" type="list" default="" label="TWITTER_BUTTON_LANGUAGE" description="TWITTER_BUTTON_LANGUAGE_DESC">
+                    <option value="">TWITTER_BUTTON_LANGUAGE_ENGLISH</option>
+                    <option value="fr">TWITTER_BUTTON_LANGUAGE_FRENCH</option>
+                    <option value="de">TWITTER_BUTTON_LANGUAGE_GERMAN</option>
+                    <option value="es">TWITTER_BUTTON_LANGUAGE_SPANISH</option>
+                    <option value="ja">TWITTER_BUTTON_LANGUAGE_JAPANESE</option>
+                    <option value="nl">TWITTER_BUTTON_LANGUAGE_DUTCH</option>
+                    <option value="id">TWITTER_BUTTON_LANGUAGE_INDONESIAN</option>
+                    <option value="it">TWITTER_BUTTON_LANGUAGE_ITALIAN</option>
+                    <option value="ko">TWITTER_BUTTON_LANGUAGE_KOREAN</option>
+                    <option value="pt">TWITTER_BUTTON_LANGUAGE_PORTUGUESE</option>
+                    <option value="ru">TWITTER_BUTTON_LANGUAGE_RUSSIAN</option>
+                    <option value="tr">TWITTER_BUTTON_LANGUAGE_TURKISH</option>
+                </field>
+                <field name="twitter_id" type="text" default="" label="TWITTER_ID" description="TWITTER_ID_DESC" />
+                <field name="twitter_btn_rel_acc" type="text" default="" label="TWITTER_RELATED_ACCOUNT_ID" description="TWITTER_RELATED_ACCOUNT_ID_DESC" />
+                <field name="twitter_btn_rel_acc_desc" type="text" default="" label="TWITTER_RELATED_ACCOUNT_DESCRIPTION" description="TWITTER_RELATED_ACCOUNT_DESCRIPTION_DESC" />
+
+                <field name="" type="separator2" default="TWEETME" label="" description="" />
+                <field name="enable_tweetme" type="list" default="0" label="SHOW_TWEETME" description="SHOW_TWEETME_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+
+                <field name="" type="separator1" default="STUMBLEUPON" label="" description="" />
+                <field name="enable_stumbleupon" type="list" default="0" label="STUMBLEUPON_BUTTON" description="STUMBLEUPON_BUTTON_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+                <field name="su_btn_style" type="list" default="1" label="STUMBLEUPON_BUTTON_STYLE" description="STUMBLEUPON_BUTTON_STYLE_DESC">
+                    <option value="1">STYLE_1</option>
+                    <option value="2">STYLE_2</option>
+                    <option value="3">STYLE_3</option>
+                    <option value="4">STYLE_4</option>
+                    <option value="5">STYLE_5</option>
+                    <option value="6">STYLE_6</option>
+                    <option value="7">STYLE_7</option>
+                </field>
+
+                <field name="" type="separator1" default="REDDIT" label="" description="" />
+                <field name="enable_reddit" type="list" default="1" label="REDDIT_SHOW" description="REDDIT_SHOW_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+
+                <field name="" type="separator1" default="DIGG" label="" description="" />
+                <field name="enable_digg" type="list" default="1" label="DIGG_SHOW" description="DIGG_SHOW_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+
+                <field name="" type="separator1" default="LINKEDIN" label="" description="" />
+                <field name="enable_linkedin" type="list" default="1" label="LINKEDIN_SHOW" description="LINKEDIN_SHOW">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+                <field name="linkedin_btn_style" type="list" default="0" label="LINKEDIN_COUNTER" description="LINKEDIN_COUNTER_DESC">
+                    <option value="0">LINKEDIN_COUNTER_NO_COUNT</option>
+                    <option value="1">LINKEDIN_COUNTER_RIGHT</option>
+                    <option value="2">LINKEDIN_COUNTER_TOP</option>
+                </field>
+
+                <field name="" type="separator1" default="GOOGLE" label="" description="" />
+                <field name="" type="separator2" default="GOOGLE_PLUS" label="" description="" />
+                <field name="enable_googleplus1" type="list" default="1" label="GOOGLE_PLUS_SHOW" description="GOOGLE_PLUS_SHOW_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+
+                <field name="" type="separator2" default="GOOGLE_BUZZ" label="" description="" />
+                <field name="enable_googlebuzz" type="list" default="0" label="GOOGLE_BUZZ_SHOW" description="GOOGLE_BUZZ_SHOW_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+
+                <field name="" type="separator1" default="SHARETHIS" label="" description="" />
+                <field name="enable_sharethis" type="list" default="0" label="SHARETHIS_SHOW" description="SHARETHIS_SHOW_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+                <field name="publisher_id" type="textarea" cols="35" rows="1" default="" label="SHARETHIS_PUB_ID" description="SHARETHIS_PUB_ID_DESC" />
+                <field name="sharethis_popup" type="list" default="1" label="SHARETHIS_POPUP_MODE" description="SHARETHIS_POPUP_MODE_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+            </fieldset>
+            <fieldset name="advanced">
+                <field name="" type="separator1" default="URL SETTINGS" label="" description="" />
+                <field name="url_method" type="list" default="article_url" label="URL_METHOD" description="URL_METHOD_DESC">
+                    <option value="request_uri">REQUEST_URI (Default)</option>
+                    <option value="article_url">Article URL</option>
+                    <option value="juri">JURI::current</option>
+                    <option value="php">PHP</option>
+                </field>
+                <field name="base_method" type="list" default="0" label="BASE_METHOD" description="BASE_METHOD_DESC">
+                    <option value="0">JURI::base();</option>
+                    <option value="1">JURI::root();</option>
+                    <option value="2">JURI::getInstance();</option>
+                    <option value="3">Custom (Specify Below)</option>
+                </field>
+                <field name="custom_base" type="textarea" cols="35" rows="1" default="" label="CUSTOM_BASE" description="CUSTOM_BASE_DESC" />
+                <field name="use_ids" type="list" default="1" label="USE_ID_OR_SLUG" description="USE_ID_OR_SLUG_DESC">
+                    <option value="0">Use Slug</option>
+                    <option value="1">Use ID</option>
+                </field>
+                <field name="url_encode" type="list" default="1" label="URL_ENCODE" description="URL_ENCODE_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+
+                <field name="" type="separator1" default="DEBUG SETTINGS" label="" description="" />
+                <field name="debug" type="list" default="0" label="DEBUG" description="DEBUG_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+            </fieldset>
+		</fields>
+	</config>
+</install>

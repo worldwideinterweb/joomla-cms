@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>System - KA JavaScript SDK</name>
+	<author>Khawaib Ahmed</author>
+	<creationDate>22 Augus 2011</creationDate>
+	<copyright>Copyright (C) 2010 www.Khawaib.co.uk. All rights reserved.</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>khawaib@khawaib.co.uk</authorEmail>
+	<authorUrl>www.Khawaib.co.uk</authorUrl>
+	<version>3.3.5</version>
+	<description>JASCRIPTSDK_INSTALLED_SUCCESSFULLY</description>
+	<files>
+		<filename plugin="javascriptsdk">javascriptsdk.php</filename>
+        <folder>javascriptsdk</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_javascriptsdk.ini</language>
+        <language tag="en-GB">en-GB.plg_system_javascriptsdk.sys.ini</language>
+	</languages>
+	<params addpath="/plugins/system/javascriptsdk/elements">
+		<param name="fb_app_id" type="text" default="" label="SDK_APPLICATION_ID" description="SDK_APPLICATION_ID_DESC" />
+        <param name="locale" type="fblanguages" default="default" label="SDK_LANGUAGE" description="SDK_LANGUAGE_DESC" />
+		        
+        <param name="" type="separator2" default="XMLNS_TAGS" label="" description="" />
+		<param name="fb_xmlns" type="list" default="1" label="FBXMLS" description="FBXMLS_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+		<param name="og_xmlns" type="list" default="1" label="OGXMLS" description="OGXMLS_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+        <param name="" type="separator2" default="FB_TAGS" label="" description="" />
+        <param name="fb_admins" type="text" default="" label="FB_ADMIN_ID" description="FB_ADMIN_ID_DESC" />
+        <param name="fb_page_id" type="text" default="" label="FB_PAGE_ID" description="FB_PAGE_ID_DESC" />
+        
+        <param name="" type="separator1" default="OPEN_GRAPH_SETTINGS" label="" description="" />
+		<param name="enable_og_title" type="list" default="1" label="ENABLE_OG_TITLE" description="ENABLE_OG_TITLE_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+
+		<param name="enable_og_type" type="list" default="1" label="ENABLE_OG_TYPE" description="ENABLE_OG_TYPE_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+        <param name="og_type" type="ogtypes" default="website" label="OG_TYPE" description="OG_TYPE_DESC" />
+        <param name="og_custom_type" type="text" default="" label="OG_CUSTOM_TYPE" description="OG_CUSTOM_TYPE_DESC" />
+        <param name="custom_xmlns_namespace" type="text" default="" label="CUSTOM_XMLNS_NAMESPACE" description="CUSTOM_XMLNS_NAMESPACE_DESC" />
+		<param name="" type="separatornote" default="" label="" description="CUSTOM_OBJECT_TYPES_NOTE" />
+        <param name="enable_og_url" type="list" default="1" label="ENABLE_OG_URL" description="ENABLE_OG_URL_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+        <param name="custom_og_url" default=""  type="textarea" cols="35" rows="1"  label="CUSTOM_OG_URL" description="CUSTOM_OG_URL_DESC" />
+		<param name="enable_og_site_name" type="list" default="1" label="ENABLE_OG_SITE_NAME" description="ENABLE_OG_SITE_NAME_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+        <param name="custom_og_site_name" default=""  type="textarea" cols="35" rows="1"  label="OG_CUSTOM_SITE_NAME" description="OG_CUSTOM_SITE_NAME_DESC" />
+		<param name="enable_og_image" type="list" default="1" label="ENABLE_OG_IMAGE" description="ENABLE_OG_IMAGE_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+        <param name="custom_og_image" type="textarea" cols="35" rows="1" default="" label="CUSTOM_OG_IMAGE" description="CUSTOM_OG_IMAGE_DESC" />
+		<param name="enable_og_description" type="list" default="1" label="ENABLE_OG_DESCRIPTION" description="ENABLE_OG_DESCRIPTION_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+        <param name="custom_og_description" type="textarea" cols="35" rows="1" default="" label="CUSTOM_OG_DESCRIPTION" description="CUSTOM_OG_DESCRIPTION_DESC" />
+        
+<!--        
+        <param name="" type="separator2" default="LOCATION_OG_TAGS" label="" description="" />
+        <param name="" type="separatornote" default="" label="" description="LOCATION_OG_TAGS_DESC" />
+        <param name="og_latitude" default="" type="text" label="OG_LATITUDE" description="OG_LATITUDE_DESC" />
+        <param name="og_longitude" default="" type="text" label="OG_LONGITUDE" description="OG_LONGITUDE_DESC" />
+        <param name="og_street-address" default="" type="text" label="OG_STREET_ADDRESS" description="OG_STREET_ADDRESS_DESC" />
+        <param name="og_locality" default="" type="text" label="OG_LOCALITY" description="OG_LOCALITY_DESC" />
+        <param name="og_region" default="" type="text" label="OG_RIGION" description="OG_RIGION_DESC" />
+        <param name="og_postal-code" default="" type="text" label="OG_POSTAL_CODE" description="OG_POSTAL_CODE_DESC" />
+        <param name="og_country-name" default="" type="text" label="OG_COUNTRY_NAME" description="OG_COUNTRY_NAME_DESC" />
+-->
+<!--
+        <param name="" type="separator2" default="CONTACT_OG_TAGS" label="" description="" />
+        <param name="" type="separatornote" default="" label="" description="CONTACT_OG_TAGS_NOTE" />
+        <param name="og_email" default="" type="text" label="OG_EMAIL" description="OG_EMAIL_DESC" />
+        <param name="og_phone_number" default="" type="text" label="OG_PHONE_NUMBER" description="OG_PHONE_NUMBER_DESC" />
+        <param name="og_fax_number" default="" type="text" label="OG_FAX_NUMBER" description="OG_FAX_NUMBER_DESC" />        
+-->
+<!--    
+        <param name="" type="separator2" default="VIDEO_OG_TAGS" label="" description="" />
+        <param name="" type="separatornote" default="" label="" description="VIDEO_OG_TAGS_NOTE" />
+        <param name="og:video" default="" type="text" label="OG_VIDEO" description="OG_VIDEO_DESC" />
+        <param name="og:video:height" default="" type="text" label="OG_VIDEO_HEIGHT" description="OG_VIDEO_HEIGHT_DESC" />
+        <param name="og:video:width" default="" type="text" label="OG_VIDEO_WIDTH" description="OG_VIDEO_WIDTH_DESC" />
+        <param name="og:video:type" default="" type="text" label="OG_VIDEO_TYPE" description="OG_VIDEO_TYPE_DESC" />
+        
+        <param name="" type="separatornote" default="" label="" description="AUDIO_OG_TAGS_NOTE" />
+        <param name="og:audio" default="" type="text" label="OG_AUDIO" description="OG_AUDIO_DESC" />
+        <param name="og:audio:title" default="" type="text" label="OG_AUDIO_TITLE" description="OG_AUDIO_TITLE_DESC" />
+        <param name="og:audio:artist" default="" type="text" label="OG_AUDIO_ARTIST" description="OG_AUDIO_ARTIST_DESC" />
+        <param name="og:audio:album" default="" type="text" label="OG_AUDIO_ALBUM" description="OG_AUDIO_ALBUM_DESC" />
+        <param name="og:audio:type" default="" type="text" label="OG_AUDIO_TYPE" description="OG_AUDIO_TYPE_DESC" />
+-->
+
+	</params>
+    <params group="advanced">
+        <param name="enable_sdk" type="list" default="1" label="ENABLE_SDK" description="ENABLE_SDK_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+        </param>
+        <param name="asynchronous" type="list" default="1" label="ASYNCHRONOUS_LOAD" description="ASYNCHRONOUS_LOAD_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+        </param>
+        <param name="insertion_mode" type="list" default="0" label="SDK_MODE" description="SDK_MODE_DESC">
+            <option value="0">SDK_MODE_MODE_1</option>
+            <option value="1">SDK_MODE_MODE_2</option>
+        </param>
+		<param name="admin_load" type="list" default="0" label="ADMIN_LOAD" description="ADMIN_LOAD_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="" type="separator1" default="URL_SETTINGS" label="" description="" />
+		<param name="url_method" type="list" default="request_uri" label="URL_METHOD" description="URL_METHOD_DESC">
+			<option value="request_uri">REQUEST_URI (Default)</option>
+			<option value="article_url">Article URL</option>
+			<option value="juri">JURI::current</option>
+			<option value="php">PHP</option>
+		</param>
+		<param name="base_method" type="list" default="0" label="BASE_METHOD" description="BASE_METHOD_DESC">
+			<option value="0">JURI::base();</option>
+			<option value="1">JURI::root();</option>
+			<option value="2">JURI::getInstance();</option>
+			<option value="3">Custom (Specify Below)</option>
+		</param>
+		<param name="custom_base" type="textarea" cols="35" rows="1" default="" label="CUSTOM_BASE" description="CUSTOM_BASE_DESC" />
+		<param name="use_ids" type="list" default="1" label="USE_ID_OR_SLUG" description="USE_ID_OR_SLUG_DESC">
+			<option value="0">USE_SLUG</option>
+			<option value="1">USE_ID</option>
+		</param>
+		<param name="url_encode" type="list" default="1" label="URL_ENCODE" description="URL_ENCODE_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+
+        <param name="" type="separator1" default="SEP1_DISPLAY_SETTINGS" label="" description="" />
+        <param name="" type="separator2" default="SEP2_MENU_ID_SETTINGS" label="TOOLTIP" description="SEP2_MENU_ID_SETTINGS_DESC" />
+        <param name="menu_display_mode" type="list" default="-1" label="MENU_DISPLAY_MODE" description="MENU_DISPLAY_MODE_DESC">
+            <option value="-1">SELECT_MENU_MODE</option>
+            <option value="0">SHOW_ONLY_FOLLOWING_SELECTED_MENUS</option>
+            <option value="1">DO_NOT_SHOW_ON_FOLLOWING_SELECTED_MENUS</option>
+        </param>
+        <param name="menuIDs" type="menus" default="" label="MENU_IDS" description="MENU_IDS_DESC" />
+
+        <param name="" type="separator2" default="SEP2_COM_CONTENT_DISPLAY_SETTINGS" label="TOOLTIP" description="SEP2_COM_CONTENT_DISPLAY_SETTINGS_DESC" />
+        <param name="display_mode" type="list" default="-1" label="DISPLAY_MODE" description="DISPLAY_MODE_DESC">
+            <option value="-1">SELECT_CONTENT_MODE</option>
+            <option value="0">SHOW_ON_ONLY_FOLLOWING_SELECTED_CONTENT</option>
+            <option value="1">DO_NOT_SHOW_ON_FOLLOWING_SELECTED_CONTENT</option>
+        </param>
+        <param name="sectionIDs" type="sections" default="" label="SECTION_ID" description="SECTION_ID_DESC" />
+        <param name="categoryIDs" type="categories"  default="" label="CATEGORY_ID" description="CATEGORY_ID_DESC" />
+        <param name="articleIDs" type="textarea" cols="35" rows="1" default="" label="ARTICLE_ID" description="ARTICLE_ID_DESC" />
+
+        <param name="view_restrictions" type="multilist" default="" multiple="multiple" size="7" label="CONTENT_RESCRICTIONS" description="CONTENT_RESCRICTIONS_DESC">
+            <option value="view_article">DO_NOT_SHOW_CONTENT_ARTICLES</option>
+            <option value="view_frontpage">DO_NOT_SHOW_ON_FRONTPAGE</option>
+            <option value="view_cat_layout_blog">DO_NOT_SHOW_ON_CATEGORY_BLOG_LAYOUTS</option>
+            <option value="view_cat">DO_NOT_SHOW_ON_STANDARD_CATEGORY_LAYOUTS</option>            
+            <option value="view_sec_layout_blog">DO_NOT_SHOW_ON_SECTION_BLOG_LAYOUTS</option>
+            <option value="view_sec">DO_NOT_SHOW_ON_SECTION_LAYOUTS</option>
+        </param>
+        <param name="" type="separator1" default="SEP1_EXTENSION_INTEGRATIONS" label="" description="" />
+        <param name="integrations" type="multilist" default="" multiple="multiple" size="10" label="INTEGRATIONS" description="INTEGRATIONS_DESC">
+            <option value="eventlist_detail_layout">SHOW_ON_EVENTLIST_DETAIL_LAYOUT</option>
+            <option value="hikashop_product">SHOW_ON_HIKASHOP_PRODUCT_PAGE</option>
+            <option value="k2_cats">SHOW_ON_K2_CATEGORY_PAGE</option>
+            <option value="k2_latest_items">SHOW_ON_K2_LATEST_PAGE_ITEMS</option>
+            <option value="k2_items">SHOW_ON_K2_PAGE_ITEM</option>
+            <option value="mosets_tree_page">SHOW_ON_MOSETS_TREE_DESCRIPTION_PAGE</option>
+            <option value="quick_faq_items">SHOW_ON_QUICK_FAQ_ITEMS</option>
+            <option value="virtuemart_category">SHOW_ON_VIRTUEMART_CATEGORY_PAGE</option>
+            <option value="virtuemart_products">SHOW_ON_VIRTUEMART_PRODUCT_PAGE</option>
+            <option value="zoo_items">SHOW_ON_ZOO_ITEMS</option>
+            <!--<option value="zoo_cats">SHOW_ON_ZOO_CATEGORIES</option>-->
+        </param>
+                
+		<param name="" type="separator1" default="DEBUG_SETTINGS" label="" description="" />
+		<param name="debug" type="list" default="0" label="DEBUG" description="DEBUG_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+    </params>
+    
+    
+	<config>
+        <fields name="params" addfieldpath="/plugins/system/javascriptsdk/javascriptsdk/fields">
+            <fieldset name="basic">
+                <field name="fb_app_id" type="text" default="" label="SDK_APPLICATION_ID" description="SDK_APPLICATION_ID_DESC" />
+                <field name="locale" type="fblanguages" default="default" label="SDK_LANGUAGE" description="SDK_LANGUAGE_DESC" />
+
+                <field name="" type="separator2" default="XMLNS_TAGS" label="" description="" />
+                <field name="fb_xmlns" type="list" default="1" label="FBXMLS" description="FBXMLS_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+                <field name="og_xmlns" type="list" default="1" label="OGXMLS" description="OGXMLS_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+                <field name="" type="separator2" default="FB_TAGS" label="" description="" />
+                <field name="fb_admins" type="text" default="" label="FB_ADMIN_ID" description="FB_ADMIN_ID_DESC" />
+                <field name="fb_page_id" type="text" default="" label="FB_PAGE_ID" description="FB_PAGE_ID_DESC" />
+
+                <field name="" type="separator1" default="OPEN_GRAPH_SETTINGS" label="" description="" />
+                <field name="enable_og_title" type="list" default="1" label="ENABLE_OG_TITLE" description="ENABLE_OG_TITLE_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+
+                <field name="enable_og_type" type="list" default="1" label="ENABLE_OG_TYPE" description="ENABLE_OG_TYPE_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+                <field name="og_type" type="ogtypes" default="ogtypes" label="OG_TYPE" description="OG_TYPE_DESC" />
+                <field name="og_custom_type" type="text" default="" label="OG_CUSTOM_TYPE" description="OG_CUSTOM_TYPE_DESC" />
+                <field name="custom_xmlns_namespace" type="text" default="" label="CUSTOM_XMLNS_NAMESPACE" description="CUSTOM_XMLNS_NAMESPACE_DESC" />
+                <field name="" type="separatornote" default="" label="" description="CUSTOM_OBJECT_TYPES_NOTE" />
+                <field name="enable_og_url" type="list" default="1" label="ENABLE_OG_URL" description="ENABLE_OG_URL_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+                <field name="custom_og_url" default=""  type="textarea" cols="35" rows="1"  label="CUSTOM_OG_URL" description="CUSTOM_OG_URL_DESC" />
+                <field name="enable_og_site_name" type="list" default="1" label="ENABLE_OG_SITE_NAME" description="ENABLE_OG_SITE_NAME_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+                <field name="custom_og_site_name" default=""  type="textarea" cols="35" rows="1"  label="OG_CUSTOM_SITE_NAME" description="OG_CUSTOM_SITE_NAME_DESC" />
+                <field name="enable_og_image" type="list" default="1" label="ENABLE_OG_IMAGE" description="ENABLE_OG_IMAGE_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+                <field name="custom_og_image" type="textarea" cols="35" rows="1" default="" label="CUSTOM_OG_IMAGE" description="CUSTOM_OG_IMAGE_DESC" />
+                <field name="enable_og_description" type="list" default="1" label="ENABLE_OG_DESCRIPTION" description="ENABLE_OG_DESCRIPTION_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+                <field name="custom_og_description" type="textarea" cols="35" rows="1" default="" label="CUSTOM_OG_DESCRIPTION" description="CUSTOM_OG_DESCRIPTION_DESC" />
+			</fieldset>
+
+			<fieldset name="advanced">
+                <field name="enable_sdk" type="list" default="1" label="ENABLE_SDK" description="ENABLE_SDK_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+                <field name="asynchronous" type="list" default="1" label="ASYNCHRONOUS_LOAD" description="ASYNCHRONOUS_LOAD_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+                <field name="insertion_mode" type="list" default="0" label="SDK_MODE" description="SDK_MODE_DESC">
+                    <option value="0">SDK_MODE_MODE_1</option>
+                    <option value="1">SDK_MODE_MODE_2</option>
+                </field>
+                <field name="admin_load" type="list" default="0" label="ADMIN_LOAD" description="ADMIN_LOAD_DESC">
+                    <option value="0">NO</option>
+                    <option value="1">YES</option>
+                </field>
+                <field name="" type="separator1" default="URL_SETTINGS" label="" description="" />
+                <field name="url_method" type="list" default="request_uri" label="URL_METHOD" description="URL_METHOD_DESC">
+                    <option value="request_uri">REQUEST_URI (Default)</option>
+                    <option value="article_url">Article URL</option>
+                    <option value="juri">JURI::current</option>
+                    <option value="php">PHP</option>
+                </field>
+                <field name="base_method" type="list" default="0" label="BASE_METHOD" description="BASE_METHOD_DESC">
+                    <option value="0">JURI::base();</option>
+                    <option value="1">JURI::root();</option>
+                    <option value="2">JURI::getInstance();</option>
+                    <option value="3">Custom (Specify Below)</option>
+                </field>
+                <field name="custom_base" type="textarea" cols="35" rows="1" default="" label="CUSTOM_BASE" description="CUSTOM_BASE_DESC" />
+                <field name="use_ids" type="list" default="1" label="USE_ID_OR_SLUG" description="USE_ID_OR_SLUG_DESC">
+                    <option value="0">Use Slug</option>
+                    <option value="1">Use ID</option>
+                </field>
+                <field name="url_encode" type="list" default="1" label="URL_ENCODE" description="URL_ENCODE_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+
+                <field name="" type="separator1" default="SEP1_DISPLAY_SETTINGS" label="" description="" />
+                <field name="" type="separator2" default="SEP2_MENU_ID_SETTINGS" label="" description="SEP2_MENU_ID_SETTINGS_DESC" />
+                <field name="menu_display_mode" type="list" default="-1" label="MENU_DISPLAY_MODE" description="MENU_DISPLAY_MODE_DESC_17">
+                    <option value="-1">SELECT_MENU_MODE</option>
+                    <option value="0">SHOW_ONLY_FOLLOWING_SELECTED_MENUS</option>
+                    <option value="1">DO_NOT_SHOW_ON_FOLLOWING_SELECTED_MENUS</option>
+                </field>
+                <field name="menuIDs" type="textarea" cols="35" rows="1" default="" label="MENU_IDS" description="MENU_IDS_DESC_17" />
+
+                <field name="" type="separator2" default="SEP2_COM_CONTENT_DISPLAY_SETTINGS" label="TOOLTIP" description="SEP2_COM_CONTENT_DISPLAY_SETTINGS_DESC" />
+                <field name="display_mode" type="list" default="-1" label="DISPLAY_MODE" description="DISPLAY_MODE_DESC_17">
+                    <option value="-1">SELECT_CONTENT_MODE</option>
+                    <option value="0">SHOW_ON_ONLY_FOLLOWING_SELECTED_CONTENT</option>
+                    <option value="1">DO_NOT_SHOW_ON_FOLLOWING_SELECTED_CONTENT</option>
+                </field>
+                <field name="categoryIDs" type="textarea" cols="35" rows="1" default="" label="CATEGORY_ID" description="CATEGORY_ID_DESC_17" />
+                <field name="articleIDs" type="textarea" cols="35" rows="1" default="" label="ARTICLE_ID" description="ARTICLE_ID_DESC_17" />
+<!--
+                <field name="sectionIDs" type="sections" default="" label="SECTION_ID" description="SECTION_ID_DESC" />
+                <field name="categoryIDs" type="categories"  default="" class="inputbox" style="width:62%;" multiple="multiple" size="10" label="CATEGORY_ID" description="CATEGORY_ID_DESC" />
+                <field name="articleIDs" type="textarea" cols="35" rows="1" default="" label="ARTICLE_ID" description="ARTICLE_ID_DESC" />
+-->
+                <field name="" type="separator2" default="OTHER_DISPLAY_SETTINGS" label="" description="" />
+                <field name="view_restrictions" type="multilist" default="" multiple="multiple" size="3" label="CONTENT_RESCRICTIONS" description="CONTENT_RESCRICTIONS_DESC">
+                    <option value="view_article">DO_NOT_SHOW_CONTENT_ARTICLES</option>
+                    <option value="view_featured_articles">DO_NOT_SHOW_ON_FEATURED_ARTICLES_17</option>
+                    <option value="view_cat_layout_blog">DO_NOT_SHOW_ON_CATEGORY_BLOG_LAYOUTS</option>
+<!--                    <option value="view_cat">DO_NOT_SHOW_ON_STANDARD_CATEGORY_LAYOUTS</option>-->
+<!--                    <option value="view_sec_layout_blog">DO_NOT_SHOW_ON_SECTION_BLOG_LAYOUTS</option>-->
+<!--                    <option value="view_sec">DO_NOT_SHOW_ON_SECTION_LAYOUTS</option>-->
+                </field>
+        
+                <field name="" type="separator1" default="DEBUG_SETTINGS" label="" description="" />
+                <field name="debug" type="list" default="0" label="DEBUG" description="DEBUG_DESC">
+                    <option value="0">DISABLE</option>
+                    <option value="1">ENABLE</option>
+                </field>
+            </fieldset>
+		</fields>
+	</config>
+</install>
