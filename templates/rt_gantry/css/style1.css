@@ -502,4 +502,5 @@ background-size: 100%;
 }
 .linkbar_nailed_it .moduleItemIntrotext {
 	margin: 0px !important;
+	padding: 0px !important;
 }
