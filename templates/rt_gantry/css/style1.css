@@ -498,5 +498,5 @@ background-size: 100%;
 	margin: 10px 2px 0px 2px;
 }
 .linkbar_nailed_it .even .moduleItemIntrotext img, .linkbar_nailed_it .odd .moduleItemIntrotext img{
-	margin: 0px;
+	margin: 0px !important;
 }
