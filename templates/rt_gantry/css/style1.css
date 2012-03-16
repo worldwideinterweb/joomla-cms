@@ -494,6 +494,6 @@ background-size: 100%;
 .linkbar_nailed_it .even, .linkbar_nailed_it .odd {
 	background: transparent;
 	padding:0px;
-	border: 2px solid gray;
-	margin-top: 10px;
+	border: 2px solid lightgray;
+	margin: 10px 2px 0px 2px;
 }
