@@ -477,7 +477,6 @@ background-size: 100%;
 }
 .linkbar_nailed_it {
         padding:0px;
-	background:url('/templates/rt_gantry/images/body/title_bg.gif');
 }
 
 .linkbar_nailed_it_title {
@@ -488,6 +487,7 @@ background-size: 100%;
 	padding:0px;
 }
 #rt-sidebar-a .linkbar_nailed_it .rt-block .module-title h2 {
+	background:url('/templates/rt_gantry/images/body/title_bg.gif');
 	border: 2px solid gray;
 	padding-bottom:4px;
 }
