@@ -475,3 +475,47 @@ background-size: 100%;
 .sharepoint {
 	float:right;
 }
+.linkbar_nailed_it {
+        padding:0px;
+	background:url('/templates/rt_gantry/images/body/title_bg.gif');
+}
+.linkbar_nailed_it_title {
+	position:relative;
+	top:-30px;}
+.linkbar_nailed_it_text {
+padding:0px;
+}
+
+#linkbar_nailed_it.image {
+   position: relative;
+   width: 100%; /* for IE 6 */
+}
+
+#linkbar_nailed_it h2 {
+   position: absolute;
+   top: 200px;
+   left: 0;
+   width: 100%;
+}
+div#linkbar_nailed_it_text {
+	position: relative;
+	height: 16px;
+	width: auto;
+	top: 125px;
+	color: #441f01;
+	font: bold 13px Tahoma;
+	padding: 2px 8px;
+	text-align:center;
+	text-transform:uppercase;
+	overflow:hidden;
+/*   background: rgb(0, 0, 0); /* fallback color */
+/*   background: rgba(0, 0, 0, 0.7);*/
+	background: url('/templates/rt_gantry/images/body/linkbar_titles.png');
+}
+
+a#linkbar_nailed_it_link {
+	background-repeat: no-repeat;height: 145px;width: 286px;
+	display:block;
+	margin:3px 5px;
+	border: 2px solid gray
+}
