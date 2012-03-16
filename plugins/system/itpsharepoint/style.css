@@ -1,0 +1,66 @@
+@CHARSET "UTF-8";
+.itp-sharepoint{
+    display:block !important;        
+}
+
+.itp-sharepoint-tw{
+    float:left;
+    margin:10px 5px 0;
+}
+
+.itp-sharepoint-tbr{
+    float:left;
+    margin:10px;
+}
+
+.itp-sharepoint-fbl{
+    float:left;
+    margin:10px;
+}
+.itp-sharepoint-digg{
+    float:left;
+    margin-right:15px;
+    margin-top:10px;
+}
+.itp-sharepoint-su{
+    float:left;
+    margin-right:14px;
+    margin-top:11px;
+}
+.itp-sharepoint-lin{
+    float:left;
+    margin-right:14px;
+    margin-top:10px;
+}
+
+.itp-sharepoint-gone{
+    float:left;
+    margin-left:5px;
+    margin-right:10px;
+    margin-top:10px;
+}
+
+.itp-sharepoint-retweetme{
+    float:left;
+    margin-top:10px;
+}
+
+.itp-sharepoint-reddit{
+    float:left;
+    margin-top:10px;
+}
+.itp-sharepoint-reddit a:hover{
+    text-decoration: none !important;
+    background: none !important;
+}
+
+.itp-sharepoint-pinterest {
+    float:left;
+    margin-left:10px;
+    margin-top:10px;
+}
+
+.itp-sharepoint-buffer {
+    float:left;
+    margin-top:10px;
+}
