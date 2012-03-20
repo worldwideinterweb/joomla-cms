@@ -292,9 +292,9 @@ a#linkbar_top8_link {
 	margin:0px;
 	padding: 5px 10px;
 	border: 2px solid gray;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	/*font-family: Tahoma;*/	
-	font-weight: bolder;
+	/*font-family: Tahoma;*/
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: bold;
 }
 .main-content .module-title h2 {
 	color: white;
