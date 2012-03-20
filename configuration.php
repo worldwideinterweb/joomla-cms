@@ -41,8 +41,8 @@ class JConfig {
 	public $caching = '0';
 	public $cache_handler = 'apc';
 	public $cachetime = '15';
-	public $MetaDesc = '';
-	public $MetaKeys = '';
+	public $MetaDesc = 'World Wide Interweb. It\'s basically the internet and stuff. You know... funny original videos, photo galleries based on some sort of like super cool themes. That sort of thing.';
+	public $MetaKeys = 'funny, comedy, videos, photos, galleries, original, parody, celebrities, compilation, sports, gaming, lists, humor';
 	public $MetaAuthor = '1';
 	public $sef = '1';
 	public $sef_rewrite = '1';
@@ -53,7 +53,7 @@ class JConfig {
 	public $tmp_path = '/var/www/html/www.worldwideinterweb.com/htdocs/tmp';
 	public $lifetime = '75';
 	public $session_handler = 'database';
-	public $MetaRights = '';
+	public $MetaRights = 'Copyright © 2012 Team Party Worldwide, LLC. All Rights Reserved.';
 	public $sitename_pagetitles = '0';
 	public $force_ssl = '0';
 	public $feed_email = 'author';
