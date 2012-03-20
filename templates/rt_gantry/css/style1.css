@@ -501,7 +501,7 @@ background-size: 100%;
 	padding-bottom:4px;
 }
 .linkbar_nailed_it .even, .linkbar_nailed_it .odd {
-	background: transparent;
+	background: Gainsboro;
 	padding:0px;
 	border: 2px solid lightgray;
 	margin: 10px 2px 0px 2px;
