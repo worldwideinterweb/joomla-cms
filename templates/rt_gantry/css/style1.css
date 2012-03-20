@@ -515,10 +515,8 @@ background-size: 100%;
 }
 .linkbar_nailed_it .moduleItemTitle {
 	float:right;
-	width:148px;
-	margin: 0px !important;
+	width:142px;
+	margin: 3px !important;
 	padding: 0px !important;
 	font-size:16px !important;
-	top:3px;
-	left:3px;
 }
