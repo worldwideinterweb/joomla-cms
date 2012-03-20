@@ -295,7 +295,7 @@ a#linkbar_top8_link {
 	/*font-family: Tahoma;*/
 	font-family: Verdana, Verdana, Geneva, sans-serif;
 	font-weight: bold;
-	letter-spacing: .5em;
+	letter-spacing: .01em;
 }
 .main-content .module-title h2 {
 	color: white;
