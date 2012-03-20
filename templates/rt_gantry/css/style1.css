@@ -37,7 +37,8 @@ margin-top: 16px;
 .menutop ul li > .item:hover, .menutop ul li.f-menuparent-itemfocus > .item {background: #333;color: #ccc;}
 .menutop ul li > .daddy span {background: url(../images/menus/dropdown-daddy.png) 100% 50% no-repeat;}
 .menutop .fusion-grouped ol li > .item {background: url(../images/menus/menu-arrow.png) 5px 50% no-repeat;}
-.menutop li {font-family: Verdana, Verdana, Geneva, sans-serif !important;
+.menutop li {
+	font-family: Verdana, Verdana, Geneva, sans-serif !important;
 	font-weight: bolder;
 	font-size: 13px;
 }
@@ -316,7 +317,7 @@ a#linkbar_top8_link {
 	position:relative;
 	font-weight:bold;
 	font-size:20px;         
-	font-family: Verdana, Verdana, Geneva, sans-serif;;
+	font-family: Verdana, Verdana, Geneva, sans-serif;
 	color: #264040;
 	padding: 0;
 	text-transform:uppercase;
