@@ -292,7 +292,8 @@ a#linkbar_top8_link {
 	margin:0px;
 	padding: 5px 10px;
 	border: 2px solid gray;
-	font-family: Tahoma;
+	/*font-family: Tahoma;*/
+	font-family: Tahoma, Geneva, sans-serif;
 	font-weight: bolder;
 }
 .main-content .module-title h2 {
