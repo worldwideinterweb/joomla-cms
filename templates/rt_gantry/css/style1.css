@@ -12,7 +12,7 @@ body {
 #rt-header, #rt-bottom {color: #aaa;}
 .rt-container {background: transparent;}
 a:hover {color: #000;}
-#rt-footer, #rt-copyright {color: #fff;}
+#rt-footer, #rt-copyright {color: #000;}
 #rt-sidebar-a {background-color: transparent;
 margin-top: 16px;
 }
@@ -520,4 +520,8 @@ background-size: 100%;
 	padding: 0px !important;
 	font-size:15px !important;
 	line-height:18px;
+}
+.copytext {
+	width: 100%;
+	text-align:center;
 }
