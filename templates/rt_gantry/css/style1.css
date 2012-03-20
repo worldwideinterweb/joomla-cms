@@ -331,7 +331,7 @@ a#linkbar_top8_link {
         position:relative;
 	font:16px Verdana;
 	color:gray;
-        padding: 0;}
+        padding: 3px 0px 0px 0px;}
 .component-content {
     float: left;
     left: -15px;
