@@ -531,3 +531,6 @@ background-size: 100%;
 #rt-header .rt-container .rt-grid-10 {
 	height:10px;
 }
+#rt-header .rt-container .rt-grid-10 .rt-block {
+	height:1px;
+}
