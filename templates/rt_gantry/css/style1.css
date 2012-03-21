@@ -528,6 +528,7 @@ background-size: 100%;
 .copytext {
 	width: 100%;
 	text-align:center;
+	color:silver;
 }
 #rt-header .rt-container .rt-grid-10 {
 	height:10px;
