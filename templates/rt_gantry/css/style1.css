@@ -540,6 +540,9 @@ background-size: 100%;
 .footer .rt-block {
 	height:15px;
 }
+.menucontact_menu {
+	height 15px;
+}
 ul.menucontact_menu {
 	display: inline-block;
 }
@@ -554,4 +557,7 @@ ul.menucontact_menu {
     float:left;
     color:silver;
     line-height:1.7em;
+}
+.menucontact_menu a {
+	color:silver;
 }
