@@ -540,7 +540,7 @@ background-size: 100%;
 .footer .rt-block, .contact .rt-block {
 	height:15px;
 	margin: 0;
-	padding:10px 0 0 0;
+	padding:10px 0 15px 0;
 }
 .menucontact_menu .rt-block {
 	height 15px;
@@ -549,7 +549,7 @@ background-size: 100%;
 }
 ul.menucontact_menu {
 	display: inline-block;
-	margin-left:326px;
+	margin-left:342px;
 }
 
 .menucontact_menu li {
