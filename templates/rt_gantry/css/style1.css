@@ -537,3 +537,6 @@ background-size: 100%;
 	float:right;
 	width:200px;
 }
+.menucontact_menu ul {
+	display: inline-block;
+}
