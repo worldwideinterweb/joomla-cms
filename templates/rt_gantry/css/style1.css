@@ -540,3 +540,12 @@ background-size: 100%;
 .menucontact_menu ul {
 	display: inline-block;
 }
+
+.menucontact_menu li {
+    height: auto;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: Helvetica,Arial,FreeSans,sans-serif;
+}
