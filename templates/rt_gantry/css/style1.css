@@ -557,16 +557,15 @@ ul.menucontact_menu {
     list-style: none outside none;
     margin: 0;
     padding: 5px;
+    padding-right:0px;
     position: relative;
     font-family: Helvetica,Arial,FreeSans,sans-serif;
     float:left;
     color:silver;
     line-height:1.7em;
 }
-.menucontact_menu li:after {content:" | ";
-padding-right:0px;
-}
-
+.menucontact_menu li:after {content:" | "}
+.menucontact_menu li:last-child:after {content: ""}
 .menucontact_menu a {
 	color:silver;
 	font-size: 1.1em;
