@@ -545,7 +545,8 @@ ul.menucontact_menu {
     height: auto;
     list-style: none outside none;
     margin: 0;
-    padding: 0;
+    padding: 5;
     position: relative;
     font-family: Helvetica,Arial,FreeSans,sans-serif;
+    float:left;
 }
