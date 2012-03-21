@@ -549,6 +549,7 @@ background-size: 100%;
 }
 ul.menucontact_menu {
 	display: inline-block;
+	margin-left:326px;
 }
 
 .menucontact_menu li {
@@ -564,4 +565,5 @@ ul.menucontact_menu {
 }
 .menucontact_menu a {
 	color:silver;
+	font-size: 1.1em;
 }
