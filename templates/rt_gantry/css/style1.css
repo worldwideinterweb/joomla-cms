@@ -563,6 +563,8 @@ ul.menucontact_menu {
     color:silver;
     line-height:1.7em;
 }
+.menucontact_menu li:after {content:" | "}
+
 .menucontact_menu a {
 	color:silver;
 	font-size: 1.1em;
