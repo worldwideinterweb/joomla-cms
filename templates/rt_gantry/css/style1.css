@@ -563,18 +563,7 @@ ul.menucontact_menu {
     color:silver;
     line-height:1.7em;
 }
-    .menucontact_menu li {
-    display:inline;
-    list-style-type:none;
-    padding-left:1em;
-    margin-left:1em;
-    border-left:1px solid #ccc
-    }
-
-    .menucontact_menu li:first-child {
-    border-left:none
-    }
-
+.menucontact_menu li:after {content:" | "}
 
 .menucontact_menu a {
 	color:silver;
