@@ -539,9 +539,13 @@ background-size: 100%;
 }
 .footer .rt-block {
 	height:15px;
+	margin: 0;
+	padding:10px 0 0 0;
 }
 .menucontact_menu {
 	height 15px;
+	margin: 0;
+	padding: 10px 0 0 0;
 }
 ul.menucontact_menu {
 	display: inline-block;
