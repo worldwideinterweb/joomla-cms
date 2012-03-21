@@ -528,7 +528,7 @@ background-size: 100%;
 	width: 100%;
 	text-align:center;
 }
-#rt-header .rt-container .rt-grid-10 .rt-block,#rt-header .rt-container .rt-grid-10 {
+#rt-header .rt-container .rt-grid-10 .rt-block {
 	float:right;
 	width:200px;
 }
