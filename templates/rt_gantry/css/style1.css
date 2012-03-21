@@ -15,7 +15,7 @@ a:hover {color: #000;}
 #rt-footer, #rt-copyright {color: #000;}
 
 #rt-footer .rt-container {
-	background:url('/templates/rt_gantry/images/header/header_bg.gif');
+	background:url('/templates/rt_gantry/images/header/header_bg.gif') !important;
 }
 #rt-sidebar-a {background-color: transparent;
 margin-top: 16px;
