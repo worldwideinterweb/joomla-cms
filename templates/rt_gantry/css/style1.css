@@ -537,7 +537,7 @@ background-size: 100%;
 	float:right;
 	width:200px;
 }
-.menucontact_menu ul {
+ul.menucontact_menu {
 	display: inline-block;
 }
 
