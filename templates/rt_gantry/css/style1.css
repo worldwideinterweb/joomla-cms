@@ -607,9 +607,9 @@ ul.menucontact_menu {
     width: 596px;
 }
 div.k2FeedIcon {
-    float: right;
-    position: relative;
+    position: absolute;
     top: 7px;
+    left: 582px;
 }
 div.latestItemsCategory {
     background: none repeat scroll 0 0 transparent;
