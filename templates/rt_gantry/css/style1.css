@@ -591,14 +591,14 @@ ul.menucontact_menu {
 
 .latestItemsContainer .latestItemsCategory h2 {
 	height: 10px;
+}
+.latestItemsContainer .latestItemsCategory h2 a {
+    color: white;
     text-transform: uppercase;
-    background: url("/templates/rt_gantry/images/body/title_bg.gif") repeat scroll 0 0 transparent;
     border: 2px solid gray;
+    background: url("/templates/rt_gantry/images/body/title_bg.gif") repeat scroll 0 0 transparent;
     font-family: Verdana,Verdana,Geneva,sans-serif;
     font-weight: bold;
     margin: 0;
     padding: 5px 10px;
-}
-.latestItemsContainer .latestItemsCategory h2 a {
-    color: white;
 }
