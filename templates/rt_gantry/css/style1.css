@@ -280,7 +280,7 @@ a#linkbar_top8_link {
 }
 
 /* Content */
-#rt-maintop .rt-container .rt-grid-12 div {
+.main-content {
 	position: absolute;
 	top: 224px;
 	width: 620px;
