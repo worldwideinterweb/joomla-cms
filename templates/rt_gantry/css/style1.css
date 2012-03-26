@@ -280,11 +280,11 @@ a#linkbar_top8_link {
 }
 
 /* Content */
-.main-content:not(.k2ItemsBlock) {
+/* .main-content:not(.k2ItemsBlock) {
 	position: absolute;
 	top: 224px;
 	width: 620px;
-}
+} */
 
 .main-content .rt-block {
 	margin:0px 0px 0px 0px;
