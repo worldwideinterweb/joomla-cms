@@ -291,6 +291,17 @@ a#linkbar_top8_link {
 	padding:0px;
 }
 
+div.k2ItemsBlock ul li div.moduleItemAuthor {
+    float: right;
+    margin-left: 264px;
+    margin-top: 106px;
+    position: absolute;
+}
+
+div.k2ItemsBlock ul li span.moduleItemDateCreated {
+    float: right;
+}
+
 #rt-main .rt-container, #rt-feature .rt-container, #rt-bottom .rt-container {
         background:url('/templates/rt_gantry/images/body/content_bg.gif') !important;
 }
