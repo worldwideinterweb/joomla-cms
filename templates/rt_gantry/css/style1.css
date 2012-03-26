@@ -505,6 +505,7 @@ background-size: 100%;
 }
 .sharepoint {
 	float:right;
+	margin-right:25px;
 }
 .linkbar_nailed_it {
         padding:0px;
