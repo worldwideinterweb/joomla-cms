@@ -590,7 +590,9 @@ ul.menucontact_menu {
 }
 
 .latestItemsContainer .latestItemsCategory h2 {
-	height: 10px;
+	margin:0px;
+	padding:0px;
+	height: 0px;
 }
 .latestItemsContainer .latestItemsCategory h2 a {
     color: white;
@@ -601,4 +603,6 @@ ul.menucontact_menu {
     font-weight: bold;
     margin: 0;
     padding: 5px 10px;
+    display: block;
+    width: 100%;
 }
