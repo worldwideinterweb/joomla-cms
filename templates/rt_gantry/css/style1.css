@@ -623,7 +623,7 @@ div.latestItemsCategory {
 	width:60px;
 	height:59px;
 	float:right;
-	position:fixed;
+	position:absolute;
 	margin-left:975px;
-	top:30px;
+	top:-80px;
 }
