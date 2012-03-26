@@ -632,5 +632,6 @@ div.latestItemsCategory {
 	position:absolute;
 }
 .itp-sharepoint-fbl { 
-	left: 100px;
+	position:absolute;
+	right:213px;
 }
