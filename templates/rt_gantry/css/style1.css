@@ -280,7 +280,7 @@ a#linkbar_top8_link {
 }
 
 /* Content */
-.main-content {
+.main-content:not(.k2ItemsBlock) {
 	position: absolute;
 	top: 224px;
 	width: 620px;
