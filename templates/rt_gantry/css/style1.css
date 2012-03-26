@@ -619,6 +619,11 @@ div.latestItemsCategory {
 }
 
 .dont_push {
-	width:100px;
-	height:100px;
+	background:url('/templates/rt_gantry/images/body/dont_push.png');
+	width:60px;
+	height:59px;
+	float:right;
+	position:fixed;
+	margin-left:975px;
+	top:30px;
 }
