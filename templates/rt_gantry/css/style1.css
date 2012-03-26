@@ -627,3 +627,7 @@ div.latestItemsCategory {
 	margin-left:975px;
 	top:-80px;
 }
+.dont_push_container {
+	float:left;
+	position:absolute;
+}
