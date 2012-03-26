@@ -617,3 +617,8 @@ div.latestItemsCategory {
     margin: 0;
     padding: 0;
 }
+
+.dont_push {
+	width:100px;
+	height:100px;
+}
