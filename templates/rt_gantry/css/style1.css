@@ -588,3 +588,7 @@ ul.menucontact_menu {
 	color:silver;
 	font-size: 1.1em;
 }
+
+.latestItemsContainer .latestItemsCategory {
+	height: 10px;
+}
