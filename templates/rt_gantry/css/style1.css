@@ -636,6 +636,7 @@ div.latestItemsCategory {
     float: left;
     margin-right: 0px;
     margin-top: 10px;
+	width:60px;
 }
 .itp-sharepoint-digg {
     float: left;
