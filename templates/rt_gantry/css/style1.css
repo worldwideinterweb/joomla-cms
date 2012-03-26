@@ -589,6 +589,17 @@ ul.menucontact_menu {
 	font-size: 1.1em;
 }
 
-.latestItemsContainer .latestItemsCategory {
+.latestItemsContainer .latestItemsCategory h2 {
 	height: 10px;
+    color: white;
+    text-transform: uppercase;
+    background: url("/templates/rt_gantry/images/body/title_bg.gif") repeat scroll 0 0 transparent;
+    border: 2px solid gray;
+    color: #FFFF33;
+    font-family: Verdana,Verdana,Geneva,sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 10px;
+
 }
+
