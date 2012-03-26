@@ -631,3 +631,12 @@ div.latestItemsCategory {
 	float:left;
 	position:absolute;
 }
+.itp-sharepoint-fbl {
+    float: left;
+    margin-right: 0px;
+    margin-top: 10px;
+}
+.itp-sharepoint-digg {
+    float: left;
+    margin: 10px;
+}
