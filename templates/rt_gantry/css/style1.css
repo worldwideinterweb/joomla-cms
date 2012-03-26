@@ -590,7 +590,7 @@ ul.menucontact_menu {
 }
 
 .latestItemsContainer .latestItemsCategory h2 {
-	margin:0px;
+	margin: 20px 0 0 0;
 	padding:0px;
 	height: 0px;
 }
@@ -604,7 +604,7 @@ ul.menucontact_menu {
     margin: 0;
     padding: 5px 10px;
     display: block;
-    width: 100%;
+    width: 596px;
 }
 div.k2FeedIcon {
     float: right;
