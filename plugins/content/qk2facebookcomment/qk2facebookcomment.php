@@ -33,7 +33,6 @@ $pluginCount++;
 		global $mainframe;
 		$option = JRequest::getVar('option');
 		$document = &JFactory::getDocument();
-var_dump("HEREHERHEHREHRHEHREHRHEH: $pluginCount ----");
 		require_once(JPATH_BASE.DS.'components'.DS.'com_k2'.DS.'helpers'.DS.'route.php');
 		if($item->id) {
 			$link = JRoute::_(K2HelperRoute::getItemRoute($item->id,$item->catid));
@@ -94,6 +93,7 @@ var_dump("HEREHERHEHREHRHEHREHRHEH: $pluginCount ----");
 	  	if($show_category == 0 && $option == 'com_k2' && $view == 'itemlist' && ($layout == 'category' ||  $layout == 'categorys')){
 	  		$fbcomment = '';
 	  	}
+var_dump("HEREHERHEHREHRHEHREHRHEH: $view ----");
 		return $fbcomment;
 	}
 		
