@@ -203,7 +203,7 @@ defined('_JEXEC') or die('Restricted access');
 	  <?php echo $this->item->event->K2BeforeDisplayContent; ?>
 
 	  <?php if($this->item->params->get('itemImage') && !empty($this->item->image)): ?>
-<? var_dump($this->item->video); ?>
+<? var_dump($this->item->category->name); ?>
 	  <!-- Item Image -->
 	  <div class="itemImageBlock">
 		  <span class="itemImage">
