@@ -298,16 +298,16 @@ div.k2ItemsBlock ul li div.moduleItemAuthor {
     position: absolute;
     text-align: right;
     width:250px;
-    color:gray;
+    color:lightGray;
 }
 div.k2ItemsBlock ul li div.moduleItemAuthor a {
-    color:gray;
+    color:lightGray;
 }
 
 div.k2ItemsBlock ul li span.moduleItemDateCreated {
     float: left;
     margin-left:5px;
-    color:gray;
+    color:lightGray;
 }
 
 #rt-main .rt-container, #rt-feature .rt-container, #rt-bottom .rt-container {
