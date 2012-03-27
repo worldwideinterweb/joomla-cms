@@ -38,7 +38,7 @@ class JConfig {
 	public $smtphost = 'localhost';
 	public $smtpsecure = 'none';
 	public $smtpport = '25';
-	public $caching = '2';
+	public $caching = '0';
 	public $cache_handler = 'apc';
 	public $cachetime = '15';
 	public $MetaDesc = 'World Wide Interweb. It\'s basically the internet and stuff. You know... funny original videos, photo galleries based on some sort of like super cool themes. That sort of thing.';
