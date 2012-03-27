@@ -32,7 +32,7 @@ class plgContentqk2facebookcomment extends K2Plugin
 	function k2facebookcomment($item, $params, $limitstart) {
 		global $pluginCount;
 		global $mainframe;
-$pluginCount++;
+		$pluginCount++;
 		$option = JRequest::getVar('option');
 		$document = &JFactory::getDocument();
 		require_once(JPATH_BASE.DS.'components'.DS.'com_k2'.DS.'helpers'.DS.'route.php');
