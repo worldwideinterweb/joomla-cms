@@ -17,6 +17,7 @@ class plgContentqk2facebookcomment extends K2Plugin
 	// Some params
 	var $pluginName = 'Qsocial comment';
 	var $pluginNameHumanReadable = 'Social share on K2 content items';
+	var $pluginCount = 0;
 	
 	function plgContentqk2facebookcomment( & $subject, $params)
 	{
@@ -28,10 +29,11 @@ class plgContentqk2facebookcomment extends K2Plugin
 	 * Most functions are empty to showcase what is available to trigger and output. A few are used to actually output some code for example reasons.
 	 */
 	function k2facebookcomment($item, $params, $limitstart) {
+$pluginCount++;
 		global $mainframe;
 		$option = JRequest::getVar('option');
 		$document = &JFactory::getDocument();
-
+var_dump("HEREHERHEHREHRHEHREHRHEH: $pluginCount ----");
 		require_once(JPATH_BASE.DS.'components'.DS.'com_k2'.DS.'helpers'.DS.'route.php');
 		if($item->id) {
 			$link = JRoute::_(K2HelperRoute::getItemRoute($item->id,$item->catid));
@@ -48,7 +50,6 @@ class plgContentqk2facebookcomment extends K2Plugin
 		}else{
 			$document->addCustomTag( '<meta property="og:image" content="'.$item->imageMedium.'" />' );
 		}
-die($this->params->get('numposts', 5));	
 		$fbcomment = '<div id="fb-root"></div>';
 		$fbcomment .= '
 			<script>(function(d, s, id) {
