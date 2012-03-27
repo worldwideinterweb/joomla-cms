@@ -17,12 +17,12 @@ class plgContentqk2facebookcomment extends K2Plugin
 	// Some params
 	var $pluginName = 'Qsocial comment';
 	var $pluginNameHumanReadable = 'Social share on K2 content items';
-	var $pluginCount = 0;
 	
 	function plgContentqk2facebookcomment( & $subject, $params)
 	{
+		global $pluginCount;
+		$pluginCount = 0;
 		parent::__construct($subject, $params);
-var_dump("HERHERHERHEHREHREHRHE: $pluginCount -----");
 	}
 	/**
 	 * Below we list all available FRONTEND events, to trigger K2 plugins.
@@ -30,8 +30,10 @@ var_dump("HERHERHERHEHREHREHRHE: $pluginCount -----");
 	 * Most functions are empty to showcase what is available to trigger and output. A few are used to actually output some code for example reasons.
 	 */
 	function k2facebookcomment($item, $params, $limitstart) {
-$pluginCount++;
+		global $pluginCount;
 		global $mainframe;
+$pluginCount++;
+var_dump("HERHEHREHRHERHEHREHREH $pluginCount ----");
 		$option = JRequest::getVar('option');
 		$document = &JFactory::getDocument();
 		require_once(JPATH_BASE.DS.'components'.DS.'com_k2'.DS.'helpers'.DS.'route.php');
