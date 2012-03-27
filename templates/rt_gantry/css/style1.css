@@ -298,12 +298,12 @@ div.k2ItemsBlock ul li div.moduleItemAuthor {
     position: absolute;
     text-align: right;
     width:250px;
-    color:lightGray;
+    color:#bbbbbb;
     font-size:90%;
     height:15px;
 }
 div.k2ItemsBlock ul li div.moduleItemAuthor a {
-    color:lightGray;
+    color:#bbbbbb;
     font-size:90%;
     height:15px;
 }
@@ -311,7 +311,7 @@ div.k2ItemsBlock ul li div.moduleItemAuthor a {
 div.k2ItemsBlock ul li span.moduleItemDateCreated {
     float: left;
     margin-left:5px;
-    color:lightGray;
+    color:#bbbbbb;
     font-size:90%;
     height:15px;
 }
