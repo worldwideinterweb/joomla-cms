@@ -300,10 +300,12 @@ div.k2ItemsBlock ul li div.moduleItemAuthor {
     width:250px;
     color:lightGray;
     font-size:90%;
+    height:15px;
 }
 div.k2ItemsBlock ul li div.moduleItemAuthor a {
     color:lightGray;
     font-size:90%;
+    height:15px;
 }
 
 div.k2ItemsBlock ul li span.moduleItemDateCreated {
@@ -311,6 +313,7 @@ div.k2ItemsBlock ul li span.moduleItemDateCreated {
     margin-left:5px;
     color:lightGray;
     font-size:90%;
+    height:15px;
 }
 
 #rt-main .rt-container, #rt-feature .rt-container, #rt-bottom .rt-container {
