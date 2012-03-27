@@ -293,14 +293,21 @@ a#linkbar_top8_link {
 
 div.k2ItemsBlock ul li div.moduleItemAuthor {
     float: right;
-    margin-left: 260px;
+    margin-left: 360px;
     margin-top: 106px;
     position: absolute;
+    text-align: right;
+    width:250px;
+    color:gray;
+}
+div.k2ItemsBlock ul li div.moduleItemAuthor a {
+    color:gray;
 }
 
 div.k2ItemsBlock ul li span.moduleItemDateCreated {
     float: left;
     margin-left:5px;
+    color:gray;
 }
 
 #rt-main .rt-container, #rt-feature .rt-container, #rt-bottom .rt-container {
