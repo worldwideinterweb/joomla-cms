@@ -210,7 +210,7 @@ class plgContentqk2facebookcomment extends K2Plugin
 			$body = JResponse::getBody();
 
 			$position 	 = $this->params->get('fb_position', 0);
-			
+		die('we are here');	
 			// show item
 			if($position == 6 && empty($display)){
 				$setbody = preg_replace("/<div class=\"itemBackToTop\">/", "\n\n".$fbcomment."\n\n<div class=\"itemBackToTop\">", $body);
