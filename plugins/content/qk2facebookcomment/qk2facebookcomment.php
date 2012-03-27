@@ -17,7 +17,6 @@ class plgContentqk2facebookcomment extends K2Plugin
 	// Some params
 	var $pluginName = 'Qsocial comment';
 	var $pluginNameHumanReadable = 'Social share on K2 content items';
-	var $pluginCount = 0;
 	
 	function plgContentqk2facebookcomment( & $subject, $params)
 	{
@@ -48,8 +47,8 @@ class plgContentqk2facebookcomment extends K2Plugin
 			$document->addCustomTag( '<meta property="og:image" content="'.$imageUrl.'" />' );
 		}else{
 			$document->addCustomTag( '<meta property="og:image" content="'.$item->imageMedium.'" />' );
-		}	
-		
+		}
+die('here');	
 		$fbcomment = '<div id="fb-root"></div>';
 		$fbcomment .= '
 			<script>(function(d, s, id) {
@@ -94,13 +93,7 @@ class plgContentqk2facebookcomment extends K2Plugin
 	  	if($show_category == 0 && $option == 'com_k2' && $view == 'itemlist' && ($layout == 'category' ||  $layout == 'categorys')){
 	  		$fbcomment = '';
 	  	}
-
-		if ($pluginCount == 0) {	
-			return $fbcomment;
-		}else{
-			$pluginCount = 1;
-			return '';
-		}
+		return $fbcomment;
 	}
 		
 	function onK2AfterDisplay(& $item, & $params, $limitstart) {
@@ -210,7 +203,7 @@ class plgContentqk2facebookcomment extends K2Plugin
 			$body = JResponse::getBody();
 
 			$position 	 = $this->params->get('fb_position', 0);
-		die('we are here');	
+			
 			// show item
 			if($position == 6 && empty($display)){
 				$setbody = preg_replace("/<div class=\"itemBackToTop\">/", "\n\n".$fbcomment."\n\n<div class=\"itemBackToTop\">", $body);
