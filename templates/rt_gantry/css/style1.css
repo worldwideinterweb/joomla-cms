@@ -299,8 +299,8 @@ div.k2ItemsBlock ul li div.moduleItemAuthor {
 }
 
 div.k2ItemsBlock ul li span.moduleItemDateCreated {
-    float: right;
-    margin-right:145px;
+    float: left;
+    margin-left:5px;
 }
 
 #rt-main .rt-container, #rt-feature .rt-container, #rt-bottom .rt-container {
