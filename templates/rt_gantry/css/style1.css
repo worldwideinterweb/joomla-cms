@@ -299,15 +299,18 @@ div.k2ItemsBlock ul li div.moduleItemAuthor {
     text-align: right;
     width:250px;
     color:lightGray;
+    font-size:90%;
 }
 div.k2ItemsBlock ul li div.moduleItemAuthor a {
     color:lightGray;
+    font-size:90%;
 }
 
 div.k2ItemsBlock ul li span.moduleItemDateCreated {
     float: left;
     margin-left:5px;
     color:lightGray;
+    font-size:90%;
 }
 
 #rt-main .rt-container, #rt-feature .rt-container, #rt-bottom .rt-container {
