@@ -48,7 +48,7 @@ class plgContentqk2facebookcomment extends K2Plugin
 		}else{
 			$document->addCustomTag( '<meta property="og:image" content="'.$item->imageMedium.'" />' );
 		}
-die('here');	
+die($this->params->get('numposts', 5));	
 		$fbcomment = '<div id="fb-root"></div>';
 		$fbcomment .= '
 			<script>(function(d, s, id) {
