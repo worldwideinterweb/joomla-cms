@@ -93,7 +93,7 @@ $pluginCount++;
 	  	if($show_category == 0 && $option == 'com_k2' && $view == 'itemlist' && ($layout == 'category' ||  $layout == 'categorys')){
 	  		$fbcomment = '';
 	  	}
-var_dump("HEREHERHEHREHRHEHREHRHEH: $view ----");
+var_dump("HEREHERHEHREHRHEHREHRHEH: $layout ----");
 		return $fbcomment;
 	}
 		
