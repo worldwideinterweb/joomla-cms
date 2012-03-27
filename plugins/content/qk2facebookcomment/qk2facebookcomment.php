@@ -33,7 +33,6 @@ class plgContentqk2facebookcomment extends K2Plugin
 		global $pluginCount;
 		global $mainframe;
 $pluginCount++;
-var_dump("HERHEHREHRHERHEHREHREH $pluginCount ----");
 		$option = JRequest::getVar('option');
 		$document = &JFactory::getDocument();
 		require_once(JPATH_BASE.DS.'components'.DS.'com_k2'.DS.'helpers'.DS.'route.php');
@@ -64,7 +63,9 @@ var_dump("HERHEHREHRHERHEHREHREH $pluginCount ----");
 			</script>
 			';
 		$fbcomment .= '<div class="fb-comments" data-href="'.$link.'" data-num-posts="'.$this->params->get('numposts', 5).'" data-width="'.$this->params->get('width', 500).'"></div>';	
-		
+		if ($pluginCount > 1){
+			$fbcomment = '';
+		}	
 		$view = JRequest::getVar('view');
 		$layout = JRequest::getVar('layout');
 		// display item future
