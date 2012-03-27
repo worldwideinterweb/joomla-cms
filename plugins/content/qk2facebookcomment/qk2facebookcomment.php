@@ -17,8 +17,8 @@ class plgContentqk2facebookcomment extends K2Plugin
 	// Some params
 	var $pluginName = 'Qsocial comment';
 	var $pluginNameHumanReadable = 'Social share on K2 content items';
-	var $pluginCount = 0;
-	
+	global $pluginCount;
+	$pluginCount = 0;
 	function plgContentqk2facebookcomment( & $subject, $params)
 	{
 		parent::__construct($subject, $params);
@@ -33,6 +33,7 @@ $pluginCount++;
 		global $mainframe;
 		$option = JRequest::getVar('option');
 		$document = &JFactory::getDocument();
+var_dump("HEREHERHEHREHRHEHREHRHEH: $pluginCount ----");
 		require_once(JPATH_BASE.DS.'components'.DS.'com_k2'.DS.'helpers'.DS.'route.php');
 		if($item->id) {
 			$link = JRoute::_(K2HelperRoute::getItemRoute($item->id,$item->catid));
@@ -93,7 +94,6 @@ $pluginCount++;
 	  	if($show_category == 0 && $option == 'com_k2' && $view == 'itemlist' && ($layout == 'category' ||  $layout == 'categorys')){
 	  		$fbcomment = '';
 	  	}
-var_dump("HEREHERHEHREHRHEHREHRHEH: $layout ----");
 		return $fbcomment;
 	}
 		
