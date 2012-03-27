@@ -17,6 +17,7 @@ class plgContentqk2facebookcomment extends K2Plugin
 	// Some params
 	var $pluginName = 'Qsocial comment';
 	var $pluginNameHumanReadable = 'Social share on K2 content items';
+	var $pluginCount = 0;
 	
 	function plgContentqk2facebookcomment( & $subject, $params)
 	{
@@ -48,6 +49,7 @@ class plgContentqk2facebookcomment extends K2Plugin
 		}else{
 			$document->addCustomTag( '<meta property="og:image" content="'.$item->imageMedium.'" />' );
 		}	
+		
 		$fbcomment = '<div id="fb-root"></div>';
 		$fbcomment .= '
 			<script>(function(d, s, id) {
@@ -92,7 +94,13 @@ class plgContentqk2facebookcomment extends K2Plugin
 	  	if($show_category == 0 && $option == 'com_k2' && $view == 'itemlist' && ($layout == 'category' ||  $layout == 'categorys')){
 	  		$fbcomment = '';
 	  	}
-		return $fbcomment;
+
+		if ($pluginCount == 0) {	
+			return $fbcomment;
+		}else{
+			$pluginCount = 1;
+			return '';
+		}
 	}
 		
 	function onK2AfterDisplay(& $item, & $params, $limitstart) {
