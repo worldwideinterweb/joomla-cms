@@ -633,7 +633,7 @@ div.latestItemsCategory {
 }
 
 .dont_push {
-	background:url('/templates/rt_gantry/images/body/dont_push.png');
+	background:url('/templates/rt_gantry/images/body/dont_push_off.png');
 	width:60px;
 	height:59px;
 	float:right;
