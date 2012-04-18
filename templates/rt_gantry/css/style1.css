@@ -108,7 +108,7 @@ height: 19px;
 }
 
 .ad_header_lb {
-	/* background: url("/images/linkbars/demo/leaderboard.gif") no-repeat center bottom; */
+	background: url("/images/linkbars/demo/leaderboard.png") no-repeat center bottom;
 	background: none;
 	height:110px;
 	width: 728px;
@@ -122,7 +122,7 @@ height: 19px;
 #rt-sidebar-a .nopadding .rt-block{
 	padding:0px;
 	height:250px;
-        /* background: url("/images/linkbars/demo/300x250_default.png") no-repeat center bottom; */
+        background: url("/images/linkbars/demo/300x250.png") no-repeat center bottom;
 	background: none;
 } 
 
