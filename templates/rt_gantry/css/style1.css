@@ -635,11 +635,12 @@ div.latestItemsCategory {
 .dont_push {
 	background:url('/templates/rt_gantry/images/body/dont_push.gif');
 	width:60px;
-	height:59px;
+	height:60px;
 	float:right;
 	position:absolute;
 	margin-left:975px;
-	top:-80px;
+	top:-79px;
+	left:1px;
 }
 .dont_push_container {
 	float:left;
