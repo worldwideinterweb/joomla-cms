@@ -122,9 +122,17 @@ height: 19px;
 #rt-sidebar-a .nopadding .rt-block{
 	padding:0px;
 	height:250px;
+        /* background: url("/images/linkbars/demo/300x250.png") no-repeat center bottom; */
+	background: none;
+}
+
+#rt-sidebar-a .nopadding_bg .rt-block{
+        padding:0px;
+        height:250px;
         background: url("/images/linkbars/demo/300x250.png") no-repeat center bottom;
-	/* background: none; */
-} 
+        /* background: none; */
+}
+ 
 
 /* Sidebar Linkbar God Sent Us */
 #rt-sidebar-a .linkbar_godsent .rt-block{
