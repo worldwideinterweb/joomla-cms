@@ -60,3 +60,4 @@
 2012-04-09	20:21:41	INFO	74.212.251.170	Joomla FAILURE: 	Invalid password
 2012-04-09	20:21:49	INFO	74.212.251.170	Joomla FAILURE: 	Invalid password
 2012-04-16	05:26:38	INFO	76.175.156.214	Joomla FAILURE: 	Invalid password
+2012-04-20	20:47:30	INFO	74.212.251.170	Joomla FAILURE: 	Invalid password
