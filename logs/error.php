@@ -71,3 +71,4 @@
 2012-05-03	17:58:56	INFO	74.212.251.170	Joomla FAILURE: 	Empty password not allowed
 2012-05-08	19:28:35	INFO	74.212.251.170	Joomla FAILURE: 	Invalid password
 2012-05-09	02:24:50	INFO	74.212.251.170	Joomla FAILURE: 	Invalid password
+2012-05-10	18:02:56	INFO	74.212.251.170	Joomla FAILURE: 	Empty password not allowed
