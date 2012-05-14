@@ -76,3 +76,5 @@
 2012-05-14	12:24:10	INFO	76.175.156.214	Joomla FAILURE: 	Empty password not allowed
 2012-05-14	12:24:30	INFO	76.175.156.214	Joomla FAILURE: 	Empty password not allowed
 2012-05-14	12:24:51	INFO	76.175.156.214	Joomla FAILURE: 	Invalid password
+2012-05-14	12:25:12	INFO	76.175.156.214	Joomla FAILURE: 	Invalid password
+2012-05-14	12:25:32	INFO	76.175.156.214	Joomla FAILURE: 	Invalid password
