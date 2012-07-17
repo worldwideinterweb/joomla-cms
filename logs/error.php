@@ -108,3 +108,7 @@
 2012-07-17	03:03:06	INFO	174.100.47.243	Joomla FAILURE: 	Invalid password
 2012-07-17	03:03:18	INFO	174.100.47.243	Joomla FAILURE: 	Invalid password
 2012-07-17	03:03:24	INFO	174.100.47.243	Joomla FAILURE: 	Invalid password
+2012-07-17	03:10:21	INFO	174.100.47.243	Joomla FAILURE: 	User does not exist
+2012-07-17	03:10:28	INFO	174.100.47.243	Joomla FAILURE: 	User does not exist
+2012-07-17	03:10:34	INFO	174.100.47.243	Joomla FAILURE: 	User does not exist
+2012-07-17	03:10:47	INFO	174.100.47.243	Joomla FAILURE: 	User does not exist
