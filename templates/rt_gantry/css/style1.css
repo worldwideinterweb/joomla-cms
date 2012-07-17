@@ -108,8 +108,8 @@ height: 19px;
 }
 
 .ad_header_lb {
-	background: url("/images/linkbars/demo/leaderboard.png") no-repeat center bottom;
-	/* background: none; */
+	/* background: url("/images/linkbars/demo/leaderboard.png") no-repeat center bottom; */
+	background: none;
 	height:110px;
 	width: 728px;
 	padding:0px;
@@ -129,8 +129,8 @@ height: 19px;
 #rt-sidebar-a .nopadding_bg .rt-block{
         padding:0px;
         height:250px;
-        background: url("/images/linkbars/demo/300x250.png") no-repeat center bottom;
-        /* background: none; */
+        /* background: url("/images/linkbars/demo/300x250.png") no-repeat center bottom; */
+        background: none;
 }
  
 
