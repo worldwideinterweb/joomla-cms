@@ -114,3 +114,4 @@
 2012-07-17	03:10:47	INFO	174.100.47.243	Joomla FAILURE: 	User does not exist
 2012-07-17	03:11:23	INFO	174.100.47.243	Joomla FAILURE: 	User does not exist
 2012-07-17	03:11:29	INFO	174.100.47.243	Joomla FAILURE: 	User does not exist
+2012-07-17	03:42:48	INFO	174.100.47.243	Joomla FAILURE: 	User does not exist
