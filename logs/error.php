@@ -124,3 +124,4 @@
 2012-08-01	08:33:24	INFO	76.175.156.214	Joomla FAILURE: 	Invalid password
 2012-08-01	08:33:36	INFO	76.175.156.214	Joomla FAILURE: 	Invalid password
 2012-08-05	01:16:42	INFO	76.175.156.214	Joomla FAILURE: 	Invalid password
+2012-08-05	19:56:28	INFO	76.175.156.214	Joomla FAILURE: 	Invalid password
