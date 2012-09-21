@@ -134,3 +134,4 @@
 2012-08-30	08:24:23	INFO	76.175.156.214	Joomla FAILURE: 	Invalid password
 2012-09-07	14:41:07	INFO	98.103.25.72	Joomla FAILURE: 	User does not exist
 2012-09-07	14:41:15	INFO	98.103.25.72	Joomla FAILURE: 	Invalid password
+2012-09-21	23:20:06	INFO	74.212.251.170	Joomla FAILURE: 	Invalid password
