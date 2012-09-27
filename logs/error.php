@@ -140,3 +140,4 @@
 2012-09-24	03:47:21	INFO	174.100.47.243	Joomla FAILURE: 	Invalid password
 2012-09-24	14:24:40	INFO	46.160.85.231	Joomla FAILURE: 	Invalid password
 2012-09-26	21:52:21	INFO	74.212.251.170	Joomla FAILURE: 	Invalid password
+2012-09-27	21:21:56	INFO	74.212.251.170	Joomla FAILURE: 	Invalid password
