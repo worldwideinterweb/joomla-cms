@@ -1,0 +1,429 @@
+*************************** 1. row ***************************
+     Id: 13079505
+   User: joomla_user
+   Host: 10.182.97.81:48546
+     db: joomla_db
+Command: Query
+   Time: 4
+  State: Sorting result
+   Info: SELECT * FROM jom17_k2_comments WHERE itemID=1793 AND published=1  ORDER BY commentDate DESC LIMIT 8360, 10
+*************************** 2. row ***************************
+     Id: 13079527
+   User: joomla_user
+   Host: 10.182.97.24:54065
+     db: joomla_db
+Command: Query
+   Time: 4
+  State: Sorting result
+   Info: SELECT * FROM jom17_k2_comments WHERE itemID=1793 AND published=1  ORDER BY commentDate DESC LIMIT 9490, 10
+*************************** 3. row ***************************
+     Id: 13079561
+   User: joomla_user
+   Host: 10.182.97.81:48590
+     db: joomla_db
+Command: Query
+   Time: 80
+  State: Sending data
+   Info: SELECT COUNT(*) FROM jom17_k2_comments WHERE itemID=1793 AND published=1
+*************************** 4. row ***************************
+     Id: 13079569
+   User: joomla_user
+   Host: 10.182.97.24:54107
+     db: joomla_db
+Command: Query
+   Time: 76
+  State: Sending data
+   Info: SELECT COUNT(*) FROM jom17_k2_comments WHERE itemID=1793 AND published=1
+*************************** 5. row ***************************
+     Id: 13079574
+   User: joomla_user
+   Host: 10.182.97.24:54112
+     db: joomla_db
+Command: Query
+   Time: 72
+  State: Sending data
+   Info: SELECT COUNT(*) FROM jom17_k2_comments WHERE itemID=1793 AND published=1
+*************************** 6. row ***************************
+     Id: 13079594
+   User: joomla_user
+   Host: 10.182.97.81:48607
+     db: joomla_db
+Command: Query
+   Time: 61
+  State: Sending data
+   Info: SELECT COUNT(*) FROM jom17_k2_comments WHERE itemID=419 AND published=1
+*************************** 7. row ***************************
+     Id: 13079600
+   User: joomla_user
+   Host: 10.182.97.81:48609
+     db: joomla_db
+Command: Query
+   Time: 55
+  State: Sending data
+   Info: SELECT COUNT(*) FROM jom17_k2_comments WHERE itemID=1793 AND published=1
+*************************** 8. row ***************************
+     Id: 13079620
+   User: joomla_user
+   Host: 10.182.97.81:48620
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: UPDATE jom17_k2_items
+SET `hits` = (`hits` + 1)
+WHERE id = '228'
+*************************** 9. row ***************************
+     Id: 13079642
+   User: joomla_user
+   Host: 10.182.97.24:54158
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: SELECT i.*, c.name AS categoryname,c.id AS categoryid, c.alias AS categoryalias, c.params AS categoryparams FROM jom17_k2_items as i LEFT JOIN jom17_k2_categories c ON c.id = i.catid WHERE i.published = 1 AND i.access IN(1,1) AND i.trash = 0 AND c.published = 1 AND c.access IN(1,1)  AND c.trash = 0 AND ( i.publish_up = '0000-00-00 00:00:00' OR i.publish_up <= '2012-10-03 22:15:01' ) AND ( i.publish_down = '0000-00-00 00:00:00' OR i.publish_down >= '2012-10-03 22:15:01' ) AND i.catid IN (4,5,6,7,9,30,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,28,29) ORDER BY i.hits DESC LIMIT 0, 5
+*************************** 10. row ***************************
+     Id: 13079643
+   User: joomla_user
+   Host: 10.182.97.24:54159
+     db: joomla_db
+Command: Query
+   Time: 34
+  State: Sending data
+   Info: SELECT COUNT(*) FROM jom17_k2_comments WHERE itemID=419 AND published=1
+*************************** 11. row ***************************
+     Id: 13079646
+   User: joomla_user
+   Host: 10.182.97.81:48637
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: removing tmp table
+   Info: SELECT a.fulltext, a.id, a.title, a.alias, a.title_alias, a.introtext, a.state, a.catid, a.created, a.created_by, a.created_by_alias, a.modified, a.modified_by,a.publish_up, a.publish_down, a.attribs, a.metadata, a.metakey, a.metadesc, a.access, a.hits, a.featured, LENGTH(a.fulltext) AS readmore,a.fulltext, a.id, a.title, a.alias, a.title_alias, a.introtext, a.state, a.catid, a.created, a.created_by, a.created_by_alias, a.modified, a.modified_by,a.publish_up, a.publish_down, a.attribs, a.metadata, a.metakey, a.metadesc, a.access, a.hits, a.featured, LENGTH(a.fulltext) AS readmore,c.title AS category_title, c.path AS category_route, c.access AS category_access, c.alias AS category_alias,CASE WHEN a.created_by_alias > ' ' THEN a.created_by_alias ELSE ua.name END AS author,ua.email AS author_email,contact.id as contactid,parent.title as parent_title, parent.id as parent_id, parent.path as parent_route, parent.alias as parent_alias,ROUND( v.rating_sum / v.rating_count ) AS rating, v.rating_count as rating_count,c.published, CASE WHEN badcats.id is null THEN c.published ELSE 0 END AS parents_published
+FROM jom17_content AS a
+LEFT JOIN jom17_content_frontpage AS fp ON fp.content_id = a.id
+LEFT JOIN jom17_categories AS c ON c.id = a.catid
+LEFT JOIN jom17_users AS ua ON ua.id = a.created_by
+LEFT JOIN jom17_users AS uam ON uam.id = a.modified_by
+LEFT JOIN jom17_contact_details AS contact on contact.user_id = a.created_by
+LEFT JOIN jom17_categories as parent ON parent.id = c.parent_id
+LEFT JOIN jom17_content_rating AS v ON a.id = v.content_id
+LEFT OUTER JOIN (SELECT cat.id as id FROM jom17_categories AS cat JOIN jom17_categories AS parent ON cat.lft BETWEEN parent.lft AND parent.rgt WHERE parent.extension = 'com_content' AND parent.published != 1 GROUP BY cat.id ) AS badcats ON badcats.id = c.id
+WHERE a.access IN (1,1) AND CASE WHEN badcats.id is null THEN a.state ELSE 0 END = 1 AND (a.publish_up = '0000-00-00 00:00:00' OR a.publish_up <= '2012-10-03 22:15:44') AND (a.publish_down = '0000-00-00 00:00:00' OR a.publish_down >= '2012-10-03 22:15:44')
+GROUP BY a.id
+ORDER BY a.publish_up DESC LIMIT 0, 5
+*************************** 12. row ***************************
+     Id: 13079665
+   User: joomla_user
+   Host: 10.182.97.24:54169
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: SELECT i.*, c.name AS categoryname,c.id AS categoryid, c.alias AS categoryalias, c.params AS categoryparams FROM jom17_k2_items as i LEFT JOIN jom17_k2_categories c ON c.id = i.catid WHERE i.published = 1 AND i.access IN(1,1) AND i.trash = 0 AND c.published = 1 AND c.access IN(1,1)  AND c.trash = 0 AND ( i.publish_up = '0000-00-00 00:00:00' OR i.publish_up <= '2012-10-03 22:15:01' ) AND ( i.publish_down = '0000-00-00 00:00:00' OR i.publish_down >= '2012-10-03 22:15:01' ) AND i.catid IN (4,5,6,7,9,30,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,28,29) ORDER BY i.hits DESC LIMIT 0, 5
+*************************** 13. row ***************************
+     Id: 13079666
+   User: joomla_user
+   Host: 10.182.97.81:48657
+     db: joomla_db
+Command: Query
+   Time: 3
+  State: Sorting result
+   Info: SELECT i.*, c.name AS categoryname,c.id AS categoryid, c.alias AS categoryalias, c.params AS categoryparams FROM jom17_k2_items as i LEFT JOIN jom17_k2_categories c ON c.id = i.catid WHERE i.published = 1 AND i.access IN(1,1) AND i.trash = 0 AND c.published = 1 AND c.access IN(1,1)  AND c.trash = 0 AND ( i.publish_up = '0000-00-00 00:00:00' OR i.publish_up <= '2012-10-03 22:15:42' ) AND ( i.publish_down = '0000-00-00 00:00:00' OR i.publish_down >= '2012-10-03 22:15:42' ) AND i.catid IN (10) ORDER BY i.created DESC LIMIT 0, 3
+*************************** 14. row ***************************
+     Id: 13079667
+   User: joomla_user
+   Host: 10.182.97.24:54170
+     db: joomla_db
+Command: Query
+   Time: 17
+  State: Sending data
+   Info: SELECT COUNT(*) FROM jom17_k2_comments WHERE itemID=247 AND published=1
+*************************** 15. row ***************************
+     Id: 13079668
+   User: joomla_user
+   Host: 10.182.97.81:48658
+     db: joomla_db
+Command: Query
+   Time: 3
+  State: Sorting result
+   Info: SELECT i.*, c.name AS categoryname,c.id AS categoryid, c.alias AS categoryalias, c.params AS categoryparams FROM jom17_k2_items as i LEFT JOIN jom17_k2_categories c ON c.id = i.catid WHERE i.published = 1 AND i.access IN(1,1) AND i.trash = 0 AND c.published = 1 AND c.access IN(1,1)  AND c.trash = 0 AND ( i.publish_up = '0000-00-00 00:00:00' OR i.publish_up <= '2012-10-03 22:15:42' ) AND ( i.publish_down = '0000-00-00 00:00:00' OR i.publish_down >= '2012-10-03 22:15:42' ) AND i.catid IN (10) ORDER BY i.created DESC LIMIT 0, 3
+*************************** 16. row ***************************
+     Id: 13079672
+   User: joomla_user
+   Host: 10.182.97.81:48662
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: SELECT i.*, c.name AS categoryname,c.id AS categoryid, c.alias AS categoryalias, c.params AS categoryparams FROM jom17_k2_items as i LEFT JOIN jom17_k2_categories c ON c.id = i.catid WHERE i.published = 1 AND i.access IN(1,1) AND i.trash = 0 AND c.published = 1 AND c.access IN(1,1)  AND c.trash = 0 AND ( i.publish_up = '0000-00-00 00:00:00' OR i.publish_up <= '2012-10-03 22:15:44' ) AND ( i.publish_down = '0000-00-00 00:00:00' OR i.publish_down >= '2012-10-03 22:15:44' ) AND i.catid IN (4,5,6,7,9,30,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,28,29) ORDER BY i.hits DESC LIMIT 0, 5
+*************************** 17. row ***************************
+     Id: 13079673
+   User: joomla_user
+   Host: 10.182.97.81:48663
+     db: joomla_db
+Command: Query
+   Time: 2
+  State: Sorting result
+   Info: SELECT i.*, c.name AS categoryname,c.id AS categoryid, c.alias AS categoryalias, c.params AS categoryparams FROM jom17_k2_items as i LEFT JOIN jom17_k2_categories c ON c.id = i.catid WHERE i.published = 1 AND i.access IN(1,1) AND i.trash = 0 AND c.published = 1 AND c.access IN(1,1)  AND c.trash = 0 AND ( i.publish_up = '0000-00-00 00:00:00' OR i.publish_up <= '2012-10-03 22:15:43' ) AND ( i.publish_down = '0000-00-00 00:00:00' OR i.publish_down >= '2012-10-03 22:15:43' ) AND i.catid IN (5,18,19,20,21,22,23) ORDER BY i.created DESC LIMIT 0, 44
+*************************** 18. row ***************************
+     Id: 13079675
+   User: joomla_user
+   Host: 10.182.97.81:48664
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: SELECT i.*, c.name AS categoryname,c.id AS categoryid, c.alias AS categoryalias, c.params AS categoryparams FROM jom17_k2_items as i LEFT JOIN jom17_k2_categories c ON c.id = i.catid WHERE i.published = 1 AND i.access IN(1,1) AND i.trash = 0 AND c.published = 1 AND c.access IN(1,1)  AND c.trash = 0 AND ( i.publish_up = '0000-00-00 00:00:00' OR i.publish_up <= '2012-10-03 22:15:44' ) AND ( i.publish_down = '0000-00-00 00:00:00' OR i.publish_down >= '2012-10-03 22:15:44' ) AND i.catid IN (4,5,6,7,9,30,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,28,29) ORDER BY i.hits DESC LIMIT 0, 5
+*************************** 19. row ***************************
+     Id: 13079677
+   User: joomla_user
+   Host: 10.182.97.24:54174
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: UPDATE jom17_k2_items
+SET `hits` = (`hits` + 1)
+WHERE id = '1228'
+*************************** 20. row ***************************
+     Id: 13079678
+   User: joomla_user
+   Host: 10.182.97.24:54175
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: SELECT i.*, c.name AS categoryname,c.id AS categoryid, c.alias AS categoryalias, c.params AS categoryparams FROM jom17_k2_items as i LEFT JOIN jom17_k2_categories c ON c.id = i.catid WHERE i.published = 1 AND i.access IN(1,1) AND i.trash = 0 AND c.published = 1 AND c.access IN(1,1)  AND c.trash = 0 AND ( i.publish_up = '0000-00-00 00:00:00' OR i.publish_up <= '2012-10-03 22:15:01' ) AND ( i.publish_down = '0000-00-00 00:00:00' OR i.publish_down >= '2012-10-03 22:15:01' ) AND i.catid IN (4,5,6,7,9,30,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,28,29) ORDER BY i.hits DESC LIMIT 0, 5
+*************************** 21. row ***************************
+     Id: 13079679
+   User: joomla_user
+   Host: 10.182.97.24:54176
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: SELECT i.*, c.name AS categoryname,c.id AS categoryid, c.alias AS categoryalias, c.params AS categoryparams FROM jom17_k2_items as i LEFT JOIN jom17_k2_categories c ON c.id = i.catid WHERE i.published = 1 AND i.access IN(1,1) AND i.trash = 0 AND c.published = 1 AND c.access IN(1,1)  AND c.trash = 0 AND ( i.publish_up = '0000-00-00 00:00:00' OR i.publish_up <= '2012-10-03 22:15:01' ) AND ( i.publish_down = '0000-00-00 00:00:00' OR i.publish_down >= '2012-10-03 22:15:01' ) AND i.catid IN (4,5,6,7,9,30,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,28,29) ORDER BY i.hits DESC LIMIT 0, 5
+*************************** 22. row ***************************
+     Id: 13079680
+   User: joomla_user
+   Host: 10.182.97.24:54177
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: SELECT i.*, c.name AS categoryname,c.id AS categoryid, c.alias AS categoryalias, c.params AS categoryparams FROM jom17_k2_items as i LEFT JOIN jom17_k2_categories c ON c.id = i.catid WHERE i.published = 1 AND i.access IN(1,1) AND i.trash = 0 AND c.published = 1 AND c.access IN(1,1)  AND c.trash = 0 AND ( i.publish_up = '0000-00-00 00:00:00' OR i.publish_up <= '2012-10-03 22:15:01' ) AND ( i.publish_down = '0000-00-00 00:00:00' OR i.publish_down >= '2012-10-03 22:15:01' ) AND i.catid IN (4,5,6,7,9,30,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,28,29) ORDER BY i.hits DESC LIMIT 0, 5
+*************************** 23. row ***************************
+     Id: 13079681
+   User: joomla_user
+   Host: 10.182.97.24:54178
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: SELECT i.*, c.name AS categoryname,c.id AS categoryid, c.alias AS categoryalias, c.params AS categoryparams FROM jom17_k2_items as i LEFT JOIN jom17_k2_categories c ON c.id = i.catid WHERE i.published = 1 AND i.access IN(1,1) AND i.trash = 0 AND c.published = 1 AND c.access IN(1,1)  AND c.trash = 0 AND ( i.publish_up = '0000-00-00 00:00:00' OR i.publish_up <= '2012-10-03 22:15:01' ) AND ( i.publish_down = '0000-00-00 00:00:00' OR i.publish_down >= '2012-10-03 22:15:01' ) AND i.catid IN (4,5,6,7,9,30,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,28,29) ORDER BY i.hits DESC LIMIT 0, 5
+*************************** 24. row ***************************
+     Id: 13079682
+   User: joomla_user
+   Host: 10.182.97.24:54179
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: SELECT i.*, c.name AS categoryname,c.id AS categoryid, c.alias AS categoryalias, c.params AS categoryparams FROM jom17_k2_items as i LEFT JOIN jom17_k2_categories c ON c.id = i.catid WHERE i.published = 1 AND i.access IN(1,1) AND i.trash = 0 AND c.published = 1 AND c.access IN(1,1)  AND c.trash = 0 AND ( i.publish_up = '0000-00-00 00:00:00' OR i.publish_up <= '2012-10-03 22:15:01' ) AND ( i.publish_down = '0000-00-00 00:00:00' OR i.publish_down >= '2012-10-03 22:15:01' ) AND i.catid IN (4,5,6,7,9,30,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,28,29) ORDER BY i.hits DESC LIMIT 0, 5
+*************************** 25. row ***************************
+     Id: 13079683
+   User: joomla_user
+   Host: 10.182.97.81:48665
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: SELECT i.*, c.name AS categoryname,c.id AS categoryid, c.alias AS categoryalias, c.params AS categoryparams FROM jom17_k2_items as i LEFT JOIN jom17_k2_categories c ON c.id = i.catid WHERE i.published = 1 AND i.access IN(1,1) AND i.trash = 0 AND c.published = 1 AND c.access IN(1,1)  AND c.trash = 0 AND ( i.publish_up = '0000-00-00 00:00:00' OR i.publish_up <= '2012-10-03 22:15:44' ) AND ( i.publish_down = '0000-00-00 00:00:00' OR i.publish_down >= '2012-10-03 22:15:44' ) AND i.catid IN (4,5,6,7,9,30,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,28,29) ORDER BY i.hits DESC LIMIT 0, 5
+*************************** 26. row ***************************
+     Id: 13079684
+   User: joomla_user
+   Host: 10.182.97.81:48666
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: SELECT i.*, c.name AS categoryname,c.id AS categoryid, c.alias AS categoryalias, c.params AS categoryparams FROM jom17_k2_items as i LEFT JOIN jom17_k2_categories c ON c.id = i.catid WHERE i.published = 1 AND i.access IN(1,1) AND i.trash = 0 AND c.published = 1 AND c.access IN(1,1)  AND c.trash = 0 AND ( i.publish_up = '0000-00-00 00:00:00' OR i.publish_up <= '2012-10-03 22:15:44' ) AND ( i.publish_down = '0000-00-00 00:00:00' OR i.publish_down >= '2012-10-03 22:15:44' ) AND i.catid IN (4,5,6,7,9,30,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,28,29) ORDER BY i.hits DESC LIMIT 0, 5
+*************************** 27. row ***************************
+     Id: 13079685
+   User: joomla_user
+   Host: 10.182.97.81:48667
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: SELECT i.*, c.name AS categoryname,c.id AS categoryid, c.alias AS categoryalias, c.params AS categoryparams FROM jom17_k2_items as i LEFT JOIN jom17_k2_categories c ON c.id = i.catid WHERE i.published = 1 AND i.access IN(1,1) AND i.trash = 0 AND c.published = 1 AND c.access IN(1,1)  AND c.trash = 0 AND ( i.publish_up = '0000-00-00 00:00:00' OR i.publish_up <= '2012-10-03 22:15:44' ) AND ( i.publish_down = '0000-00-00 00:00:00' OR i.publish_down >= '2012-10-03 22:15:44' ) AND i.catid IN (4,5,6,7,9,30,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,28,29) ORDER BY i.hits DESC LIMIT 0, 5
+*************************** 28. row ***************************
+     Id: 13079689
+   User: joomla_user
+   Host: 10.182.97.24:54183
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: UPDATE jom17_k2_items
+SET `hits` = (`hits` + 1)
+WHERE id = '1228'
+*************************** 29. row ***************************
+     Id: 13079690
+   User: joomla_user
+   Host: 10.182.97.81:48670
+     db: joomla_db
+Command: Query
+   Time: 4
+  State: Sending data
+   Info: SELECT COUNT(*) FROM jom17_k2_comments WHERE itemID=1793 AND published=1
+*************************** 30. row ***************************
+     Id: 13079691
+   User: joomla_user
+   Host: 10.182.97.81:48671
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: SELECT i.*, c.name AS categoryname,c.id AS categoryid, c.alias AS categoryalias, c.params AS categoryparams FROM jom17_k2_items as i LEFT JOIN jom17_k2_categories c ON c.id = i.catid WHERE i.published = 1 AND i.access IN(1,1) AND i.trash = 0 AND c.published = 1 AND c.access IN(1,1)  AND c.trash = 0 AND ( i.publish_up = '0000-00-00 00:00:00' OR i.publish_up <= '2012-10-03 22:15:44' ) AND ( i.publish_down = '0000-00-00 00:00:00' OR i.publish_down >= '2012-10-03 22:15:44' ) AND i.catid IN (4,5,6,7,9,30,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,28,29) ORDER BY i.hits DESC LIMIT 0, 5
+*************************** 31. row ***************************
+     Id: 13079693
+   User: joomla_user
+   Host: 10.182.97.24:54189
+     db: joomla_db
+Command: Query
+   Time: 2
+  State: Sorting result
+   Info: SELECT i.*, c.name AS categoryname,c.id AS categoryid, c.alias AS categoryalias, c.params AS categoryparams FROM jom17_k2_items as i LEFT JOIN jom17_k2_categories c ON c.id = i.catid WHERE i.published = 1 AND i.access IN(1,1) AND i.trash = 0 AND c.published = 1 AND c.access IN(1,1)  AND c.trash = 0 AND ( i.publish_up = '0000-00-00 00:00:00' OR i.publish_up <= '2012-10-03 22:15:00' ) AND ( i.publish_down = '0000-00-00 00:00:00' OR i.publish_down >= '2012-10-03 22:15:00' ) AND i.catid IN (5,18,19,20,21,22,23) ORDER BY i.created DESC LIMIT 0, 44
+*************************** 32. row ***************************
+     Id: 13079694
+   User: joomla_user
+   Host: 10.182.97.24:54190
+     db: joomla_db
+Command: Query
+   Time: 2
+  State: Locked
+   Info: UPDATE jom17_k2_items
+SET `hits` = (`hits` + 1)
+WHERE id = '2419'
+*************************** 33. row ***************************
+     Id: 13079695
+   User: joomla_user
+   Host: 10.182.97.24:54192
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: closing tables
+   Info: UPDATE `jom17_session` SET `data` = '89a01RM5zyrGNrfJ7dP_TAD4axV9lYlnUZT5VG0dia-4Jw9nvsjc1tpmf1zyroduzeUVryzCwQSESwlqHI_U_ZjMbFHo951Ic0o-WT_u3kXZj-F6WHPgmnnhr4p3VPoMMGAFuIi6trtJU1C4Nu7J35GvqKZiHN3EAzaQGl4_Z1H8NEecOooj-a2bezutggvrZHqrpz2kluNPeel9JBpcS7ueFY569c7qlwbWHexD_9SSq-hjritvxKb53NBLThOOrji80EKUbiDE5Z-UvGO8eEQuAh9yNHNSKQq9dBkqMcOt2-6oR1a9qLfyGI9CzDFEg30TViRvsO_H0Ks07PDnsCHytjEiOXacoG49iH_83MOtEuE6C6pwFb11RNbGIAeNR2kKSZKgXXod4plf5ugdtjbt01ESGp2fUcHc20oZjqM4ydJZ0fqR0eWejLW1eCzsKQEyWzrYuvM1OJeMHuv-azPO1mI56lWm-DCfZWpMr2acJwKehGAE_EcEscdizYVla63ZWP_r-MKxvLcSQvj4nXYsFBVQfp3oIM8pXsqTsaP-HGMTBziOhQMXixzACEef32Ye1nLgPhpqz9-JBNhV8uXzwj4l0cJf7L7YLsQ8ZQriXBSzaQEFpexg0nWy3LjvsctIw5t1RjGu6IPJA9dmRDDyX_AUDZWmOeHVMvG60ny5EsmpUNz65bLqNJNDPeUkWL5o3fLqow9gpyLmlieVjfHJ-Vn1i8cnzZzlrI2OUhh8lHPWCkGaS7FY2Nm1AeD2aMBsVnlx2z1NB5_CHiVmZP1i5SLRhVJVy93EmvHcvFDI1-nba86MS6SFZ2d7OOMDhjoweLutBbVV_OornbAJuANFPGlYnJeS6YPA4xbMHQ9aJUpIHs0C6dag4XD_XidtPBC7UBMFMrSxhY873MjlGNKz7BX0Nc_-yNKkS-nsc92bE7SJt1xDQDLUsVlmFJfEL9-yTb8ol5aGaDQVvJ2Yd6Bu83TO7qXrqbGHYzFot9WBQgHKdHT__124XTAp1HjFxVAPnYKFVs9yrgjHfRTRQwCJ7mWdvIAViNLYzHFiE5QU-Vx9fbg-LPzYgHSrMcB9nnkp6yIqzEW4KOF_lDXC5uolJ5DVP2k5nEL4CQEwvUfrrxCwOIjYIZus5yLt7FtqKMKDXIqny11UOLXkFhv3gXgS0OakBnGX4hBGjK-j7t7XOzComjb5WklOKr2dGmw08OSaKes81-WTK3kXHFyJ9dmdwf4tTyYhx_kHJ_z_TOSOmwPgG8Cd3vZtu8HnvsMQ1luAphVjbPa3x8uQzjDQeVOD21cT8xkGMl_k1lp25HdCwlrJShMalWleJEt9sSy8dQFKeRzsKu_ZxaKH05jCtj3_Vb7Ksa1xDVm_AFsrxuo.',	  `time` = 1349302501 WHERE `session_id` = 'p97ic6qvfm5ekqnsk2mfmfjub4'
+*************************** 34. row ***************************
+     Id: 13079696
+   User: joomla_user
+   Host: 10.182.97.81:48672
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: SELECT i.*, c.name AS categoryname,c.id AS categoryid, c.alias AS categoryalias, c.params AS categoryparams FROM jom17_k2_items as i LEFT JOIN jom17_k2_categories c ON c.id = i.catid WHERE i.published = 1 AND i.access IN(1,1) AND i.trash = 0 AND c.published = 1 AND c.access IN(1,1)  AND c.trash = 0 AND ( i.publish_up = '0000-00-00 00:00:00' OR i.publish_up <= '2012-10-03 22:15:44' ) AND ( i.publish_down = '0000-00-00 00:00:00' OR i.publish_down >= '2012-10-03 22:15:44' ) AND i.catid IN (4,5,6,7,9,30,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,28,29) ORDER BY i.hits DESC LIMIT 0, 5
+*************************** 35. row ***************************
+     Id: 13079697
+   User: joomla_user
+   Host: 10.182.97.81:48673
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: SELECT * FROM jom17_k2_items WHERE id=1733 LIMIT 0, 1
+*************************** 36. row ***************************
+     Id: 13079698
+   User: joomla_user
+   Host: 10.182.97.24:54194
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: SELECT i.*, c.name AS categoryname,c.id AS categoryid, c.alias AS categoryalias, c.params AS categoryparams FROM jom17_k2_items as i LEFT JOIN jom17_k2_categories c ON c.id = i.catid WHERE i.published = 1 AND i.access IN(1,1) AND i.trash = 0 AND c.published = 1 AND c.access IN(1,1)  AND c.trash = 0 AND ( i.publish_up = '0000-00-00 00:00:00' OR i.publish_up <= '2012-10-03 22:15:01' ) AND ( i.publish_down = '0000-00-00 00:00:00' OR i.publish_down >= '2012-10-03 22:15:01' ) AND i.catid IN (4,5,6,7,9,30,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,28,29) ORDER BY i.hits DESC LIMIT 0, 5
+*************************** 37. row ***************************
+     Id: 13079699
+   User: joomla_user
+   Host: 10.182.97.81:48674
+     db: joomla_db
+Command: Query
+   Time: 0
+  State: Locked
+   Info: SELECT * FROM jom17_k2_items WHERE id=1733 LIMIT 0, 1
+*************************** 38. row ***************************
+     Id: 13079700
+   User: joomla_user
+   Host: 10.182.97.24:54195
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: SELECT i.*, c.name AS categoryname,c.id AS categoryid, c.alias AS categoryalias, c.params AS categoryparams FROM jom17_k2_items as i LEFT JOIN jom17_k2_categories c ON c.id = i.catid WHERE i.published = 1 AND i.access IN(1,1) AND i.trash = 0 AND c.published = 1 AND c.access IN(1,1)  AND c.trash = 0 AND ( i.publish_up = '0000-00-00 00:00:00' OR i.publish_up <= '2012-10-03 22:15:01' ) AND ( i.publish_down = '0000-00-00 00:00:00' OR i.publish_down >= '2012-10-03 22:15:01' ) AND i.catid IN (4,5,6,7,9,30,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,28,29) ORDER BY i.hits DESC LIMIT 0, 5
+*************************** 39. row ***************************
+     Id: 13079701
+   User: joomla_user
+   Host: 10.182.97.24:54196
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: SELECT * FROM jom17_k2_items WHERE id=1733 LIMIT 0, 1
+*************************** 40. row ***************************
+     Id: 13079702
+   User: joomla_user
+   Host: 10.182.97.24:54198
+     db: joomla_db
+Command: Sleep
+   Time: 0
+  State: 
+   Info: NULL
+*************************** 41. row ***************************
+     Id: 13079703
+   User: joomla_user
+   Host: 10.182.97.24:54199
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: Locked
+   Info: SELECT i.*, c.name as categoryname,c.id as categoryid, c.alias as categoryalias, c.params as categoryparams FROM jom17_k2_items as i LEFT JOIN jom17_k2_categories AS c ON c.id = i.catid WHERE i.published = 1 AND i.access IN(1,1) AND i.trash = 0 AND c.published = 1 AND c.access IN(1,1) AND c.trash = 0 AND ( i.publish_up = '0000-00-00 00:00:00' OR i.publish_up <= '2012-10-03 22:15:01' ) AND ( i.publish_down = '0000-00-00 00:00:00' OR i.publish_down >= '2012-10-03 22:15:01' ) AND c.id IN (1,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,28,29) ORDER BY i.created DESC LIMIT 0, 10
+*************************** 42. row ***************************
+     Id: 13079704
+   User: joomla_user
+   Host: 10.182.97.81:48675
+     db: joomla_db
+Command: Query
+   Time: 0
+  State: Locked
+   Info: SELECT * FROM jom17_k2_items WHERE id=1733 LIMIT 0, 1
+*************************** 43. row ***************************
+     Id: 13079705
+   User: root
+   Host: localhost
+     db: NULL
+Command: Query
+   Time: 0
+  State: NULL
+   Info: show full processlist
+*************************** 44. row ***************************
+     Id: 13079706
+   User: joomla_user
+   Host: 10.182.97.81:48676
+     db: joomla_db
+Command: Query
+   Time: 1
+  State: executing
+   Info: SELECT `data`
+FROM `jom17_session`
+WHERE `session_id` = 'dq7f0b6ui12ak4nmtjmnoi9pm4'
+*************************** 45. row ***************************
+     Id: 13079707
+   User: joomla_user
+   Host: 10.182.97.81:48677
+     db: joomla_db
+Command: Query
+   Time: 0
+  State: System lock
+   Info: SELECT `data`
+FROM `jom17_session`
+WHERE `session_id` = 'd91107kdgg2caj1tatsn7743m4'
