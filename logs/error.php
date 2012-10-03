@@ -145,3 +145,4 @@
 2012-09-29	10:18:54	INFO	46.160.85.231	Joomla FAILURE: 	Invalid password
 2012-10-01	13:07:19	INFO	46.160.85.231	Joomla FAILURE: 	Invalid password
 2012-10-02	05:44:15	INFO	46.160.85.231	Joomla FAILURE: 	Invalid password
+2012-10-03	07:05:12	INFO	46.160.85.231	Joomla FAILURE: 	Invalid password
