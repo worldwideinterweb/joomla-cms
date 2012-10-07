@@ -209,7 +209,7 @@ class plgSystemJCH_Optimize extends JPlugin {
         $iSprite = $this->params->get('csg_enable', 0);
 
         $sId = md5(serialize(implode('', $this->aLinks) . $this->params));
-	$sId = 'wwi.mini.jsfiles';
+	$sId = "wwi.mini.$sType";
         $aArgs = array($this->aLinks, $sType, $sLnEnd, $iMinify, $iImport, $iSprite, $sId);
         $aFunction = array($this, 'getContents');
 
