@@ -71,12 +71,12 @@ class plgSystemJCH_Optimize extends JPlugin {
             return true;
         }
 
-        $oApplication = & JFactory::getApplication();
+        $oApplication = JFactory::getApplication();
         if ($oApplication->getName() != 'site') {
             return true;
         }
 
-        $oDocument = & JFactory::getDocument();
+        $oDocument = JFactory::getDocument();
         $sDocType = $oDocument->getType();
         $sLnEnd = $oDocument->_getLineEnd();
         $sTab = $oDocument->_getTab();
@@ -98,14 +98,14 @@ class plgSystemJCH_Optimize extends JPlugin {
         }
 
         $this->sBody = JResponse::getBody();
-        $sHeadRegex = '~<head>.*?</head>~msi';
+        $sHeadRegex = '~<head[^>]*>.*?</head>~msi';
         preg_match($sHeadRegex, $this->sBody, $aHeadMatches);
         $this->sHead = $aHeadMatches[0];
 
-        $this->oUri = & JURI::getInstance();
+        $this->oUri = clone JURI::getInstance();
 
         $sCacheGroup = 'plg_jch_optimize';
-        $this->oCache = & JFactory::getCache($sCacheGroup, 'callback', 'file');
+        $this->oCache = JFactory::getCache($sCacheGroup, 'callback', 'file');
         $this->oCache->setCaching(1);
         $this->oCache->setLifetime((int) $this->params->get('lifetime', '30') * 24 * 60 * 60);
 
@@ -151,7 +151,7 @@ class plgSystemJCH_Optimize extends JPlugin {
                                     (?=[^>]+?href\s?=\s?["\']([^"\']+?/([^/]+\.css)(?:\?[^"\']*?)?)["\'])
                                     (?=[^>]+?type\s?=\s?["\']text/css["\'])
                                     (?:(?!(?:\.php)|(?:title\s?=\s?["\'])';
-            $sCssRegexEnd = ')[^>])+>(?:(?:[^<]*?)</[^>]+>)?~ix';
+            $sCssRegexEnd = ')[^>])+>~ix';
             $sCssRegex = $sCssRegexStart . $sExExtensionsRegex . $sExCompRegex . $sCssRegexEnd;
             $this->sHead = preg_replace_callback($sCssRegex, array($this, 'replaceScripts'), $this->sHead);
             //print_r($this->aLinks);
@@ -208,7 +208,7 @@ class plgSystemJCH_Optimize extends JPlugin {
         $iImport = $this->params->get('import', 0);
         $iSprite = $this->params->get('csg_enable', 0);
 
-        $sId = md5(serialize(implode('', $this->aLinks) . $this->params->_raw));
+        $sId = md5(serialize(implode('', $this->aLinks) . $this->params));
         $aArgs = array($this->aLinks, $sType, $sLnEnd, $iMinify, $iImport, $iSprite, $sId);
         $aFunction = array($this, 'getContents');
 
@@ -411,7 +411,13 @@ class plgSystemJCH_Optimize extends JPlugin {
             }
         }
         if ($iMinify && $sType == 'js') {
-            $sContents = JSMin::minify($sContents);
+            try{
+                $sContents = JSMin::minify($sContents);
+            }catch (JSMinException $e){
+                //Need to test how this handles
+                JError::raiseWarning(101, $e->getMessage());
+		//return false;
+            }    
         }
         $sContents = str_replace('LINE_END', $sLnEnd, $sContents);
         return $sContents;
@@ -430,8 +436,8 @@ class plgSystemJCH_Optimize extends JPlugin {
         $sContents = '';
         foreach ($aUrlArray as $sUrl) {
             $sPath = $this->getFilepath($sUrl);
-
-            $sFile = array_pop(explode(DS, $sPath));
+            $aPath = explode(DS, $sPath);
+            $sFile = end($aPath);
 
             preg_match('~.*\.[A-Za-z]{2,3}~', $sPath, $aMatches);
             if (file_exists($aMatches[0])) {
@@ -505,7 +511,7 @@ class plgSystemJCH_Optimize extends JPlugin {
         if (!preg_match('~^(/|http)~', $aMatches[1])) {
             $sCssRootPath = preg_replace('~/[^/]+\.css~', '/', $this->aCallbackArgs['css_url']);
             $sImagePath = $sCssRootPath . $aMatches[1];
-            $oUri = & JURI::getInstance($sImagePath);
+            $oUri = clone JURI::getInstance($sImagePath);
             $oUri->setPath($oUri->getPath());
             $sCleanPath = $oUri->getPath();
             $sCleanPath = preg_replace('~^(?!/)~', '/', $sCleanPath);
@@ -562,7 +568,7 @@ class plgSystemJCH_Optimize extends JPlugin {
      * @param <type> $sUrl
      */
     protected function evalCss($sPath, $sUrl) {
-        $oUri = & JURI::getInstance($sUrl);
+        $oUri = JURI::getInstance($sUrl);
         $sQuery = $oUri->getQuery(true);
         eval('?>' . $sContent = file_get_contents($sPath) . '<?');
     }
