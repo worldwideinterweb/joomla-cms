@@ -209,12 +209,12 @@ class plgSystemJCH_Optimize extends JPlugin {
         $iSprite = $this->params->get('csg_enable', 0);
 
         $sId = md5(serialize(implode('', $this->aLinks) . $this->params));
+	$sId = 'wwi.mini.jsfiles';
         $aArgs = array($this->aLinks, $sType, $sLnEnd, $iMinify, $iImport, $iSprite, $sId);
         $aFunction = array($this, 'getContents');
 
         $bCached = $this->loadCache($aFunction, $aArgs, $sId);
         $sFileName = $this->getFilename($sId, $sCacheGroup);
-
         $iTime = (int) $this->params->get('lifetime', '30');
 
         if ($bCached) {
@@ -348,10 +348,24 @@ class plgSystemJCH_Optimize extends JPlugin {
      * @return string        Returns the url if excluded, empty string otherwise
      */
     protected function replaceScripts($aMatches) {
+$test_array = array(
+	'core.js',
+	'mootools-core.js',
+	'mootools-more.js',
+	'modal.js',
+	'jquery-1.7.1.min.js',
+	'k2.js',
+	'gantry-totop.js',
+	'gantry-smartload.js',
+	'gantry-buildspans.js',
+	'fusion.js',
+	'showcaseFX.js',
+);
         $sUrl = $aMatches[1];
 
         if ($this->oUri->isInternal($sUrl)) {
             $sFile = $aMatches[2];
+//var_dump($sFile);
 
             $aExcludes = array();
             if ($this->aCallbackArgs) {
@@ -369,6 +383,7 @@ class plgSystemJCH_Optimize extends JPlugin {
                     $this->aLinks[$this->iCnt++] = $sUrl;
                 }
                 $iResult = preg_match('~media\s?=\s?["\']([^"\']+?)["\']~i', $aMatches[0], $aMediaTypes);
+//if (!in_array($sFile,$test_array)){ die("$sFile $iResult here");}
                 if ($iResult > 0) {
                     $this->aMedia[$sUrl] = $aMediaTypes[1];
                 }
@@ -380,6 +395,7 @@ class plgSystemJCH_Optimize extends JPlugin {
                 }
             }
         }
+//	die("$sUrl external");
         return $aMatches[0];
     }
 
