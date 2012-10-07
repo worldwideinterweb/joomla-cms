@@ -607,6 +607,7 @@ class plgSystemJCH_Optimize extends JPlugin {
         if (!empty($aIncludeImages[0]) && !$iMinMaxImages) {
             foreach ($aIncludeImages as $sIncImage) {
                 $sIncImage = str_replace('.', '\.', $sIncImage);
+		var_dump($sIncImage);
                 $sIncImagesRegex .= '|(?:(?<=^|})([^{]+?){[^}]+?(url\(([^}]+?' . $sIncImage . ')[^}]*?\))[^}]*?})';
             }
         }
