@@ -169,7 +169,7 @@ class plgSystemJCH_Optimize extends JPlugin {
             $aOptions['cssMinifier'] = array('Minify_CSS', 'process');
         }
         if ($this->params->get('js_minify', 0)) {
-            $aOptions['jsMinifier'] = array('JSMin', 'minify');
+            //$aOptions['jsMinifier'] = array('JSMin', 'minify');
         }
         if ($iHtmlMin) {
             $sBody = Minify_HTML::minify($sBody, $aOptions);
