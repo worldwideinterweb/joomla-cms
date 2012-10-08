@@ -348,30 +348,16 @@ class plgSystemJCH_Optimize extends JPlugin {
      * @return string        Returns the url if excluded, empty string otherwise
      */
     protected function replaceScripts($aMatches) {
-$test_array = array(
-	'core.js',
-	'mootools-core.js',
-	'mootools-more.js',
-	'modal.js',
-	'jquery-1.7.1.min.js',
-	'k2.js',
-	'gantry-totop.js',
-	'gantry-smartload.js',
-	'gantry-buildspans.js',
-	'fusion.js',
-	'showcaseFX.js',
-);
         $sUrl = $aMatches[1];
 
         if ($this->oUri->isInternal($sUrl)) {
             $sFile = $aMatches[2];
-//var_dump($sFile);
 
             $aExcludes = array();
             if ($this->aCallbackArgs) {
                 $aExcludes = $this->aCallbackArgs['excludes'];
             }
-            if (in_array($sFile, $aExcludes)) {
+            if (!in_array($sFile, $aExcludes)) {
                 return $aMatches[0];
             } else {
                 if (in_array($sFile, $this->aOrder)) {
@@ -383,7 +369,6 @@ $test_array = array(
                     $this->aLinks[$this->iCnt++] = $sUrl;
                 }
                 $iResult = preg_match('~media\s?=\s?["\']([^"\']+?)["\']~i', $aMatches[0], $aMediaTypes);
-//if (!in_array($sFile,$test_array)){ die("$sFile $iResult here");}
                 if ($iResult > 0) {
                     $this->aMedia[$sUrl] = $aMediaTypes[1];
                 }
