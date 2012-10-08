@@ -213,7 +213,7 @@ class plgSystemJCH_Optimize extends JPlugin {
 //var_dump($this->aLinks);
 //var_dump($this->params);
 //die();
-	$sId = "wwi.mini.$sType";
+	//$sId = "wwi.mini.$sType";
         $aArgs = array($this->aLinks, $sType, $sLnEnd, $iMinify, $iImport, $iSprite, $sId);
         $aFunction = array($this, 'getContents');
 

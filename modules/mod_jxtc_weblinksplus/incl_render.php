@@ -138,7 +138,7 @@ if ($realpages) {
 	}
 	// FX
 	$jxtcsettings = "{opacityin:$nptipoi,opacityout:$nptipoo,verticalin:$nptipvi,verticalout:$nptipvo,horizontalin:$nptiphi,horizontalout:$nptipho,durationin:$nptipdi,durationout:$nptipdo,pause:$nptpause,fxtype:new ".($nptipAnim=='linear' ? "Fx.Transition(Fx.Transitions.linear)" : "Fx.Transition(Fx.Transitions.$nptipAnim.$nptipEase)").",centered:'$nptipCenter'}";
-	$doc->addScript($live_site.'media/JoomlaXTC/showcaseFX.js');
+	$doc->addScript('/media/JoomlaXTC/showcaseFX.js');
 	$doc->addScriptDeclaration("window.addEvent('load', function(){ // ".$module->id."
 	var ".$jxtc."slidebox = new slidebox('$jxtc','$sbFX',$sbObj,$sbTran);
 	var ".$jxtc."jxtcpops = new jxtcpops('$jxtc',$jxtcsettings);

@@ -115,4 +115,4 @@ $results = $dispatcher->trigger('onContentPrepare', array ('com_content.article'
 $modulehtml = $item->text;
 echo '<div id="'.$jxtc.'">'.$modulehtml.'</div>';
 ?>
-<div style="display:none"><a href="http://www.joomlaxtc.com">JoomlaXTC Social Group Wall - Copyright 2009,2010 Monev Software LLC</a></div>
+<!--<div style="display:none"><a href="http://www.joomlaxtc.com">JoomlaXTC Social Group Wall - Copyright 2009,2010 Monev Software LLC</a></div>-->
