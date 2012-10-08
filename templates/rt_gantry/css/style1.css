@@ -51,7 +51,7 @@ margin-top: 16px;
 	background:url('/templates/rt_gantry/images/header/header_bg.gif');
 	border-bottom: 3px solid white;}
 #rt-header .rt-container {
-	background:url('/templates/rt_gantry/images/header/header_globe_big.gif') no-repeat 527px bottom !important;
+	background:url(/templates/rt_gantry/images/header/header_globe_big.gif) no-repeat 527px bottom !important;
 	height:105px;}
 #rt-header .rt-container #rt-logo {margin:6px 0px 0px 2px;}
 #rt-header .rt-container .rt-grid-2 {margin-left:0px;}
@@ -61,7 +61,7 @@ margin-top: 16px;
 	padding:0px;}
 
 /* Header - 1px header hack for chrome/safari */
-@media screen and (-webkit-min-device-pixel-ratio:0){
+@media screen {
 	#rt-header .rt-container {width: 959px !important;}}
 
 /* Header - Search */
@@ -81,7 +81,6 @@ height: 19px;
 	top: 13px;
         margin:0px;}
 .ad_header_special {
-        /* background: url("/images/linkbars/demo/small_ad.gif") no-repeat center bottom; */
 	background: none;
 	height: 110px;
 	width: 220px;
@@ -108,7 +107,6 @@ height: 19px;
 }
 
 .ad_header_lb {
-	/* background: url("/images/linkbars/demo/leaderboard.png") no-repeat center bottom; */
 	background: none;
 	height:110px;
 	width: 728px;
@@ -122,14 +120,12 @@ height: 19px;
 #rt-sidebar-a .nopadding .rt-block{
 	padding:0px;
 	height:250px;
-        /* background: url("/images/linkbars/demo/300x250.png") no-repeat center bottom; */
 	background: none;
 }
 
 #rt-sidebar-a .nopadding_bg .rt-block{
         padding:0px;
         height:250px;
-        /* background: url("/images/linkbars/demo/300x250.png") no-repeat center bottom; */
         background: none;
 }
  
@@ -237,7 +233,6 @@ a#linkbar_top8_link {
 .k2ItemsBlock ul {
         list-style:none;
         padding:0px;
-        diplay:block;
 }
 #rt-feature .k2ItemsBlock ul {
 	padding-left:6px;
@@ -467,7 +462,7 @@ background-size: 100%;
 	background:none;
 }
 .rt-fusionmenu .nopill .rt-menubar .menutop li.item519 a.item  {
-	background:url('/templates/rt_gantry/images/menus/nav_home.png') !important;
+	background:url(/templates/rt_gantry/images/menus/nav_home.png) !important;
 	width:64px;
 	height:31px;
 }
@@ -476,7 +471,7 @@ background-size: 100%;
 }
 
 .rt-fusionmenu .nopill .rt-menubar .menutop li.item520 a.item  {
-	background:url('/templates/rt_gantry/images/menus/nav_videos.png') !important;
+	background:url(/templates/rt_gantry/images/menus/nav_videos.png) !important;
 	width:79px;
 	height:31px;
 	margin-left:4px;
@@ -486,7 +481,7 @@ background-size: 100%;
 }
 
 .rt-fusionmenu .nopill .rt-menubar .menutop li.item521 a.item  {
-	background:url('/templates/rt_gantry/images/menus/nav_photos.png') !important;
+	background:url(/templates/rt_gantry/images/menus/nav_photos.png) !important;
 	width:86px;
 	height:31px;
 	margin-left:4px;
@@ -496,7 +491,7 @@ background-size: 100%;
 }
 
 .rt-fusionmenu .nopill .rt-menubar .menutop li.item522 a.item  {
-	background:url('/templates/rt_gantry/images/menus/nav_sports.png') !important;
+	background:url(/templates/rt_gantry/images/menus/nav_sports.png) !important;
 	width:64px;
 	height:31px;
 	margin-left:4px;
@@ -506,7 +501,7 @@ background-size: 100%;
 }
 
 .rt-fusionmenu .nopill .rt-menubar .menutop li.item524 a.item  {
-	background:url('/templates/rt_gantry/images/menus/nav_celebs.png') !important;
+	background:url(/templates/rt_gantry/images/menus/nav_celebs.png) !important;
 	width:86px;
 	height:31px;
 	margin-left:4px;
@@ -516,7 +511,7 @@ background-size: 100%;
 }
 
 .rt-fusionmenu .nopill .rt-menubar .menutop li.item523 a.item  {
-	background:url('/templates/rt_gantry/images/menus/nav_gaming.png') !important;
+	background:url(/templates/rt_gantry/images/menus/nav_gaming.png) !important;
 	width:79px;
 	height:31px;
 	margin-left:4px;
@@ -583,7 +578,6 @@ background-size: 100%;
 	padding:10px 0 15px 0;
 }
 .menucontact_menu .rt-block {
-	height 15px;
 	margin: 0;
 	padding: 10px 0 0 0;
 }

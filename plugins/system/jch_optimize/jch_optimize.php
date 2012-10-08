@@ -209,12 +209,6 @@ class plgSystemJCH_Optimize extends JPlugin {
         $iSprite = $this->params->get('csg_enable', 0);
 
         $sId = md5(serialize(implode('', $this->aLinks) . $this->params));
-//var_dump($sId);
-//var_dump($sCacheGroup);
-//var_dump($this->aLinks);
-//var_dump($this->params);
-//die();
-	//$sId = "wwi.mini.$sType";
         $aArgs = array($this->aLinks, $sType, $sLnEnd, $iMinify, $iImport, $iSprite, $sId);
         $aFunction = array($this, 'getContents');
 

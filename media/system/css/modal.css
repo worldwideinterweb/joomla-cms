@@ -37,7 +37,7 @@
 	height: 30px;
 	right: -15px;
 	top: -15px;
-	background: url(../images/modal/closebox.png) no-repeat center;
+	background: url(../images/modal/closebox.png) no-repeat;
 	border: none;
 }
 
@@ -46,9 +46,9 @@
 }
 
 .sbox-loading #sbox-content {
-	background-image: url(../images/modal/spinner.gif);
+	background: url(../images/modal/spinner.gif);
 	background-repeat: no-repeat;
-	background-position: center;
+	/*background-position: cen ter;*/
 }
 
 #sbox-content {
