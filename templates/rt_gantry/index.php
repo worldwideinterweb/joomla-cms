@@ -24,7 +24,7 @@ require_once('lib/gantry/gantry.php');
         ?>
     </head>
     <body <?php echo $gantry->displayBodyTag(); ?>>
-<script type="text/javascript">
+<!--<script type="text/javascript">
 window.Meebo||function(c){function p(){return["<",i,' onload="var d=',g,";d.getElementsByTagName('head')[0].",
 j,"(d.",h,"('script')).",k,"='//cim.meebo.com/cim?iv=",a.v,"&",q,"=",c[q],c[l]?
 "&"+l+"="+c[l]:"",c[e]?"&"+e+"="+c[e]:"","'\"></",i,">"].join("")}var f=window,
@@ -39,7 +39,7 @@ b.allowTransparency="true";v[j](b);try{b.contentWindow[g].open()}catch(w){c[e]=
 d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{var t=
 b.contentWindow[g];t.write(p());t.close()}catch(x){b[k]=o+'d.write("'+p().replace(/"/g,
 '\\"')+'");d.close();'}a.T(1)}({network:"worldwideinterweb_na32ja"});
-</script>
+</script>-->
         <?php /** Begin Drawer **/ if ($gantry->countModules('drawer')) : ?>
         <div id="rt-drawer">
             <div class="rt-container">
