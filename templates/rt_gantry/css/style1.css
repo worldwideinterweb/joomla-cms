@@ -519,6 +519,9 @@ background-size: 100%;
 .rt-fusionmenu .nopill .rt-menubar .menutop li.item523 a.item span {
 	text-indent:-5000px;
 }
+.item538 {
+	display: none;
+}
 .sharepoint {
 	float:right;
 	margin-right:25px;
