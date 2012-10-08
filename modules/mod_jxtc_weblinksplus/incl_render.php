@@ -170,7 +170,7 @@ if ($realpages) {
 	}
 }
 
-$doc->addStyleSheet($live_site.'modules/'.$moduleDir.'/css/wall.css','text/css');
+$doc->addStyleSheet('/modules/'.$moduleDir.'/css/wall.css','text/css');
 $modulehtml = $moduletemplate;
 $modulehtml = str_replace( '{leftbutton}', $leftbuttonhtml, $modulehtml );
 $modulehtml = str_replace( '{rightbutton}', $rightbuttonhtml, $modulehtml );

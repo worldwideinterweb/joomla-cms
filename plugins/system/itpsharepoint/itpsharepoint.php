@@ -50,7 +50,7 @@ class plgSystemITPSharePoint extends JPlugin {
         $doc   = JFactory::getDocument();
         /* @var $doc JDocumentHtml */
         if($this->params->get("loadCss")) {
-            $doc->addStyleSheet(JURI::root() . "plugins/system/itpsharepoint/style.css");
+            $doc->addStyleSheet("/plugins/system/itpsharepoint/style.css");
         }
         
         // Remove the indicator in the site description.
