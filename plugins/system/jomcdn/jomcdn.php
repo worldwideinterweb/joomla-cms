@@ -145,7 +145,7 @@ class plgSystemJomCDN extends JPlugin
 
 	/**
 	 * Zip file extensions
-	 *
+	 * 
 	 * @var array
 	 **/
 	static $zip_extensions = array( '7z', 'deb', 'gz', 'pkg', 'rar', 'sit', 'sitx', 'zip', 'zipx' );
@@ -278,10 +278,10 @@ class plgSystemJomCDN extends JPlugin
      */
 	function onAfterRender()
 	{
-		global $mainframe;
+		global $app;
 
 		// If we are not on the live site, then... well buh bye!
-		if ( !$mainframe->isSite() ) {
+		if ( !$app->isSite() ) {
 			return true;
 		}
 
@@ -508,10 +508,7 @@ class plgSystemJomCDN extends JPlugin
 			$buffer = str_replace( $patterns, $replacements, $buffer );
 		}
 		$buffer = str_replace( '/http', 'http', $buffer );
-		if ( $cdn_domain ) {
-			$buffer = str_replace( substr( JURI::root(), 0, -1 )
-				. $cdn_domain, $cdn_domain, $buffer );
-		}
+		$buffer = str_replace( substr( JURI::root(), 0, -1 ) . $cdn_domain, $cdn_domain, $buffer );
 
 		JResponse::setBody( $buffer );
 	}
@@ -580,11 +577,6 @@ class plgSystemJomCDN extends JPlugin
 		$non_existent = array();
 		// Loop through the files and make sure they were found
 		foreach ( $images as $file => $file_path ) {
-			if ( $this->_file_exists( $file_path ) ) {
-				unset( $images[$file] );
-				continue;
-			}
-
 			// Check to see if the absolute path for the file was found on method clean_media_files
 			if ( intval( $file ) > 0 ) {
 				// This means that the absolute path for this file was not found
@@ -1279,7 +1271,7 @@ class plgSystemJomCDN extends JPlugin
 	 **/
 	function smush_it( $_original_url )
 	{
-		global $mainframe;
+		global $app;
 
 		$url = 'http://www.smushit.com/ysmush.it/ws.php?img=' . urlencode( $_original_url );
 
@@ -1360,19 +1352,21 @@ class plgSystemJomCDN extends JPlugin
 		}
 
 		// Get unique filename before store!
-		$temp = rtrim( $mainframe->getCfg( 'tmp_path' ), '/' . DS );
+		$temp = rtrim( $app->getCfg( 'tmp_path' ), '/' . DS );
 		$temp_file = $temp .DS. basename( $_original_url );
 		$counter = 1;
 		while ( file_exists( $temp_file ) ) {
-			$_temp = explode( '.', $temp_file, 2 );
-			$temp_file = $_temp[0] . $counter . '.'. $_temp[1];
+			$pieces = count( explode( '.', $temp_file ) );
+			$_temp = explode( '.', $temp_file, $pieces );
+			$temp_file = str_replace( $_temp[ $pieces - 2 ] . '.' . $_temp[ $pieces - 1 ],
+					$_temp[ $pieces - 2 ] . $counter . '.' . $_temp[ $pieces - 1 ], $temp_file);
 			$counter++;
 		}
 
 		$handle = @fopen( $temp_file, 'wb' );
 		if ( !$handle ) {
 			if ( CDN_DEBUG ) {
-				echo 'Could not create Temporary file.';
+				echo 'Could not create temporary file:' . $temp_file;
 			}
 			return false;
 		}
@@ -1696,8 +1690,13 @@ class RACKSPACE_CDN extends CDN_HELER
 		}
 
 		if ( defined( 'CDN_CRON_RUNNING' ) && CDN_CRON_RUNNING ) {
-			require_once( dirname( __FILE__ ) .DS. $this->_name .DS. 'rackspace-php-cloudfiles'
-				.DS. 'cloudfiles.php' );
+			$path = dirname( __FILE__ ) .DS. $this->_name .DS. 'rackspace-php-cloudfiles'
+				.DS. 'cloudfiles.php';
+			if ( $this->params->get( 'rs_account_is_uk', 0 ) ) {
+				$path = dirname( __FILE__ ) .DS. $this->_name .DS. 'rackspace-php-cloudfiles'
+					.DS. 'cloudfiles-uk.php';
+			}
+			require_once $path;
 
 			$auth = new CF_Authentication( $api_key, $username );
 			$auth->authenticate();
@@ -1765,10 +1764,6 @@ class RACKSPACE_CDN extends CDN_HELER
 						break;
 					default:
 						break;
-				}
-
-				if ( empty( $local_file ) ) {
-					$local_file = " \n";
 				}
 			}
 		}
@@ -1841,24 +1836,16 @@ class CDN_HELER
 				$offset = $this->params->get( 'cache_css_lifetime', 3600 * 24 * 10 );
 
 				// Here we are just setting a flag to compress and minify this file type
-				if ( $this->params->get( 'do_gzip', 1 ) ) {
-					$headers['do_gzip'] = true;
-				}
-				if ( $this->params->get( 'do_minify', 1 ) ) {
-					$headers['do_minify'] = 'cssmin';
-				}
+				$headers['do_gzip'] = true;
+				$headers['do_minify'] = 'cssmin';
 			}
 			if ( in_array( $ext, $this->script_extensions ) ) {
 				// Default offset 10 days
 				$offset = $this->params->get( 'cache_js_lifetime', 3600 * 24 * 10 );
 
 				// Here we are just setting a flag to compress and minify this file type
-				if ( $this->params->get( 'do_gzip', 1 ) ) {
-					$headers['do_gzip'] = true;
-				}
-				if ( $this->params->get( 'do_minify', 1 ) ) {
-					$headers['do_minify'] = 'jsmin';
-				}
+				$headers['do_gzip'] = true;
+				$headers['do_minify'] = 'jsmin';
 			}
 			// For htc files
 			if ( 'htc' == $ext ) {
