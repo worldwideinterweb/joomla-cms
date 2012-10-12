@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>System - jomCDN</name>
+	<author>'corePHP'</author>
+	<creationDate>July 2010</creationDate>
+	<copyright>Copyright (C) 2010 'corePHP' LLC, www.corephp.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@corephp.com</authorEmail>
+	<authorUrl>www.corephp.com</authorUrl>
+	<version>1.2.0</version>
+	<description>JCDN_PLUGIN_DESC</description>
+
+	<files>
+		<filename plugin="jomcdn">jomcdn.php</filename>
+		<folder>jomcdn</folder>
+	</files>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_jomcdn.ini</language>
+	</languages>
+
+	<params>
+		<param name="cdn_type" type="list" default="s3" label="CDN Service to use" description="Select the CDN service that you will be using.">
+			<option value="s3">Amazon S3 with CloudFront</option>
+			<option value="rs">Rackspace Cloud Files</option>
+		</param>
+
+		<param name="@spacer" type="spacer" default="======= Amazon CDN Configuration =======" label="" />
+		<param name="s3_access_key" type="password" default="" label="Amazon access key" description="Your Amazon S3 access key, you can retrieve this from 'Security Credentials' under the 'Your Account' page in amazon." />
+		<param name="s3_secret_key" type="password" default="" label="Amazon S3 secret key" description="Your Amazon S3 secret key, you can retrieve this from 'Security Credentials' under the 'Your Account' page in amazon." />
+		<param name="s3_use_ssl" type="list" default="0" label="Amazon S3 use SSL" description="Use SSL for Amazon S3 content">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="s3_bucket" type="text" default="" label="Bucket Name" description="The name of the bucket to store the content on." />
+		<param name="s3_cloudfront_domain" type="text" default="" label="CloudFront Domain Name" description="If you want to use CloudFront for a true CDN then enter the cloudfront domain here, just the domain, no protocol like http:// or https://." />
+
+		<param name="@spacer" type="spacer" default="======= Rackspace CDN Configuration =======" label="" />
+		<param name="rs_api_key" type="password" default="" label="Rackspace API key" description="Your Rackspace API key, you can get this from your Cloud Control Panel -> Your Account -> API Access." />
+		<param name="rs_username" type="password" default="" label="Rackspace username" description="Your Rackspace username." />
+		<param name="rs_bucket" type="text" default="" label="Container Name" description="The container where your assets will be stored." />
+	</params>
+
+	<params group="advanced">
+		<param name="@spacer" type="spacer" default="======== Cron Job Parameters ========" label=""  />
+		<param name="cache_life_time" type="text" default="172800" label="Cache lifetime" description="For how long should Joomla page caches exist before a page is parsed again? (in seconds). Default 172800 (2 days)" />
+		<param name="cron_url" type="text" default="cdn_run_cron" label="Cron Job URL Parameter" description="You should change this to something unique to your site, so that you are the only one running the cronjob." />
+		<param name="cron_delete_cache_files" type="list" default="0" label="Delete all cached files" description="This option will delete all files that have been cached in the database the next time that the cron job is run. Important: Make sure you turn this off after you delete the files! The reason to do this, is if you are moving from only using S3 storage to CloudFront, or if you need to update all of the cached files.">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="brute_force_file_path" type="list" default="1" label="Bruteforce file path" description="Before a file is sent to the CDN, the server must find the absolute path to the file in the system, this may take a few tries, if you enable this option, more than likely the file will be found, but there is also the chance that the wrong file will be found, but there is a lower probability for the latter to happen.">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="add_expiration_time" type="list" default="0" label="Add expiration time" description="If turned on, every file that is displayed from the CDN, will have attached at the end of it the date that the file expires. This is useful if you ever change a file before it expires a browser will see this same file name as a different file because the expiration date would be different. Visually, a file would look like this: http://www.example.com/images/picture1.jpg?20100803. NOTE: The only downside to this is that some proxy servers may not cache the files.">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+
+		<param name="@spacer" type="spacer" default="======== Feature switches ========" label="" />
+		<param name="do_gzip" type="list" default="1" label="Gzip files" description="Gzip files (only available for Amazon CloudFront as Rackspace does it on the fly.)">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="do_minify" type="list" default="1" label="Minify CSS and JS files" description="Minify (compress) CSS and JS files">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="smushit_please" type="list" default="1" label="Use smush.it" description="Smush.it is a service offered by Yahoo to optimize images. You can read more here http://developer.yahoo.com/yslow/smushit/ and here http://www.smushit.com/ysmush.it/">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+
+		<param name="@spacer" type="spacer" default="======== CDN Object Cache Times ========" label="" />
+		<param name="cache_image_lifetime" type="text" default="864000" label="Image cache lifetime" description="This includes .jpg', .jpeg, .gif, .png files. This is a cache at the browser level. For how long should the browser cache images from the CDN before it does a request for them again (in seconds), default '864000' which is 10 days." />
+		<param name="cache_css_lifetime" type="text" default="864000" label="CSS cache lifetime" description="This includes .css files. This is a cache at the browser level. For how long should the browser cache CSS files from the CDN before it does a request for them again (in seconds), default '864000' which is 10 days." />
+		<param name="cache_js_lifetime" type="text" default="864000" label="JavaScript cache lifetime" description="This includes .js files. This is a cache at the browser level. For how long should the browser cache JavaScript files from the CDN before it does a request for them again (in seconds), default '864000' which is 10 days." />
+		<param name="cache_htc_lifetime" type="text" default="864000" label="HTC cache lifetime" description="This includes .htc files. This is a cache at the browser level. For how long should the browser cache HTC files from the CDN before it does a request for them again (in seconds), default '864000' which is 10 days." />
+		<param name="cache_ico_lifetime" type="text" default="864000" label="ICO cache lifetime" description="This includes .ico files. This is a cache at the browser level. For how long should the browser cache ICO files from the CDN before it does a request for them again (in seconds), default '864000' which is 10 days." />
+		<param name="cache_documents_lifetime" type="text" default="1296000" label="Documents cache lifetime" description="This includes .pdf, .doc, .docx, .log, .rtf, .txt, .wks, .xls, .xlsx files. This is a cache at the browser level. For how long should the browser cache documents files from the CDN before it does a request for them again (in seconds), default '1296000' which is 15 days." />
+		<param name="cache_datafiles_lifetime" type="text" default="1296000" label="Data files cache lifetime" description="This includes .csv, .dat, .key, .pps, .ppt, .pptx, .xml files. This is a cache at the browser level. For how long should the browser cache data files from the CDN before it does a request for them again (in seconds), default '1296000' which is 15 days." />
+		<param name="cache_music_lifetime" type="text" default="2592000" label="Music cache lifetime" description="This includes .aif, .aac, .iff, .mid, .m3u, .midi, .mpa, .mp3, .ra, .wav, .wma files. This is a cache at the browser level. For how long should the browser cache music files from the CDN before it does a request for them again (in seconds), default '2592000' which is 30 days." />
+		<param name="cache_video_lifetime" type="text" default="2592000" label="Video cache lifetime" description="This includes .3g2, .3gp, .asf, .asx, .avi, .flv, .mov, .mp4, .mpg, .rm, .swf, .wmv files. This is a cache at the browser level. For how long should the browser cache video files from the CDN before it does a request for them again (in seconds), default '2592000' which is 30 days." />
+		<param name="cache_compressed_lifetime" type="text" default="2592000" label="Compressed files cache lifetime" description="This includes .7z, .deb, .gz, .pkg, .rar, .sit, .sitx, .tar.gz, .zip, .zipx files. This is a cache at the browser level. For how long should the browser cache compressed files from the CDN before it does a request for them again (in seconds), default '2592000' which is 30 days." />
+
+		<param name="@spacer" type="spacer" default="======== Extra File Types ========" label="" />
+		<param name="cache_extra_filetypes" type="textarea" default="dmg,864000|exe,864000" cols="30" rows="5" label="Extra extensions" description="Here you can add custom file extensions to the CDN. This must be in the following format (without the double quotes): &#34;dmg,864000|exe,864000&#34;, where the value before the comma is the extension and the value after is the time for the file to be cached is seconds, extensions must be separated by a pipe character &#34;|&#34;." />
+
+		<param name="@spacer" type="spacer" default="======== Server Level Parameters ========" label="" />
+		<param name="execution_time" type="text" default="3600" label="Script execution time" description="Page execution time limit for when running the cronjob. (in seconds). Change this if the cron job is not executing the whole way." />
+		<param name="memory_limit" type="text" default="512M" label="Memory limit" description="This is the memory limit for the server when running the cronjob. Change this if the cron job is not executing the whole way." />
+	</params>
+</install>
